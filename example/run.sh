@@ -27,7 +27,10 @@ if ${sudo} docker ps | awk '{print $NF}' | grep -qx ${name}; then
     read foo
     ${sudo} docker kill ${name}
 fi
-$sudo docker rm ${name}
+$sudo docker rm ${name} > /dev/null 2> /dev/null
+
+mkdir ./etc/logs > /dev/null 2> /dev/null
+mkdir ./etc/db > /dev/null 2> /dev/null
 
 ${sudo} docker run --rm=true \
     --name ${name} \
