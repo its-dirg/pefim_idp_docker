@@ -4,6 +4,7 @@ from saml2 import BINDING_HTTP_REDIRECT, BINDING_URI
 from saml2 import BINDING_HTTP_ARTIFACT
 from saml2 import BINDING_HTTP_POST
 from saml2 import BINDING_SOAP
+from saml2.cert import OpenSSLWrapper
 from saml2.saml import NAME_FORMAT_URI
 from saml2.saml import NAMEID_FORMAT_TRANSIENT
 from saml2.saml import NAMEID_FORMAT_PERSISTENT
@@ -22,17 +23,32 @@ else:
 BASEDIR = os.path.abspath(os.path.dirname(__file__))
 
 
+def verify_encrypt_cert(cert_str):
+    osw = OpenSSLWrapper()
+    ca_cert_str = osw.read_str_from_file(full_path("root_cert/localhost.ca.crt"))
+    valid, mess = osw.verify(ca_cert_str, cert_str)
+    return valid
+
+
 def full_path(local_file):
     return os.path.join(BASEDIR, local_file)
+
+#If HTTPS is true you have to assign the server cert, key and certificate chain.
+HTTPS = True
+SERVER_CERT = "httpsCert/localhost.crt"
+SERVER_KEY = "httpsCert/localhost.key"
+#CERT_CHAIN="certs/chain.pem"
+CERT_CHAIN = None
+
 
 HOST = 'localhost'
 PORT = 8088
 
-BASE = "http://%s:%s" % (HOST, PORT)
+BASE = "https://%s:%s" % (HOST, PORT)
 
 CONFIG = {
-    "entityid": "%s/idp.xml" % BASE,
-    "description": "My IDP",
+    "entityid": "%s/TestPEFIMIdP.xml" % BASE,
+    "description": "Test PEFIM IDP",
     "valid_for": 168,
     "service": {
         "aa": {
@@ -52,8 +68,13 @@ CONFIG = {
             },
         },
         "idp": {
-            "name": "Rolands IdP",
+            "name": "Test PEFIM IdP",
+            "want_authn_requests_signed": True,
+            "want_authn_requests_only_with_valid_cert": True,
             "sign_response": True,
+            "sign_assertion": False,
+            "verify_encrypt_cert": verify_encrypt_cert,
+            "encrypt_assertion": True,
             "endpoints": {
                 "single_sign_on_service": [
                     ("%s/sso/redirect" % BASE, BINDING_HTTP_REDIRECT),
@@ -85,40 +106,35 @@ CONFIG = {
             "policy": {
                 "default": {
                     "lifetime": {"minutes": 15},
-                    "attribute_restrictions": None, # means all I have
+                    #"attribute_restrictions": None, # means all I have
                     "name_form": NAME_FORMAT_URI,
-                    "entity_categories": ["swamid", "edugain"]
+                    "entity_categories": ["at_egov_pvp2"]
                 },
             },
-            "subject_data": "./idp.subject",
-            "name_id_format": [NAMEID_FORMAT_TRANSIENT,
-                               NAMEID_FORMAT_PERSISTENT]
+            #"subject_data": "./idp.subject",
+            "name_id_format": [NAMEID_FORMAT_PERSISTENT]
         },
     },
     "debug": 1,
     "key_file": full_path("pki/mykey.pem"),
     "cert_file": full_path("pki/mycert.pem"),
     "metadata": {
-        "local": [full_path("sp.xml")],
+        "local": [full_path("metadata/pefim_proxy_metadata.xml")],
     },
     "organization": {
-        "display_name": "Rolands Identiteter",
-        "name": "Rolands Identiteter",
-        "url": "http://www.example.com",
+        "display_name": "Test PEFIM IdP",
+        "name": "Test PEFIM IdP",
+        "url": "http://localhost:8088",
     },
     "contact_person": [
         {
             "contact_type": "technical",
-            "given_name": "Roland",
-            "sur_name": "Hedberg",
-            "email_address": "technical@example.com"
-        }, {
-            "contact_type": "support",
-            "given_name": "Support",
-            "email_address": "support@example.com"
+            "given_name": "Test",
+            "sur_name": "Testsson",
+            "email_address": "test.testsson@test.com"
         },
     ],
-    # This database holds the map between a subject's local identifier and
+    # This database holds the map between a subjects local identifier and
     # the identifier returned to a SP
     "xmlsec_binary": xmlsec_path,
     #"attribute_map_dir": "../attributemaps",
@@ -132,15 +148,49 @@ CONFIG = {
     }
 }
 
-# Authentication contexts
+PASSWD = {
+    "testuser": "qwerty"
+}
 
-    #(r'verify?(.*)$', do_verify),
+USERS = {
+    "testuser": {
+            "sn": "Testsson",
+            "givenName": "Test",
+            "eduPersonAffiliation": "student",
+            "eduPersonScopedAffiliation": "student@example.com",
+            "eduPersonPrincipalName": "test@example.com",
+            "uid": "testuser1",
+            "eduPersonTargetedID": "one!for!all",
+            "c": "SE",
+            "o": "Example Co.",
+            "ou": "IT",
+            "initials": "P",
+            "schacHomeOrganization": "example.com",
+            "email": "hans@example.com",
+            "displayName": "Test Testsson",
+            "labeledURL": "http://www.example.com/haho My homepage",
+            "norEduPersonNIN": "SE199012315555",
+            "PVP-VERSION": "PVP-VERSION",
+            "PVP-PRINCIPAL-NAME": "PVP-PRINCIPAL-NAME",
+            "PVP-GIVENNAME": "PVP-GIVENNAME",
+            "PVP-BIRTHDATE": "PVP-BIRTHDATE",
+            "PVP-USERID": "PVP-USERID",
+            "PVP-GID": "PVP-GID",
+            "PVP-BPK": "PVP-BPK",
+            "PVP-MAIL": "PVP-MAIL",
+            "PVP-TEL": "PVP-TEL",
+            "PVP-PARTICIPANT-ID": "PVP-PARTICIPANT-ID",
+            "PVP-PARTICIPANT-OKZ": "PVP-PARTICIPANT-OKZ",
+            "PVP-OU-OKZ": "PVP-OU-OKZ",
+            "PVP-OU": "PVP-OU",
+            "PVP-OU-GV-OU-ID": "PVP-OU-GV-OU-ID",
+            "PVP-FUNCTION": "PVP-FUNCTION",
+            "PVP-ROLES": "PVP-ROLES",
+            "PVP-INVOICE-RECPT-ID": "PVP-INVOICE-RECPT-ID",
+            "PVP-COST-CENTER-ID": "PVP-COST-CENTER-ID",
+            "PVP-CHARGE-CODE": "PVP-CHARGE-CODE",
+    }
+}
 
-CAS_SERVER = "https://cas.umu.se"
-CAS_VERIFY = "%s/verify_cas" % BASE
-PWD_VERIFY = "%s/verify_pwd" % BASE
-
-AUTHORIZATION = {
-    "CAS" : {"ACR": "CAS", "WEIGHT": 1, "URL": CAS_VERIFY},
-    "UserPassword" : {"ACR": "PASSWORD", "WEIGHT": 2, "URL": PWD_VERIFY}
+EXTRA = {
 }

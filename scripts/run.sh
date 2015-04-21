@@ -31,6 +31,7 @@ $sudo docker rm ${name}
 
 ${sudo} docker run --rm=true \
     --name ${name} \
+    --hostname localhost \
     -v $PWD/etc:/opt/pefim/etc \
     -p 8088:8088 \
     $DOCKERARGS \

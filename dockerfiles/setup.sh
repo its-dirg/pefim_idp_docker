@@ -2,6 +2,9 @@
 
 apt-get update
 apt-get install -y \
+        libsasl2-dev \
+        libldap2-dev \
+        libssl-dev \
         wget \
         unzip \
 	xmlsec1
@@ -18,4 +21,7 @@ src_name=$(ls)
 mv ${src_name} pefim_idp
 
 # install the pefim idp
+pip install git+https://github.com/HaToHo/pysaml2.git#egg=pysaml2
 pip install -e /opt/pefim/src/pefim_idp/
+pip install cherrypy==3.2.4
+pip install python-ldap
