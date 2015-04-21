@@ -2,9 +2,9 @@ FROM itsdirg/dirg_base
 
 MAINTAINER DIRG <dirg@its.umu.se>
 
-VOLUME ["/opt/pefim/etc"]
+VOLUME ["/opt/pefim/etc", "/opt/pefim/"]
 
-ADD tools /opt/pefim/tools
+ADD requirements.txt /opt/pefim/requirements.txt
 
 ADD setup.sh /opt/pefim/setup.sh
 RUN /opt/pefim/setup.sh

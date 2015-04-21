@@ -19,5 +19,5 @@ else
         sudo="sudo"
     fi
 fi
-
+${sudo} docker rmi -f ${repository}
 ${sudo} docker build -t=${repository} .
