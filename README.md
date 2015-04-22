@@ -1,4 +1,4 @@
-# PEFIM idp
+# pefim_idp_docker
 
 This project contains docker build scripts to generate a docker image for a PEFIM idp based on https://github.com/its-dirg/pefim_idp.
 
