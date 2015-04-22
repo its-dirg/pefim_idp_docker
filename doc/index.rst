@@ -6,6 +6,9 @@
 Welcome to pefim_idp_docker's documentation!
 ============================================
 
+This is an early alpha version and contains some temporary quick fixes to create a working proof of concept.
+The intention is to refactor the code and configuration.
+
 Contents:
 
 .. toctree::

@@ -52,6 +52,8 @@
 <h2>Docker volume structure<a class="headerlink" href="#docker-volume-structure" title="Permalink to this headline">¶</a></h2>
 <p>To run a PEFIM idp using the docker image, you need to bind a volume to <strong>/opt/pefim/etc</strong> in the container.
 This volume will act as the working directory of the PEFIM idp and contain all necessary files to the idp.</p>
+<p>An example of how to build a valid volume to the container can be found in the <strong>example/etc</strong> directory.
+And how to bind the volume can be found in the <strong>example/run.sh</strong> script.</p>
 <div class="section" id="the-start-sh-script">
 <h3>The start.sh script<a class="headerlink" href="#the-start-sh-script" title="Permalink to this headline">¶</a></h3>
 <p>In the volume root, a file named <strong>start.sh</strong> must exist. This file is the starting point of the application and is
@@ -65,6 +67,11 @@ pefim_idp idp_config
 </div>
 <p>This creates a metadata file of the config file idp_config.py and starts the PEFIM idp.</p>
 </div>
+</div>
+<div class="section" id="change-configuration">
+<h2>Change configuration<a class="headerlink" href="#change-configuration" title="Permalink to this headline">¶</a></h2>
+<p>The main configuration is based on pysaml2 and can be found in <strong>example/etc/idp_config.py</strong>. Be aware that you may
+need to change the <strong>example/etc/start.sh</strong> and <strong>exmple/run.sh</strong> depending on the changes.</p>
 </div>
 </div>
 
@@ -81,6 +88,7 @@ pefim_idp idp_config
 <li><a class="reference internal" href="#the-start-sh-script">The start.sh script</a></li>
 </ul>
 </li>
+<li><a class="reference internal" href="#change-configuration">Change configuration</a></li>
 </ul>
 </li>
 </ul>
