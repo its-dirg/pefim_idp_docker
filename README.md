@@ -1,4 +1,6 @@
-# pefim_idp_docker
+This project contains docker build scripts to generate a docker image for a PEFIM idp based on https://github.com/its-dirg/pefim_idp.
+
+You can also find an example how to configure and run the docker image.
 
 This is an early alpha version and contains some temporary quick fixes to create a working proof of concept.
 The intention is to refactor the code and configuration.
@@ -21,6 +23,9 @@ All files necessary to build the PEFIM idp image are located in the dockerfiles 
 
     dockerfiles/build.sh
 
-If you want to test the PEFIM idp, you can use the example idp setup in the example directory. To start the idp run the script::
+If you want to test the PEFIM idp, you can use the example idp setup in the example directory.
+Replace the metadata in example/etc/metadata with your metadata or change the metadata configuration in example/etc/idp_config.py.
+
+To start the idp run the script::
 
     example/run.sh

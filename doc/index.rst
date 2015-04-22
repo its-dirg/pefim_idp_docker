@@ -5,6 +5,8 @@
 
 Welcome to pefim_idp_docker's documentation!
 ============================================
+This project contains docker build scripts to generate a docker image for a PEFIM idp based on https://github.com/its-dirg/pefim_idp.
+You can also find an example how to configure and run the docker image.
 
 This is an early alpha version and contains some temporary quick fixes to create a working proof of concept.
 The intention is to refactor the code and configuration.
