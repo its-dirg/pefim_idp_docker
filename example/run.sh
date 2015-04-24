@@ -17,12 +17,14 @@ name=pefim_idp
 # relative path to volume
 volume=etc
 
+dir=$(pwd)
+
 port=$(cat ${volume}/${conf} | grep PORT | head -1 | sed 's/[^0-9]//g')
 
 centos_or_redhat=$(cat /etc/centos-release 2>/dev/null | wc -l)
 
 if [ ${centos_or_redhat} = 1 ]; then
-    $(chcon -Rt svirt_sandbox_file_t pwd/${volume})
+    $(chcon -Rt svirt_sandbox_file_t ${dir}/${volume})
 fi
 
 # Check if running on mac
@@ -66,7 +68,7 @@ mkdir ./etc/db > /dev/null 2> /dev/null
 ${sudo} docker run --rm=true \
     --name ${name} \
     --hostname localhost \
-    -v $(pwd)/${volume}:/opt/pefim/etc \
+    -v ${dir}/${volume}:/opt/pefim/etc \
     -p ${port}:${port} \
     $DOCKERARGS \
     -i -t \

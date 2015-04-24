@@ -1,0 +1,1539 @@
+2015-04-20 14:39:57,089 saml2:INFO Logging started
+2015-04-20 14:45:49,922 saml2:INFO Logging started
+2015-04-20 14:45:56,932 saml2:INFO Logging started
+2015-04-20 14:46:38,141 saml2.idp:ERROR An error occured while creating metadata:
+2015-04-20 14:48:31,584 saml2:INFO Logging started
+2015-04-21 07:37:50,737 saml2:INFO Logging started
+2015-04-21 07:58:25,878 saml2:INFO Logging started
+2015-04-21 08:41:21,674 saml2:INFO Logging started
+2015-04-21 08:42:35,415 saml2:INFO Logging started
+2015-04-21 08:44:07,840 saml2:INFO Logging started
+2015-04-21 08:51:56,364 saml2:INFO Logging started
+2015-04-21 09:02:48,236 saml2:INFO Logging started
+2015-04-21 09:06:24,815 saml2.entity:DEBUG receiver addresses: ['https://localhost:8088/sso/redirect']
+2015-04-21 09:06:24,816 saml2.entity:DEBUG Binding: urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect
+2015-04-21 09:06:24,818 saml2.request:DEBUG xmlstr: <?xml version="1.0" encoding="UTF-8"?>
+<ns0:AuthnRequest xmlns:ns0="urn:oasis:names:tc:SAML:2.0:protocol" xmlns:ns1="urn:oasis:names:tc:SAML:2.0:assertion" xmlns:ns2="http://www.w3.org/2000/09/xmldsig#" xmlns:ns3="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:ns4="urn:net:eustix:names:tc:PEFIM:0.0:assertion" AssertionConsumerServiceURL="https://localhost:8990/pvp2_sp/acs/post" Destination="https://localhost:8088/sso/redirect" ID="id-hTaDctb3mFQDdJMm0" IssueInstant="2015-04-21T09:06:24Z" ProtocolBinding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Version="2.0"><ns1:Issuer Format="urn:oasis:names:tc:SAML:2.0:nameid-format:entity">https://localhost:8990/pvp2_spproxy.xml</ns1:Issuer><ns2:Signature Id="Signature1"><ns2:SignedInfo><ns2:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><ns2:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/><ns2:Reference URI="#id-hTaDctb3mFQDdJMm0"><ns2:Transforms><ns2:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/><ns2:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></ns2:Transforms><ns2:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><ns2:DigestValue>uuBO23vnQ59CDWdTszGzeF8BHwI=</ns2:DigestValue></ns2:Reference></ns2:SignedInfo><ns2:SignatureValue>ALxE7f/HCPICp17lGF9NDVNE8fCVj9zZU137MVOtmwW2SWL3EZqsnQA934l47Nm1
+KlrXVmFck5S0SYp7rcmO4qx2AV8DRS00wrpq3BlBL+ypsSJEW2/iyFPV/sN2tO7w
+bPX7zw/4dB9qjffg9K9jrku4tHYJfJlaUKNjdJmP+rY=</ns2:SignatureValue><ns2:KeyInfo><ns2:X509Data><ns2:X509Certificate>MIICIzCCAYwCAXcwDQYJKoZIhvcNAQELBQAwWjELMAkGA1UEBhMCc2UxCzAJBgNVBAgTAmFjMQ0wCwYDVQQHEwRVbWVhMQwwCgYDVQQKEwNJVFMxDTALBgNVBAsTBERJUkcxEjAQBgNVBAMTCWxvY2FsaG9zdDAeFw0xNDAzMTkxNzE5MzlaFw0yNDAzMTYxNzE5MzlaMFoxCzAJBgNVBAYTAnNlMQswCQYDVQQIEwJhYzENMAsGA1UEBxMEVW1lYTEMMAoGA1UEChMDSVRTMQ0wCwYDVQQLEwRESVJHMRIwEAYDVQQDEwlsb2NhbGhvc3QwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBALswQbMz6dKL4FEKu+O3GYDfaniyxcfizsHaiehuh5jufrlGZw/zMMttteTRhpjtTFN2/R68d1kh8pmO+HV7u+53h+C33I178ZsOquSovGe1AWmzDzp2j6CRdQYdZaMCc4YxtwEXs7570YmnPLKhz8aHdiQRHhtx1cqdPPStkz67AgMBAAEwDQYJKoZIhvcNAQELBQADgYEApQ5znEdhsJBs+ew81X9pkUKZ/ruu/p2OPfYmKzdFnK6mq9bF5CEIaIkvbSJjpECicmGCNw9ATJXylnwFLnfxw6d+YGi4XPuo64NSG00ycnMSTMJ8OR5ForcF89v72BLRDYo6yXeNDw722ul0lPzH54CNQzsm4N/5w5iStnOT1TQ=</ns2:X509Certificate></ns2:X509Data></ns2:KeyInfo></ns2:Signature><ns3:Extensions><ns4:SPCertEnc><ns2:X509Data><ns2:X509Certificate>-----BEGIN CERTIFICATE-----
+MIICujCCAiMCAQEwDQYJKoZIhvcNAQELBQAwbTELMAkGA1UEBhMCc2UxCzAJBgNV
+BAgTAmFjMQ0wCwYDVQQHEwR1bWVhMRwwGgYDVQQKExNJVFMgVW1lYSBVbml2ZXJz
+aXR5MQ0wCwYDVQQLEwRESVJHMRUwEwYDVQQDEwxsb2NhbGhvc3QuY2EwHhcNMTUw
+NDIxMDkwNjI0WhcNMjUwNDE4MDkwNjI0WjBaMQswCQYDVQQGEwJzZTELMAkGA1UE
+CAwCYWMxDTALBgNVBAcMBFVtZWExDDAKBgNVBAoMA0lUUzENMAsGA1UECwwERElS
+RzESMBAGA1UEAwwJbG9jYWxob3N0MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIB
+CgKCAQEAvQYSaR3WfKMwphHla+UzhT0iZzzwX/gv0p1LTOmULSmRcQf9gY9s78ho
+GdXn5lK5nBC6hD95OnSpQAQwABfXThU1+F/zwOart1cUkURsId89eOoQlvNN1o1x
+ECWA3snkGOU60ea4wNy+Ab9eEEGsGyGJ/kmzHllRBDu5kNc+jSoRoWvZeXUxek5A
+bmna/5I4k3pcHkWco0qlVtF8WzcNce4aRxj03uPtQwMDw+slSbh9dCnCmGDsY6bW
+Y0un4JNy9F+qil6y3+nHNcmD1KQukmdw4C0FrZOwX2s1wmjuHspi8IWuTgkPov9d
+iHlW3f25/nzxqzVWM9cQ9kMKHPuwwwIDAQABMA0GCSqGSIb3DQEBCwUAA4GBAGF/
+6AboRNjdK/tF0yGmaAOHUBbfql4u1s8jkEWHVPF5JXLeoD3o6Sp8ssHnouAhS2Hq
++xdF2r9bM5Jh9zGZs3GfsZbmkmxpckh+xWNXGQhcuGVgEAoIoLtFf0dxKrVq876n
+SqFEkksd/If8JXgktEoJNTXxb7w2z363Kbpb76qf
+-----END CERTIFICATE-----
+</ns2:X509Certificate></ns2:X509Data></ns4:SPCertEnc></ns3:Extensions><ns0:NameIDPolicy AllowCreate="false" Format="urn:oasis:names:tc:SAML:2.0:nameid-format:transient"/></ns0:AuthnRequest>
+
+2015-04-21 09:06:24,820 saml2.sigver:DEBUG ==== Certs from metadata ==== https://localhost:8990/pvp2_spproxy.xml: [(<open file '<fdopen>', mode 'w+b' at 0x7f79a837f4b0>, '/tmp/tmpQfchJA.pem')] ====
+2015-04-21 09:06:24,821 saml2.sigver:DEBUG xmlsec command: /usr/bin/xmlsec1 --verify --pubkey-cert-pem /tmp/tmpQfchJA.pem --id-attr:ID urn:oasis:names:tc:SAML:2.0:protocol:AuthnRequest --store-signatures --node-id id-hTaDctb3mFQDdJMm0 --output /tmp/tmpRZt8gC.xml /tmp/tmpHLIu1P.xml
+2015-04-21 09:06:24,840 saml2.sigver:ERROR ============================================================
+= VERIFICATION CONTEXT
+== Status: unknown
+== flags: 0x00000008
+== flags2: 0x00000000
+== Key Info Read Ctx:
+= KEY INFO READ CONTEXT
+== flags: 0x00000000
+== flags2: 0x00000000
+== enabled key data: all
+== RetrievalMethod level (cur/max): 0/1
+== TRANSFORMS CTX (status=0)
+== flags: 0x00000000
+== flags2: 0x00000000
+== enabled transforms: all
+=== uri: NULL
+=== uri xpointer expr: NULL
+== EncryptedKey level (cur/max): 0/1
+=== KeyReq:
+==== keyId: NULL
+==== keyType: 0x00000000
+==== keyUsage: 0xffffffff
+==== keyBitsSize: 0
+=== list size: 0
+== Key Info Write Ctx:
+= KEY INFO WRITE CONTEXT
+== flags: 0x00000000
+== flags2: 0x00000000
+== enabled key data: all
+== RetrievalMethod level (cur/max): 0/1
+== TRANSFORMS CTX (status=0)
+== flags: 0x00000000
+== flags2: 0x00000000
+== enabled transforms: all
+=== uri: NULL
+=== uri xpointer expr: NULL
+== EncryptedKey level (cur/max): 0/1
+=== KeyReq:
+==== keyId: NULL
+==== keyType: 0x00000001
+==== keyUsage: 0xffffffff
+==== keyBitsSize: 0
+=== list size: 0
+== Signature Transform Ctx:
+== TRANSFORMS CTX (status=0)
+== flags: 0x00000000
+== flags2: 0x00000000
+== enabled transforms: all
+=== uri: NULL
+=== uri xpointer expr: NULL
+== SignedInfo References List:
+=== list size: 0
+== Manifest References List:
+=== list size: 0
+
+/tmp/tmpHLIu1P.xml:1: parser error : Start tag expected, '<' not found
+nVdZs6JIE333V9ywH43bbG4YfXuiWEUFZRHEly/YFGSVAgv59YPad+meOx39jU/WsTIr82SerPLbX02a
+^
+Error: failed to parse xml file "/tmp/tmpHLIu1P.xml"
+Error: failed to load document "/tmp/tmpHLIu1P.xml"
+ERROR
+SignedInfo References (ok/all): 0/0
+Manifests References (ok/all): 0/0
+Error: failed to verify file "/tmp/tmpHLIu1P.xml"
+
+------------------------------------------------------------
+/tmp/tmpHLIu1P.xml:1: parser error : Start tag expected, '<' not found
+nVdZs6JIE333V9ywH43bbG4YfXuiWEUFZRHEly/YFGSVAgv59YPad+meOx39jU/WsTIr82SerPLbX02a
+^
+Error: failed to parse xml file "/tmp/tmpHLIu1P.xml"
+Error: failed to load document "/tmp/tmpHLIu1P.xml"
+ERROR
+SignedInfo References (ok/all): 0/0
+Manifests References (ok/all): 0/0
+Error: failed to verify file "/tmp/tmpHLIu1P.xml"
+============================================================
+2015-04-21 09:06:24,841 saml2.sigver:DEBUG xmlsec command: /usr/bin/xmlsec1 --verify --pubkey-cert-pem /tmp/tmpQfchJA.pem --id-attr:ID urn:oasis:names:tc:SAML:2.0:protocol:AuthnRequest --store-signatures --node-id id-hTaDctb3mFQDdJMm0 --output /tmp/tmpu4J_yJ.xml /tmp/tmp73asbr.xml
+2015-04-21 09:06:24,856 saml2.request:INFO request: <?xml version='1.0' encoding='UTF-8'?>
+<ns0:AuthnRequest xmlns:ns0="urn:oasis:names:tc:SAML:2.0:protocol" xmlns:ns1="urn:oasis:names:tc:SAML:2.0:assertion" xmlns:ns2="http://www.w3.org/2000/09/xmldsig#" xmlns:ns3="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:ns4="urn:net:eustix:names:tc:PEFIM:0.0:assertion" AssertionConsumerServiceURL="https://localhost:8990/pvp2_sp/acs/post" Destination="https://localhost:8088/sso/redirect" ID="id-hTaDctb3mFQDdJMm0" IssueInstant="2015-04-21T09:06:24Z" ProtocolBinding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Version="2.0"><ns1:Issuer Format="urn:oasis:names:tc:SAML:2.0:nameid-format:entity">https://localhost:8990/pvp2_spproxy.xml</ns1:Issuer><ns2:Signature Id="Signature1"><ns2:SignedInfo><ns2:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><ns2:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><ns2:Reference URI="#id-hTaDctb3mFQDdJMm0"><ns2:Transforms><ns2:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><ns2:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></ns2:Transforms><ns2:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><ns2:DigestValue>uuBO23vnQ59CDWdTszGzeF8BHwI=</ns2:DigestValue></ns2:Reference></ns2:SignedInfo><ns2:SignatureValue>ALxE7f/HCPICp17lGF9NDVNE8fCVj9zZU137MVOtmwW2SWL3EZqsnQA934l47Nm1
+KlrXVmFck5S0SYp7rcmO4qx2AV8DRS00wrpq3BlBL+ypsSJEW2/iyFPV/sN2tO7w
+bPX7zw/4dB9qjffg9K9jrku4tHYJfJlaUKNjdJmP+rY=</ns2:SignatureValue><ns2:KeyInfo><ns2:X509Data><ns2:X509Certificate>MIICIzCCAYwCAXcwDQYJKoZIhvcNAQELBQAwWjELMAkGA1UEBhMCc2UxCzAJBgNVBAgTAmFjMQ0wCwYDVQQHEwRVbWVhMQwwCgYDVQQKEwNJVFMxDTALBgNVBAsTBERJUkcxEjAQBgNVBAMTCWxvY2FsaG9zdDAeFw0xNDAzMTkxNzE5MzlaFw0yNDAzMTYxNzE5MzlaMFoxCzAJBgNVBAYTAnNlMQswCQYDVQQIEwJhYzENMAsGA1UEBxMEVW1lYTEMMAoGA1UEChMDSVRTMQ0wCwYDVQQLEwRESVJHMRIwEAYDVQQDEwlsb2NhbGhvc3QwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBALswQbMz6dKL4FEKu+O3GYDfaniyxcfizsHaiehuh5jufrlGZw/zMMttteTRhpjtTFN2/R68d1kh8pmO+HV7u+53h+C33I178ZsOquSovGe1AWmzDzp2j6CRdQYdZaMCc4YxtwEXs7570YmnPLKhz8aHdiQRHhtx1cqdPPStkz67AgMBAAEwDQYJKoZIhvcNAQELBQADgYEApQ5znEdhsJBs+ew81X9pkUKZ/ruu/p2OPfYmKzdFnK6mq9bF5CEIaIkvbSJjpECicmGCNw9ATJXylnwFLnfxw6d+YGi4XPuo64NSG00ycnMSTMJ8OR5ForcF89v72BLRDYo6yXeNDw722ul0lPzH54CNQzsm4N/5w5iStnOT1TQ=</ns2:X509Certificate></ns2:X509Data></ns2:KeyInfo></ns2:Signature><ns0:NameIDPolicy AllowCreate="false" Format="urn:oasis:names:tc:SAML:2.0:nameid-format:transient" /><ns3:Extensions><ns4:SPCertEnc><ns2:X509Data><ns2:X509Certificate>-----BEGIN CERTIFICATE-----
+MIICujCCAiMCAQEwDQYJKoZIhvcNAQELBQAwbTELMAkGA1UEBhMCc2UxCzAJBgNV
+BAgTAmFjMQ0wCwYDVQQHEwR1bWVhMRwwGgYDVQQKExNJVFMgVW1lYSBVbml2ZXJz
+aXR5MQ0wCwYDVQQLEwRESVJHMRUwEwYDVQQDEwxsb2NhbGhvc3QuY2EwHhcNMTUw
+NDIxMDkwNjI0WhcNMjUwNDE4MDkwNjI0WjBaMQswCQYDVQQGEwJzZTELMAkGA1UE
+CAwCYWMxDTALBgNVBAcMBFVtZWExDDAKBgNVBAoMA0lUUzENMAsGA1UECwwERElS
+RzESMBAGA1UEAwwJbG9jYWxob3N0MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIB
+CgKCAQEAvQYSaR3WfKMwphHla+UzhT0iZzzwX/gv0p1LTOmULSmRcQf9gY9s78ho
+GdXn5lK5nBC6hD95OnSpQAQwABfXThU1+F/zwOart1cUkURsId89eOoQlvNN1o1x
+ECWA3snkGOU60ea4wNy+Ab9eEEGsGyGJ/kmzHllRBDu5kNc+jSoRoWvZeXUxek5A
+bmna/5I4k3pcHkWco0qlVtF8WzcNce4aRxj03uPtQwMDw+slSbh9dCnCmGDsY6bW
+Y0un4JNy9F+qil6y3+nHNcmD1KQukmdw4C0FrZOwX2s1wmjuHspi8IWuTgkPov9d
+iHlW3f25/nzxqzVWM9cQ9kMKHPuwwwIDAQABMA0GCSqGSIb3DQEBCwUAA4GBAGF/
+6AboRNjdK/tF0yGmaAOHUBbfql4u1s8jkEWHVPF5JXLeoD3o6Sp8ssHnouAhS2Hq
++xdF2r9bM5Jh9zGZs3GfsZbmkmxpckh+xWNXGQhcuGVgEAoIoLtFf0dxKrVq876n
+SqFEkksd/If8JXgktEoJNTXxb7w2z363Kbpb76qf
+-----END CERTIFICATE-----
+</ns2:X509Certificate></ns2:X509Data></ns4:SPCertEnc></ns3:Extensions></ns0:AuthnRequest>
+2015-04-21 09:06:24,857 saml2.entity:DEBUG Loaded request
+2015-04-21 09:06:24,858 saml2.entity:DEBUG Verified request
+2015-04-21 09:06:24,898 saml2.idp:ERROR An error occured while creating metadata:
+2015-04-21 09:06:32,559 saml2.mdstore:DEBUG service(https://localhost:8990/pvp2_spproxy.xml, spsso_descriptor, assertion_consumer_service, urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST)
+2015-04-21 09:06:32,561 saml2.mdstore:DEBUG service => [{'index': '1', 'binding': 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST', '__class__': 'urn:oasis:names:tc:SAML:2.0:metadata&AssertionConsumerService', 'location': 'https://localhost:8990/pvp2_sp/acs/post'}]
+2015-04-21 09:06:32,561 saml2.mdstore:DEBUG service(https://localhost:8990/pvp2_spproxy.xml, spsso_descriptor, assertion_consumer_service, urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST)
+2015-04-21 09:06:32,561 saml2.mdstore:DEBUG service => [{'index': '1', 'binding': 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST', '__class__': 'urn:oasis:names:tc:SAML:2.0:metadata&AssertionConsumerService', 'location': 'https://localhost:8990/pvp2_sp/acs/post'}]
+2015-04-21 09:06:32,565 saml2.ident:DEBUG failed to find userid haho0032 in IdentDB
+2015-04-21 09:06:32,565 saml2.ident:DEBUG local_policy: <saml2.assertion.Policy object at 0x7f79a8450e50>, name_id_policy: <?xml version='1.0' encoding='UTF-8'?>
+<ns0:NameIDPolicy xmlns:ns0="urn:oasis:names:tc:SAML:2.0:protocol" AllowCreate="false" Format="urn:oasis:names:tc:SAML:2.0:nameid-format:transient" />
+2015-04-21 09:06:32,566 saml2.server:DEBUG construct_nameid: haho0032 => <?xml version='1.0' encoding='UTF-8'?>
+<ns0:NameID xmlns:ns0="urn:oasis:names:tc:SAML:2.0:assertion" Format="urn:oasis:names:tc:SAML:2.0:nameid-format:transient" NameQualifier="https://localhost:8088/TestPEFIMIdP.xml" SPNameQualifier="https://localhost:8990/pvp2_spproxy.xml">e941de4eed700dd37f19a8d7819e87f6d4664cfc8e8ab31db08f634c13facb3a</ns0:NameID>
+2015-04-21 09:06:32,570 saml2.sigver:DEBUG xmlsec command: /usr/bin/xmlsec1 encrypt --pubkey-cert-pem /tmp/tmpaaMXPT --session-key des-192 --xml-data /tmp/tmpshG4ji --node-xpath /*[local-name()="Response"]/*[local-name()="EncryptedAssertion"]/*[local-name()="Assertion"] --output /tmp/tmpEBuJE8.xml /tmp/tmptHMT6E
+2015-04-21 09:11:58,873 saml2:INFO Logging started
+2015-04-21 09:12:21,760 saml2.entity:DEBUG receiver addresses: ['https://localhost:8088/sso/redirect']
+2015-04-21 09:12:21,761 saml2.entity:DEBUG Binding: urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect
+2015-04-21 09:12:21,761 saml2.request:DEBUG xmlstr: <?xml version="1.0" encoding="UTF-8"?>
+<ns0:AuthnRequest xmlns:ns0="urn:oasis:names:tc:SAML:2.0:protocol" xmlns:ns1="urn:oasis:names:tc:SAML:2.0:assertion" xmlns:ns2="http://www.w3.org/2000/09/xmldsig#" xmlns:ns3="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:ns4="urn:net:eustix:names:tc:PEFIM:0.0:assertion" AssertionConsumerServiceURL="https://localhost:8990/pvp2_sp/acs/post" Destination="https://localhost:8088/sso/redirect" ID="id-zFfjjHHb9ZaUqepu4" IssueInstant="2015-04-21T09:12:21Z" ProtocolBinding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Version="2.0"><ns1:Issuer Format="urn:oasis:names:tc:SAML:2.0:nameid-format:entity">https://localhost:8990/pvp2_spproxy.xml</ns1:Issuer><ns2:Signature Id="Signature1"><ns2:SignedInfo><ns2:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><ns2:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/><ns2:Reference URI="#id-zFfjjHHb9ZaUqepu4"><ns2:Transforms><ns2:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/><ns2:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></ns2:Transforms><ns2:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><ns2:DigestValue>fa+Rg2PR1kT1Ri2RR77CmrOr77w=</ns2:DigestValue></ns2:Reference></ns2:SignedInfo><ns2:SignatureValue>ndtMh5VM41QlcRbR2su22cA0/zdssoTl059ji8Qkn7rlkO9vz26as6HnR21vpcq8
+5GxbNAMSNB0uuEFSx8Q6Ym2P25k/1iIoso7emApr4eEYH/njvkpWHMvS341+opXt
+FWqSDpWMAaCEv6Fwn8alUjoXQ+FCjXFXDOT/BGD5DBI=</ns2:SignatureValue><ns2:KeyInfo><ns2:X509Data><ns2:X509Certificate>MIICIzCCAYwCAXcwDQYJKoZIhvcNAQELBQAwWjELMAkGA1UEBhMCc2UxCzAJBgNVBAgTAmFjMQ0wCwYDVQQHEwRVbWVhMQwwCgYDVQQKEwNJVFMxDTALBgNVBAsTBERJUkcxEjAQBgNVBAMTCWxvY2FsaG9zdDAeFw0xNDAzMTkxNzE5MzlaFw0yNDAzMTYxNzE5MzlaMFoxCzAJBgNVBAYTAnNlMQswCQYDVQQIEwJhYzENMAsGA1UEBxMEVW1lYTEMMAoGA1UEChMDSVRTMQ0wCwYDVQQLEwRESVJHMRIwEAYDVQQDEwlsb2NhbGhvc3QwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBALswQbMz6dKL4FEKu+O3GYDfaniyxcfizsHaiehuh5jufrlGZw/zMMttteTRhpjtTFN2/R68d1kh8pmO+HV7u+53h+C33I178ZsOquSovGe1AWmzDzp2j6CRdQYdZaMCc4YxtwEXs7570YmnPLKhz8aHdiQRHhtx1cqdPPStkz67AgMBAAEwDQYJKoZIhvcNAQELBQADgYEApQ5znEdhsJBs+ew81X9pkUKZ/ruu/p2OPfYmKzdFnK6mq9bF5CEIaIkvbSJjpECicmGCNw9ATJXylnwFLnfxw6d+YGi4XPuo64NSG00ycnMSTMJ8OR5ForcF89v72BLRDYo6yXeNDw722ul0lPzH54CNQzsm4N/5w5iStnOT1TQ=</ns2:X509Certificate></ns2:X509Data></ns2:KeyInfo></ns2:Signature><ns3:Extensions><ns4:SPCertEnc><ns2:X509Data><ns2:X509Certificate>-----BEGIN CERTIFICATE-----
+MIICujCCAiMCAQEwDQYJKoZIhvcNAQELBQAwbTELMAkGA1UEBhMCc2UxCzAJBgNV
+BAgTAmFjMQ0wCwYDVQQHEwR1bWVhMRwwGgYDVQQKExNJVFMgVW1lYSBVbml2ZXJz
+aXR5MQ0wCwYDVQQLEwRESVJHMRUwEwYDVQQDEwxsb2NhbGhvc3QuY2EwHhcNMTUw
+NDIxMDkxMjIxWhcNMjUwNDE4MDkxMjIxWjBaMQswCQYDVQQGEwJzZTELMAkGA1UE
+CAwCYWMxDTALBgNVBAcMBFVtZWExDDAKBgNVBAoMA0lUUzENMAsGA1UECwwERElS
+RzESMBAGA1UEAwwJbG9jYWxob3N0MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIB
+CgKCAQEA6U0uCHSRTs9f0rDiPe/A2iAiTU/l1n9ezMb2MNgNSfowhJGH4WvximxB
+JwhOzW5oQfHn40QQ1BH1SA/XUbqOl+5Px3o1o0zE7T4du71y1S/m2b4mmJpQJQmH
+xoaEOTYVrk8SGipQJbpbU885NTH08PkZBCpr9UfTczj0vbon9Z5p00Dlg7U2sauK
+hUaAFMO8tNGphNwB59hHRUJ/golgGDIuS/uLXCgooP3VGZ3BVpVDONvnbAQTCe33
+MCCl0sLAbtS2oeeIYbEdK7qxgmE7j1mbp/J4c4jcdTQvMVkkK235CM2jRyceDLqJ
+MCcUiGA0V/J78Ve9b5t6bMfcYuMoKwIDAQABMA0GCSqGSIb3DQEBCwUAA4GBAJJB
+MIxlKlFqzGT0RSfnFLMVf9YjHHDrRVaQL40UKCbXFsIbAGMr80yKKJgOWG67ILfd
+VsmU6YpZBXiUhV4M4oUCY5xxwzXlj8RTfTT7MPCfoZMYON7fbl7yi8JJ1SLdOfqu
+xAINkIpS6RDYa59SI8lmihfU3v/ee/Zw3dRAxdrQ
+-----END CERTIFICATE-----
+</ns2:X509Certificate></ns2:X509Data></ns4:SPCertEnc></ns3:Extensions><ns0:NameIDPolicy AllowCreate="false" Format="urn:oasis:names:tc:SAML:2.0:nameid-format:transient"/></ns0:AuthnRequest>
+
+2015-04-21 09:12:21,763 saml2.sigver:DEBUG ==== Certs from metadata ==== https://localhost:8990/pvp2_spproxy.xml: [(<open file '<fdopen>', mode 'w+b' at 0x7f1dfe317d20>, '/tmp/tmphwunLR.pem')] ====
+2015-04-21 09:12:21,764 saml2.sigver:DEBUG xmlsec command: /usr/bin/xmlsec1 --verify --pubkey-cert-pem /tmp/tmphwunLR.pem --id-attr:ID urn:oasis:names:tc:SAML:2.0:protocol:AuthnRequest --store-signatures --node-id id-zFfjjHHb9ZaUqepu4 --output /tmp/tmpPmPy1c.xml /tmp/tmpZN2sqc.xml
+2015-04-21 09:12:21,776 saml2.sigver:ERROR ============================================================
+= VERIFICATION CONTEXT
+== Status: unknown
+== flags: 0x00000008
+== flags2: 0x00000000
+== Key Info Read Ctx:
+= KEY INFO READ CONTEXT
+== flags: 0x00000000
+== flags2: 0x00000000
+== enabled key data: all
+== RetrievalMethod level (cur/max): 0/1
+== TRANSFORMS CTX (status=0)
+== flags: 0x00000000
+== flags2: 0x00000000
+== enabled transforms: all
+=== uri: NULL
+=== uri xpointer expr: NULL
+== EncryptedKey level (cur/max): 0/1
+=== KeyReq:
+==== keyId: NULL
+==== keyType: 0x00000000
+==== keyUsage: 0xffffffff
+==== keyBitsSize: 0
+=== list size: 0
+== Key Info Write Ctx:
+= KEY INFO WRITE CONTEXT
+== flags: 0x00000000
+== flags2: 0x00000000
+== enabled key data: all
+== RetrievalMethod level (cur/max): 0/1
+== TRANSFORMS CTX (status=0)
+== flags: 0x00000000
+== flags2: 0x00000000
+== enabled transforms: all
+=== uri: NULL
+=== uri xpointer expr: NULL
+== EncryptedKey level (cur/max): 0/1
+=== KeyReq:
+==== keyId: NULL
+==== keyType: 0x00000001
+==== keyUsage: 0xffffffff
+==== keyBitsSize: 0
+=== list size: 0
+== Signature Transform Ctx:
+== TRANSFORMS CTX (status=0)
+== flags: 0x00000000
+== flags2: 0x00000000
+== enabled transforms: all
+=== uri: NULL
+=== uri xpointer expr: NULL
+== SignedInfo References List:
+=== list size: 0
+== Manifest References List:
+=== list size: 0
+
+/tmp/tmpZN2sqc.xml:1: parser error : Start tag expected, '<' not found
+nVdZk6JIF333V1Q4jxXVLIKiMdUTySpooqyKL1+wKSibLCby6we1q6u6p6ajv/HJPOTdTt5zSf78q02T
+^
+Error: failed to parse xml file "/tmp/tmpZN2sqc.xml"
+Error: failed to load document "/tmp/tmpZN2sqc.xml"
+ERROR
+SignedInfo References (ok/all): 0/0
+Manifests References (ok/all): 0/0
+Error: failed to verify file "/tmp/tmpZN2sqc.xml"
+
+------------------------------------------------------------
+/tmp/tmpZN2sqc.xml:1: parser error : Start tag expected, '<' not found
+nVdZk6JIF333V1Q4jxXVLIKiMdUTySpooqyKL1+wKSibLCby6we1q6u6p6ajv/HJPOTdTt5zSf78q02T
+^
+Error: failed to parse xml file "/tmp/tmpZN2sqc.xml"
+Error: failed to load document "/tmp/tmpZN2sqc.xml"
+ERROR
+SignedInfo References (ok/all): 0/0
+Manifests References (ok/all): 0/0
+Error: failed to verify file "/tmp/tmpZN2sqc.xml"
+============================================================
+2015-04-21 09:12:21,777 saml2.sigver:DEBUG xmlsec command: /usr/bin/xmlsec1 --verify --pubkey-cert-pem /tmp/tmphwunLR.pem --id-attr:ID urn:oasis:names:tc:SAML:2.0:protocol:AuthnRequest --store-signatures --node-id id-zFfjjHHb9ZaUqepu4 --output /tmp/tmpWUFMgN.xml /tmp/tmpXe8ckS.xml
+2015-04-21 09:12:21,789 saml2.request:INFO request: <?xml version='1.0' encoding='UTF-8'?>
+<ns0:AuthnRequest xmlns:ns0="urn:oasis:names:tc:SAML:2.0:protocol" xmlns:ns1="urn:oasis:names:tc:SAML:2.0:assertion" xmlns:ns2="http://www.w3.org/2000/09/xmldsig#" xmlns:ns3="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:ns4="urn:net:eustix:names:tc:PEFIM:0.0:assertion" AssertionConsumerServiceURL="https://localhost:8990/pvp2_sp/acs/post" Destination="https://localhost:8088/sso/redirect" ID="id-zFfjjHHb9ZaUqepu4" IssueInstant="2015-04-21T09:12:21Z" ProtocolBinding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Version="2.0"><ns1:Issuer Format="urn:oasis:names:tc:SAML:2.0:nameid-format:entity">https://localhost:8990/pvp2_spproxy.xml</ns1:Issuer><ns2:Signature Id="Signature1"><ns2:SignedInfo><ns2:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><ns2:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><ns2:Reference URI="#id-zFfjjHHb9ZaUqepu4"><ns2:Transforms><ns2:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><ns2:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></ns2:Transforms><ns2:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><ns2:DigestValue>fa+Rg2PR1kT1Ri2RR77CmrOr77w=</ns2:DigestValue></ns2:Reference></ns2:SignedInfo><ns2:SignatureValue>ndtMh5VM41QlcRbR2su22cA0/zdssoTl059ji8Qkn7rlkO9vz26as6HnR21vpcq8
+5GxbNAMSNB0uuEFSx8Q6Ym2P25k/1iIoso7emApr4eEYH/njvkpWHMvS341+opXt
+FWqSDpWMAaCEv6Fwn8alUjoXQ+FCjXFXDOT/BGD5DBI=</ns2:SignatureValue><ns2:KeyInfo><ns2:X509Data><ns2:X509Certificate>MIICIzCCAYwCAXcwDQYJKoZIhvcNAQELBQAwWjELMAkGA1UEBhMCc2UxCzAJBgNVBAgTAmFjMQ0wCwYDVQQHEwRVbWVhMQwwCgYDVQQKEwNJVFMxDTALBgNVBAsTBERJUkcxEjAQBgNVBAMTCWxvY2FsaG9zdDAeFw0xNDAzMTkxNzE5MzlaFw0yNDAzMTYxNzE5MzlaMFoxCzAJBgNVBAYTAnNlMQswCQYDVQQIEwJhYzENMAsGA1UEBxMEVW1lYTEMMAoGA1UEChMDSVRTMQ0wCwYDVQQLEwRESVJHMRIwEAYDVQQDEwlsb2NhbGhvc3QwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBALswQbMz6dKL4FEKu+O3GYDfaniyxcfizsHaiehuh5jufrlGZw/zMMttteTRhpjtTFN2/R68d1kh8pmO+HV7u+53h+C33I178ZsOquSovGe1AWmzDzp2j6CRdQYdZaMCc4YxtwEXs7570YmnPLKhz8aHdiQRHhtx1cqdPPStkz67AgMBAAEwDQYJKoZIhvcNAQELBQADgYEApQ5znEdhsJBs+ew81X9pkUKZ/ruu/p2OPfYmKzdFnK6mq9bF5CEIaIkvbSJjpECicmGCNw9ATJXylnwFLnfxw6d+YGi4XPuo64NSG00ycnMSTMJ8OR5ForcF89v72BLRDYo6yXeNDw722ul0lPzH54CNQzsm4N/5w5iStnOT1TQ=</ns2:X509Certificate></ns2:X509Data></ns2:KeyInfo></ns2:Signature><ns0:NameIDPolicy AllowCreate="false" Format="urn:oasis:names:tc:SAML:2.0:nameid-format:transient" /><ns3:Extensions><ns4:SPCertEnc><ns2:X509Data><ns2:X509Certificate>-----BEGIN CERTIFICATE-----
+MIICujCCAiMCAQEwDQYJKoZIhvcNAQELBQAwbTELMAkGA1UEBhMCc2UxCzAJBgNV
+BAgTAmFjMQ0wCwYDVQQHEwR1bWVhMRwwGgYDVQQKExNJVFMgVW1lYSBVbml2ZXJz
+aXR5MQ0wCwYDVQQLEwRESVJHMRUwEwYDVQQDEwxsb2NhbGhvc3QuY2EwHhcNMTUw
+NDIxMDkxMjIxWhcNMjUwNDE4MDkxMjIxWjBaMQswCQYDVQQGEwJzZTELMAkGA1UE
+CAwCYWMxDTALBgNVBAcMBFVtZWExDDAKBgNVBAoMA0lUUzENMAsGA1UECwwERElS
+RzESMBAGA1UEAwwJbG9jYWxob3N0MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIB
+CgKCAQEA6U0uCHSRTs9f0rDiPe/A2iAiTU/l1n9ezMb2MNgNSfowhJGH4WvximxB
+JwhOzW5oQfHn40QQ1BH1SA/XUbqOl+5Px3o1o0zE7T4du71y1S/m2b4mmJpQJQmH
+xoaEOTYVrk8SGipQJbpbU885NTH08PkZBCpr9UfTczj0vbon9Z5p00Dlg7U2sauK
+hUaAFMO8tNGphNwB59hHRUJ/golgGDIuS/uLXCgooP3VGZ3BVpVDONvnbAQTCe33
+MCCl0sLAbtS2oeeIYbEdK7qxgmE7j1mbp/J4c4jcdTQvMVkkK235CM2jRyceDLqJ
+MCcUiGA0V/J78Ve9b5t6bMfcYuMoKwIDAQABMA0GCSqGSIb3DQEBCwUAA4GBAJJB
+MIxlKlFqzGT0RSfnFLMVf9YjHHDrRVaQL40UKCbXFsIbAGMr80yKKJgOWG67ILfd
+VsmU6YpZBXiUhV4M4oUCY5xxwzXlj8RTfTT7MPCfoZMYON7fbl7yi8JJ1SLdOfqu
+xAINkIpS6RDYa59SI8lmihfU3v/ee/Zw3dRAxdrQ
+-----END CERTIFICATE-----
+</ns2:X509Certificate></ns2:X509Data></ns4:SPCertEnc></ns3:Extensions></ns0:AuthnRequest>
+2015-04-21 09:12:21,790 saml2.entity:DEBUG Loaded request
+2015-04-21 09:12:21,791 saml2.entity:DEBUG Verified request
+2015-04-21 09:12:21,838 saml2.idp:ERROR An error occured while creating metadata:
+2015-04-21 09:12:29,572 saml2.mdstore:DEBUG service(https://localhost:8990/pvp2_spproxy.xml, spsso_descriptor, assertion_consumer_service, urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST)
+2015-04-21 09:12:29,573 saml2.mdstore:DEBUG service => [{'index': '1', 'binding': 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST', '__class__': 'urn:oasis:names:tc:SAML:2.0:metadata&AssertionConsumerService', 'location': 'https://localhost:8990/pvp2_sp/acs/post'}]
+2015-04-21 09:12:29,573 saml2.mdstore:DEBUG service(https://localhost:8990/pvp2_spproxy.xml, spsso_descriptor, assertion_consumer_service, urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST)
+2015-04-21 09:12:29,574 saml2.mdstore:DEBUG service => [{'index': '1', 'binding': 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST', '__class__': 'urn:oasis:names:tc:SAML:2.0:metadata&AssertionConsumerService', 'location': 'https://localhost:8990/pvp2_sp/acs/post'}]
+2015-04-21 09:12:29,577 saml2.ident:DEBUG failed to find userid haho0032 in IdentDB
+2015-04-21 09:12:29,577 saml2.ident:DEBUG local_policy: <saml2.assertion.Policy object at 0x7f1dfe3e8e50>, name_id_policy: <?xml version='1.0' encoding='UTF-8'?>
+<ns0:NameIDPolicy xmlns:ns0="urn:oasis:names:tc:SAML:2.0:protocol" AllowCreate="false" Format="urn:oasis:names:tc:SAML:2.0:nameid-format:transient" />
+2015-04-21 09:12:29,578 saml2.server:DEBUG construct_nameid: haho0032 => <?xml version='1.0' encoding='UTF-8'?>
+<ns0:NameID xmlns:ns0="urn:oasis:names:tc:SAML:2.0:assertion" Format="urn:oasis:names:tc:SAML:2.0:nameid-format:transient" NameQualifier="https://localhost:8088/TestPEFIMIdP.xml" SPNameQualifier="https://localhost:8990/pvp2_spproxy.xml">17236450aab0161cabf411e2ff50a6c4ab963a7cc98b4f8c252cb90798d65c92</ns0:NameID>
+2015-04-21 09:12:29,582 saml2.sigver:DEBUG xmlsec command: /usr/bin/xmlsec1 encrypt --pubkey-cert-pem /tmp/tmpEbqcjY --session-key des-192 --xml-data /tmp/tmpEdGXV0 --node-xpath /*[local-name()="Response"]/*[local-name()="EncryptedAssertion"]/*[local-name()="Assertion"] --output /tmp/tmpEy3gOC.xml /tmp/tmpheF7qE
+2015-04-21 10:56:54,673 saml2:INFO Logging started
+2015-04-21 10:57:33,369 saml2.entity:DEBUG receiver addresses: ['https://localhost:8088/sso/redirect']
+2015-04-21 10:57:33,371 saml2.entity:DEBUG Binding: urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect
+2015-04-21 10:57:33,372 saml2.request:DEBUG xmlstr: <?xml version="1.0" encoding="UTF-8"?>
+<ns0:AuthnRequest xmlns:ns0="urn:oasis:names:tc:SAML:2.0:protocol" xmlns:ns1="urn:oasis:names:tc:SAML:2.0:assertion" xmlns:ns2="http://www.w3.org/2000/09/xmldsig#" xmlns:ns3="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:ns4="urn:net:eustix:names:tc:PEFIM:0.0:assertion" AssertionConsumerServiceURL="https://localhost:8990/pvp2_sp/acs/post" Destination="https://localhost:8088/sso/redirect" ID="id-2ArqwtPBj3x0M7aYH" IssueInstant="2015-04-21T10:57:33Z" ProtocolBinding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Version="2.0"><ns1:Issuer Format="urn:oasis:names:tc:SAML:2.0:nameid-format:entity">https://localhost:8990/pvp2_spproxy.xml</ns1:Issuer><ns2:Signature Id="Signature1"><ns2:SignedInfo><ns2:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><ns2:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/><ns2:Reference URI="#id-2ArqwtPBj3x0M7aYH"><ns2:Transforms><ns2:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/><ns2:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></ns2:Transforms><ns2:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><ns2:DigestValue>e9PkZhJf2V/nWMFzarZK+Fk9ZNQ=</ns2:DigestValue></ns2:Reference></ns2:SignedInfo><ns2:SignatureValue>sGx/zEdACOzjaT2WmMhIfm7sNTuYMzwg5IxMkWSluuyxlbqCVdemP8myLZ+SkXIx
+2+PQlunL7BPVUn5Ep6FPWIcRaElDgWeDH66MyxxGI9hwWYhGAXAlUpCJDsnN/8tO
+5PkEAbU7nbX7pUUzmwK9NxqMK8oU9KiKE0EHBGiGH18=</ns2:SignatureValue><ns2:KeyInfo><ns2:X509Data><ns2:X509Certificate>MIICIzCCAYwCAXcwDQYJKoZIhvcNAQELBQAwWjELMAkGA1UEBhMCc2UxCzAJBgNVBAgTAmFjMQ0wCwYDVQQHEwRVbWVhMQwwCgYDVQQKEwNJVFMxDTALBgNVBAsTBERJUkcxEjAQBgNVBAMTCWxvY2FsaG9zdDAeFw0xNDAzMTkxNzE5MzlaFw0yNDAzMTYxNzE5MzlaMFoxCzAJBgNVBAYTAnNlMQswCQYDVQQIEwJhYzENMAsGA1UEBxMEVW1lYTEMMAoGA1UEChMDSVRTMQ0wCwYDVQQLEwRESVJHMRIwEAYDVQQDEwlsb2NhbGhvc3QwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBALswQbMz6dKL4FEKu+O3GYDfaniyxcfizsHaiehuh5jufrlGZw/zMMttteTRhpjtTFN2/R68d1kh8pmO+HV7u+53h+C33I178ZsOquSovGe1AWmzDzp2j6CRdQYdZaMCc4YxtwEXs7570YmnPLKhz8aHdiQRHhtx1cqdPPStkz67AgMBAAEwDQYJKoZIhvcNAQELBQADgYEApQ5znEdhsJBs+ew81X9pkUKZ/ruu/p2OPfYmKzdFnK6mq9bF5CEIaIkvbSJjpECicmGCNw9ATJXylnwFLnfxw6d+YGi4XPuo64NSG00ycnMSTMJ8OR5ForcF89v72BLRDYo6yXeNDw722ul0lPzH54CNQzsm4N/5w5iStnOT1TQ=</ns2:X509Certificate></ns2:X509Data></ns2:KeyInfo></ns2:Signature><ns3:Extensions><ns4:SPCertEnc><ns2:X509Data><ns2:X509Certificate>-----BEGIN CERTIFICATE-----
+MIICujCCAiMCAQEwDQYJKoZIhvcNAQELBQAwbTELMAkGA1UEBhMCc2UxCzAJBgNV
+BAgTAmFjMQ0wCwYDVQQHEwR1bWVhMRwwGgYDVQQKExNJVFMgVW1lYSBVbml2ZXJz
+aXR5MQ0wCwYDVQQLEwRESVJHMRUwEwYDVQQDEwxsb2NhbGhvc3QuY2EwHhcNMTUw
+NDIxMTA1NzMzWhcNMjUwNDE4MTA1NzMzWjBaMQswCQYDVQQGEwJzZTELMAkGA1UE
+CAwCYWMxDTALBgNVBAcMBFVtZWExDDAKBgNVBAoMA0lUUzENMAsGA1UECwwERElS
+RzESMBAGA1UEAwwJbG9jYWxob3N0MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIB
+CgKCAQEAsg3O+sBit03QViQhRmEh6UecVLlW8ixhCP/tsrOrbqXHCxCozH992ogA
+rEAdyL8rKFdClphyY8bf4tFBTWJrJbXVbEpD7rB8lZjzbZfc7U6e00xckz9J9XYT
+IerIxK920CVT3lKpXXQ/FueBWf64xuVQiF//Jih6MYhTxrsg5bAGSYkE+EVcbmPm
+CZ85OVZvN58EcvT5ZddYShCETAlqgXkngs1t3fe/UfoZAMJfIFn+IIjoCw88ooG5
+HCbh92A/P+KdypPSumAJ9QfeNpm2Pa+ntxbkBNCWZTRYzekPxgqUXYV289+PreLU
+Uk5MQoC7mahWjRO+NqSDTh9BqyegKwIDAQABMA0GCSqGSIb3DQEBCwUAA4GBAHJJ
+lgGs6PLEBsUiL+AXllJeo4Se2VGEyJ+gFWDwk5rdPBnV3lrgZY5h/voVXMs/eZk0
+PY1dLB0dlf8z/vvHdgyhLT9a+nNQmzp+G69hZxDXGU0fM+2VdeR+lgbYBbSzXWOX
+PNpj3DoLz6g0JSFkWZ8ULamczoBQnoknPrKl6Zhl
+-----END CERTIFICATE-----
+</ns2:X509Certificate></ns2:X509Data></ns4:SPCertEnc></ns3:Extensions><ns0:NameIDPolicy AllowCreate="false" Format="urn:oasis:names:tc:SAML:2.0:nameid-format:persistent"/></ns0:AuthnRequest>
+
+2015-04-21 10:57:33,374 saml2.sigver:DEBUG ==== Certs from metadata ==== https://localhost:8990/pvp2_spproxy.xml: [(<open file '<fdopen>', mode 'w+b' at 0x7f8c063609c0>, '/tmp/tmpBg4RSg.pem')] ====
+2015-04-21 10:57:33,375 saml2.sigver:DEBUG xmlsec command: /usr/bin/xmlsec1 --verify --pubkey-cert-pem /tmp/tmpBg4RSg.pem --id-attr:ID urn:oasis:names:tc:SAML:2.0:protocol:AuthnRequest --store-signatures --node-id id-2ArqwtPBj3x0M7aYH --output /tmp/tmp0ECepu.xml /tmp/tmpn4N97T.xml
+2015-04-21 10:57:33,383 saml2.sigver:ERROR ============================================================
+= VERIFICATION CONTEXT
+== Status: unknown
+== flags: 0x00000008
+== flags2: 0x00000000
+== Key Info Read Ctx:
+= KEY INFO READ CONTEXT
+== flags: 0x00000000
+== flags2: 0x00000000
+== enabled key data: all
+== RetrievalMethod level (cur/max): 0/1
+== TRANSFORMS CTX (status=0)
+== flags: 0x00000000
+== flags2: 0x00000000
+== enabled transforms: all
+=== uri: NULL
+=== uri xpointer expr: NULL
+== EncryptedKey level (cur/max): 0/1
+=== KeyReq:
+==== keyId: NULL
+==== keyType: 0x00000000
+==== keyUsage: 0xffffffff
+==== keyBitsSize: 0
+=== list size: 0
+== Key Info Write Ctx:
+= KEY INFO WRITE CONTEXT
+== flags: 0x00000000
+== flags2: 0x00000000
+== enabled key data: all
+== RetrievalMethod level (cur/max): 0/1
+== TRANSFORMS CTX (status=0)
+== flags: 0x00000000
+== flags2: 0x00000000
+== enabled transforms: all
+=== uri: NULL
+=== uri xpointer expr: NULL
+== EncryptedKey level (cur/max): 0/1
+=== KeyReq:
+==== keyId: NULL
+==== keyType: 0x00000001
+==== keyUsage: 0xffffffff
+==== keyBitsSize: 0
+=== list size: 0
+== Signature Transform Ctx:
+== TRANSFORMS CTX (status=0)
+== flags: 0x00000000
+== flags2: 0x00000000
+== enabled transforms: all
+=== uri: NULL
+=== uri xpointer expr: NULL
+== SignedInfo References List:
+=== list size: 0
+== Manifest References List:
+=== list size: 0
+
+/tmp/tmpn4N97T.xml:1: parser error : Start tag expected, '<' not found
+nVdZk6JIF333V1TYj0Y1iBsYXT2RQIKgIMii8PIFSwooi7II8usHtWvpnpqO/sYn85B3O3nPJfn2V5PE
+^
+Error: failed to parse xml file "/tmp/tmpn4N97T.xml"
+Error: failed to load document "/tmp/tmpn4N97T.xml"
+ERROR
+SignedInfo References (ok/all): 0/0
+Manifests References (ok/all): 0/0
+Error: failed to verify file "/tmp/tmpn4N97T.xml"
+
+------------------------------------------------------------
+/tmp/tmpn4N97T.xml:1: parser error : Start tag expected, '<' not found
+nVdZk6JIF333V1TYj0Y1iBsYXT2RQIKgIMii8PIFSwooi7II8usHtWvpnpqO/sYn85B3O3nPJfn2V5PE
+^
+Error: failed to parse xml file "/tmp/tmpn4N97T.xml"
+Error: failed to load document "/tmp/tmpn4N97T.xml"
+ERROR
+SignedInfo References (ok/all): 0/0
+Manifests References (ok/all): 0/0
+Error: failed to verify file "/tmp/tmpn4N97T.xml"
+============================================================
+2015-04-21 10:57:33,385 saml2.sigver:DEBUG xmlsec command: /usr/bin/xmlsec1 --verify --pubkey-cert-pem /tmp/tmpBg4RSg.pem --id-attr:ID urn:oasis:names:tc:SAML:2.0:protocol:AuthnRequest --store-signatures --node-id id-2ArqwtPBj3x0M7aYH --output /tmp/tmpLfqcTp.xml /tmp/tmpeXPJEN.xml
+2015-04-21 10:57:33,395 saml2.request:INFO request: <?xml version='1.0' encoding='UTF-8'?>
+<ns0:AuthnRequest xmlns:ns0="urn:oasis:names:tc:SAML:2.0:protocol" xmlns:ns1="urn:oasis:names:tc:SAML:2.0:assertion" xmlns:ns2="http://www.w3.org/2000/09/xmldsig#" xmlns:ns3="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:ns4="urn:net:eustix:names:tc:PEFIM:0.0:assertion" AssertionConsumerServiceURL="https://localhost:8990/pvp2_sp/acs/post" Destination="https://localhost:8088/sso/redirect" ID="id-2ArqwtPBj3x0M7aYH" IssueInstant="2015-04-21T10:57:33Z" ProtocolBinding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Version="2.0"><ns1:Issuer Format="urn:oasis:names:tc:SAML:2.0:nameid-format:entity">https://localhost:8990/pvp2_spproxy.xml</ns1:Issuer><ns2:Signature Id="Signature1"><ns2:SignedInfo><ns2:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><ns2:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><ns2:Reference URI="#id-2ArqwtPBj3x0M7aYH"><ns2:Transforms><ns2:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><ns2:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></ns2:Transforms><ns2:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><ns2:DigestValue>e9PkZhJf2V/nWMFzarZK+Fk9ZNQ=</ns2:DigestValue></ns2:Reference></ns2:SignedInfo><ns2:SignatureValue>sGx/zEdACOzjaT2WmMhIfm7sNTuYMzwg5IxMkWSluuyxlbqCVdemP8myLZ+SkXIx
+2+PQlunL7BPVUn5Ep6FPWIcRaElDgWeDH66MyxxGI9hwWYhGAXAlUpCJDsnN/8tO
+5PkEAbU7nbX7pUUzmwK9NxqMK8oU9KiKE0EHBGiGH18=</ns2:SignatureValue><ns2:KeyInfo><ns2:X509Data><ns2:X509Certificate>MIICIzCCAYwCAXcwDQYJKoZIhvcNAQELBQAwWjELMAkGA1UEBhMCc2UxCzAJBgNVBAgTAmFjMQ0wCwYDVQQHEwRVbWVhMQwwCgYDVQQKEwNJVFMxDTALBgNVBAsTBERJUkcxEjAQBgNVBAMTCWxvY2FsaG9zdDAeFw0xNDAzMTkxNzE5MzlaFw0yNDAzMTYxNzE5MzlaMFoxCzAJBgNVBAYTAnNlMQswCQYDVQQIEwJhYzENMAsGA1UEBxMEVW1lYTEMMAoGA1UEChMDSVRTMQ0wCwYDVQQLEwRESVJHMRIwEAYDVQQDEwlsb2NhbGhvc3QwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBALswQbMz6dKL4FEKu+O3GYDfaniyxcfizsHaiehuh5jufrlGZw/zMMttteTRhpjtTFN2/R68d1kh8pmO+HV7u+53h+C33I178ZsOquSovGe1AWmzDzp2j6CRdQYdZaMCc4YxtwEXs7570YmnPLKhz8aHdiQRHhtx1cqdPPStkz67AgMBAAEwDQYJKoZIhvcNAQELBQADgYEApQ5znEdhsJBs+ew81X9pkUKZ/ruu/p2OPfYmKzdFnK6mq9bF5CEIaIkvbSJjpECicmGCNw9ATJXylnwFLnfxw6d+YGi4XPuo64NSG00ycnMSTMJ8OR5ForcF89v72BLRDYo6yXeNDw722ul0lPzH54CNQzsm4N/5w5iStnOT1TQ=</ns2:X509Certificate></ns2:X509Data></ns2:KeyInfo></ns2:Signature><ns0:NameIDPolicy AllowCreate="false" Format="urn:oasis:names:tc:SAML:2.0:nameid-format:persistent" /><ns3:Extensions><ns4:SPCertEnc><ns2:X509Data><ns2:X509Certificate>-----BEGIN CERTIFICATE-----
+MIICujCCAiMCAQEwDQYJKoZIhvcNAQELBQAwbTELMAkGA1UEBhMCc2UxCzAJBgNV
+BAgTAmFjMQ0wCwYDVQQHEwR1bWVhMRwwGgYDVQQKExNJVFMgVW1lYSBVbml2ZXJz
+aXR5MQ0wCwYDVQQLEwRESVJHMRUwEwYDVQQDEwxsb2NhbGhvc3QuY2EwHhcNMTUw
+NDIxMTA1NzMzWhcNMjUwNDE4MTA1NzMzWjBaMQswCQYDVQQGEwJzZTELMAkGA1UE
+CAwCYWMxDTALBgNVBAcMBFVtZWExDDAKBgNVBAoMA0lUUzENMAsGA1UECwwERElS
+RzESMBAGA1UEAwwJbG9jYWxob3N0MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIB
+CgKCAQEAsg3O+sBit03QViQhRmEh6UecVLlW8ixhCP/tsrOrbqXHCxCozH992ogA
+rEAdyL8rKFdClphyY8bf4tFBTWJrJbXVbEpD7rB8lZjzbZfc7U6e00xckz9J9XYT
+IerIxK920CVT3lKpXXQ/FueBWf64xuVQiF//Jih6MYhTxrsg5bAGSYkE+EVcbmPm
+CZ85OVZvN58EcvT5ZddYShCETAlqgXkngs1t3fe/UfoZAMJfIFn+IIjoCw88ooG5
+HCbh92A/P+KdypPSumAJ9QfeNpm2Pa+ntxbkBNCWZTRYzekPxgqUXYV289+PreLU
+Uk5MQoC7mahWjRO+NqSDTh9BqyegKwIDAQABMA0GCSqGSIb3DQEBCwUAA4GBAHJJ
+lgGs6PLEBsUiL+AXllJeo4Se2VGEyJ+gFWDwk5rdPBnV3lrgZY5h/voVXMs/eZk0
+PY1dLB0dlf8z/vvHdgyhLT9a+nNQmzp+G69hZxDXGU0fM+2VdeR+lgbYBbSzXWOX
+PNpj3DoLz6g0JSFkWZ8ULamczoBQnoknPrKl6Zhl
+-----END CERTIFICATE-----
+</ns2:X509Certificate></ns2:X509Data></ns4:SPCertEnc></ns3:Extensions></ns0:AuthnRequest>
+2015-04-21 10:57:33,397 saml2.entity:DEBUG Loaded request
+2015-04-21 10:57:33,397 saml2.entity:DEBUG Verified request
+2015-04-21 10:57:33,422 saml2.idp:ERROR An error occured while creating metadata:
+2015-04-21 10:57:39,093 saml2.mdstore:DEBUG service(https://localhost:8990/pvp2_spproxy.xml, spsso_descriptor, assertion_consumer_service, urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST)
+2015-04-21 10:57:39,094 saml2.mdstore:DEBUG service => [{'index': '1', 'binding': 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST', '__class__': 'urn:oasis:names:tc:SAML:2.0:metadata&AssertionConsumerService', 'location': 'https://localhost:8990/pvp2_sp/acs/post'}]
+2015-04-21 10:57:39,094 saml2.mdstore:DEBUG service(https://localhost:8990/pvp2_spproxy.xml, spsso_descriptor, assertion_consumer_service, urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST)
+2015-04-21 10:57:39,095 saml2.mdstore:DEBUG service => [{'index': '1', 'binding': 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST', '__class__': 'urn:oasis:names:tc:SAML:2.0:metadata&AssertionConsumerService', 'location': 'https://localhost:8990/pvp2_sp/acs/post'}]
+2015-04-21 10:57:39,098 saml2.ident:DEBUG failed to find userid haho0032 in IdentDB
+2015-04-21 10:57:39,099 saml2.ident:DEBUG local_policy: <saml2.assertion.Policy object at 0x7f8c0636a490>, name_id_policy: <?xml version='1.0' encoding='UTF-8'?>
+<ns0:NameIDPolicy xmlns:ns0="urn:oasis:names:tc:SAML:2.0:protocol" AllowCreate="false" Format="urn:oasis:names:tc:SAML:2.0:nameid-format:persistent" />
+2015-04-21 10:57:39,100 saml2.server:DEBUG construct_nameid: haho0032 => <?xml version='1.0' encoding='UTF-8'?>
+<ns0:NameID xmlns:ns0="urn:oasis:names:tc:SAML:2.0:assertion" Format="urn:oasis:names:tc:SAML:2.0:nameid-format:persistent" NameQualifier="https://localhost:8088/TestPEFIMIdP.xml" SPNameQualifier="https://localhost:8990/pvp2_spproxy.xml">haho0032</ns0:NameID>
+2015-04-21 10:57:39,105 saml2.sigver:DEBUG xmlsec command: /usr/bin/xmlsec1 encrypt --pubkey-cert-pem /tmp/tmpKPcXbS --session-key des-192 --xml-data /tmp/tmpH3u0wJ --node-xpath /*[local-name()="Response"]/*[local-name()="EncryptedAssertion"]/*[local-name()="Assertion"] --output /tmp/tmpEVpe0X.xml /tmp/tmpi1v5FJ
+2015-04-21 11:06:53,049 saml2:INFO Logging started
+2015-04-21 11:07:23,995 saml2.entity:DEBUG receiver addresses: ['https://localhost:8088/sso/redirect']
+2015-04-21 11:07:23,996 saml2.entity:DEBUG Binding: urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect
+2015-04-21 11:07:23,996 saml2.request:DEBUG xmlstr: <?xml version="1.0" encoding="UTF-8"?>
+<ns0:AuthnRequest xmlns:ns0="urn:oasis:names:tc:SAML:2.0:protocol" xmlns:ns1="urn:oasis:names:tc:SAML:2.0:assertion" xmlns:ns2="http://www.w3.org/2000/09/xmldsig#" xmlns:ns3="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:ns4="urn:net:eustix:names:tc:PEFIM:0.0:assertion" AssertionConsumerServiceURL="https://localhost:8990/pvp2_sp/acs/post" Destination="https://localhost:8088/sso/redirect" ID="id-lQbY2rvYueXPB4VgN" IssueInstant="2015-04-21T11:07:23Z" ProtocolBinding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Version="2.0"><ns1:Issuer Format="urn:oasis:names:tc:SAML:2.0:nameid-format:entity">https://localhost:8990/pvp2_spproxy.xml</ns1:Issuer><ns2:Signature Id="Signature1"><ns2:SignedInfo><ns2:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><ns2:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/><ns2:Reference URI="#id-lQbY2rvYueXPB4VgN"><ns2:Transforms><ns2:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/><ns2:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></ns2:Transforms><ns2:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><ns2:DigestValue>gIIAvpaAPbtK+HZqBcX7sIzS/6o=</ns2:DigestValue></ns2:Reference></ns2:SignedInfo><ns2:SignatureValue>DBqfNjckuJOb6gja9MEC2fyV1ruTHj28w5d2ovnz/EPdDfgxlal8AFjZScF9YlDm
+OTEzfmBZbSZrNH+UT89HBbn7OXaCsPhFwBTVX4nELVU1eQVtW0ePfd1rPXOLOeBN
+dd8YrYoqPfp54v/CKv/Xl9JRLxTE5UnBQSNKOi3WC70=</ns2:SignatureValue><ns2:KeyInfo><ns2:X509Data><ns2:X509Certificate>MIICIzCCAYwCAXcwDQYJKoZIhvcNAQELBQAwWjELMAkGA1UEBhMCc2UxCzAJBgNVBAgTAmFjMQ0wCwYDVQQHEwRVbWVhMQwwCgYDVQQKEwNJVFMxDTALBgNVBAsTBERJUkcxEjAQBgNVBAMTCWxvY2FsaG9zdDAeFw0xNDAzMTkxNzE5MzlaFw0yNDAzMTYxNzE5MzlaMFoxCzAJBgNVBAYTAnNlMQswCQYDVQQIEwJhYzENMAsGA1UEBxMEVW1lYTEMMAoGA1UEChMDSVRTMQ0wCwYDVQQLEwRESVJHMRIwEAYDVQQDEwlsb2NhbGhvc3QwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBALswQbMz6dKL4FEKu+O3GYDfaniyxcfizsHaiehuh5jufrlGZw/zMMttteTRhpjtTFN2/R68d1kh8pmO+HV7u+53h+C33I178ZsOquSovGe1AWmzDzp2j6CRdQYdZaMCc4YxtwEXs7570YmnPLKhz8aHdiQRHhtx1cqdPPStkz67AgMBAAEwDQYJKoZIhvcNAQELBQADgYEApQ5znEdhsJBs+ew81X9pkUKZ/ruu/p2OPfYmKzdFnK6mq9bF5CEIaIkvbSJjpECicmGCNw9ATJXylnwFLnfxw6d+YGi4XPuo64NSG00ycnMSTMJ8OR5ForcF89v72BLRDYo6yXeNDw722ul0lPzH54CNQzsm4N/5w5iStnOT1TQ=</ns2:X509Certificate></ns2:X509Data></ns2:KeyInfo></ns2:Signature><ns3:Extensions><ns4:SPCertEnc><ns2:X509Data><ns2:X509Certificate>-----BEGIN CERTIFICATE-----
+MIICujCCAiMCAQEwDQYJKoZIhvcNAQELBQAwbTELMAkGA1UEBhMCc2UxCzAJBgNV
+BAgTAmFjMQ0wCwYDVQQHEwR1bWVhMRwwGgYDVQQKExNJVFMgVW1lYSBVbml2ZXJz
+aXR5MQ0wCwYDVQQLEwRESVJHMRUwEwYDVQQDEwxsb2NhbGhvc3QuY2EwHhcNMTUw
+NDIxMTEwNzIzWhcNMjUwNDE4MTEwNzIzWjBaMQswCQYDVQQGEwJzZTELMAkGA1UE
+CAwCYWMxDTALBgNVBAcMBFVtZWExDDAKBgNVBAoMA0lUUzENMAsGA1UECwwERElS
+RzESMBAGA1UEAwwJbG9jYWxob3N0MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIB
+CgKCAQEA1cHorMcMHqVOxzDMmDGnTM8wFkBdgC+ehLgSKPPBzbw7GiJzOsk6ZiGn
+/4/n4OAZbksePBPp8Bn4dxkpRGvjpkH6Qbcsxb0hodoKZKX8lKDnUaLUo2/ww+UU
+L2yolMTKbqP88IMYfvnbTE9QDpgSaCaqQ3Z6zHc1UhDQUWzbqpQwG3YhabSNWSas
+GUXSFtdSB1/kr5O7AvBykrGEJeI0o2cB1LVNNg+IbguLCnzbCfuVkiaeWMVZQO2a
+5GXhT1O2xglWRlmxwX6dQjHccEpu8bk7d2t982w8b1vsgbfgDXfikppUoE3VdvGM
+4qqTBFKuvLMwsm5Q+sFJcZECEBQxSwIDAQABMA0GCSqGSIb3DQEBCwUAA4GBAIv6
+eL/b8ujnIrFzOSVuCClyS8dSAJST2PCQq3a9GvcuAddCOhpjJS7stGYt1nyUZxux
+DPRzra04i+ohGbfLsGsLfSiJnPjJCC8Q7UJeMct2WOZg38iflGj0slEz9iRt55wt
+JKucWnPhVL+k3YwfqqgXbU+b7npCHKMi+LSlB9p6
+-----END CERTIFICATE-----
+</ns2:X509Certificate></ns2:X509Data></ns4:SPCertEnc></ns3:Extensions><ns0:NameIDPolicy AllowCreate="false" Format="urn:oasis:names:tc:SAML:2.0:nameid-format:persistent"/></ns0:AuthnRequest>
+
+2015-04-21 11:07:23,998 saml2.sigver:DEBUG ==== Certs from metadata ==== https://localhost:8990/pvp2_spproxy.xml: [(<open file '<fdopen>', mode 'w+b' at 0x7fb6a87ba420>, '/tmp/tmpF2RXjc.pem')] ====
+2015-04-21 11:07:23,999 saml2.sigver:DEBUG xmlsec command: /usr/bin/xmlsec1 --verify --pubkey-cert-pem /tmp/tmpF2RXjc.pem --id-attr:ID urn:oasis:names:tc:SAML:2.0:protocol:AuthnRequest --store-signatures --node-id id-lQbY2rvYueXPB4VgN --output /tmp/tmp8qNarr.xml /tmp/tmpqkPrRa.xml
+2015-04-21 11:07:24,009 saml2.sigver:ERROR ============================================================
+= VERIFICATION CONTEXT
+== Status: unknown
+== flags: 0x00000008
+== flags2: 0x00000000
+== Key Info Read Ctx:
+= KEY INFO READ CONTEXT
+== flags: 0x00000000
+== flags2: 0x00000000
+== enabled key data: all
+== RetrievalMethod level (cur/max): 0/1
+== TRANSFORMS CTX (status=0)
+== flags: 0x00000000
+== flags2: 0x00000000
+== enabled transforms: all
+=== uri: NULL
+=== uri xpointer expr: NULL
+== EncryptedKey level (cur/max): 0/1
+=== KeyReq:
+==== keyId: NULL
+==== keyType: 0x00000000
+==== keyUsage: 0xffffffff
+==== keyBitsSize: 0
+=== list size: 0
+== Key Info Write Ctx:
+= KEY INFO WRITE CONTEXT
+== flags: 0x00000000
+== flags2: 0x00000000
+== enabled key data: all
+== RetrievalMethod level (cur/max): 0/1
+== TRANSFORMS CTX (status=0)
+== flags: 0x00000000
+== flags2: 0x00000000
+== enabled transforms: all
+=== uri: NULL
+=== uri xpointer expr: NULL
+== EncryptedKey level (cur/max): 0/1
+=== KeyReq:
+==== keyId: NULL
+==== keyType: 0x00000001
+==== keyUsage: 0xffffffff
+==== keyBitsSize: 0
+=== list size: 0
+== Signature Transform Ctx:
+== TRANSFORMS CTX (status=0)
+== flags: 0x00000000
+== flags2: 0x00000000
+== enabled transforms: all
+=== uri: NULL
+=== uri xpointer expr: NULL
+== SignedInfo References List:
+=== list size: 0
+== Manifest References List:
+=== list size: 0
+
+/tmp/tmpqkPrRa.xml:1: parser error : Start tag expected, '<' not found
+nVdZk6JIF333V1TYj0Y1ixsaXT2RrIKAIIviyxdsAoqAJJjIrx/UrqV7ajr6m3qqPOTdTt5zM/32V3NK
+^
+Error: failed to parse xml file "/tmp/tmpqkPrRa.xml"
+Error: failed to load document "/tmp/tmpqkPrRa.xml"
+ERROR
+SignedInfo References (ok/all): 0/0
+Manifests References (ok/all): 0/0
+Error: failed to verify file "/tmp/tmpqkPrRa.xml"
+
+------------------------------------------------------------
+/tmp/tmpqkPrRa.xml:1: parser error : Start tag expected, '<' not found
+nVdZk6JIF333V1TYj0Y1ixsaXT2RrIKAIIviyxdsAoqAJJjIrx/UrqV7ajr6m3qqPOTdTt5zM/32V3NK
+^
+Error: failed to parse xml file "/tmp/tmpqkPrRa.xml"
+Error: failed to load document "/tmp/tmpqkPrRa.xml"
+ERROR
+SignedInfo References (ok/all): 0/0
+Manifests References (ok/all): 0/0
+Error: failed to verify file "/tmp/tmpqkPrRa.xml"
+============================================================
+2015-04-21 11:07:24,010 saml2.sigver:DEBUG xmlsec command: /usr/bin/xmlsec1 --verify --pubkey-cert-pem /tmp/tmpF2RXjc.pem --id-attr:ID urn:oasis:names:tc:SAML:2.0:protocol:AuthnRequest --store-signatures --node-id id-lQbY2rvYueXPB4VgN --output /tmp/tmpQ_ztud.xml /tmp/tmp3EH829.xml
+2015-04-21 11:07:24,022 saml2.request:INFO request: <?xml version='1.0' encoding='UTF-8'?>
+<ns0:AuthnRequest xmlns:ns0="urn:oasis:names:tc:SAML:2.0:protocol" xmlns:ns1="urn:oasis:names:tc:SAML:2.0:assertion" xmlns:ns2="http://www.w3.org/2000/09/xmldsig#" xmlns:ns3="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:ns4="urn:net:eustix:names:tc:PEFIM:0.0:assertion" AssertionConsumerServiceURL="https://localhost:8990/pvp2_sp/acs/post" Destination="https://localhost:8088/sso/redirect" ID="id-lQbY2rvYueXPB4VgN" IssueInstant="2015-04-21T11:07:23Z" ProtocolBinding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Version="2.0"><ns1:Issuer Format="urn:oasis:names:tc:SAML:2.0:nameid-format:entity">https://localhost:8990/pvp2_spproxy.xml</ns1:Issuer><ns2:Signature Id="Signature1"><ns2:SignedInfo><ns2:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><ns2:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><ns2:Reference URI="#id-lQbY2rvYueXPB4VgN"><ns2:Transforms><ns2:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><ns2:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></ns2:Transforms><ns2:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><ns2:DigestValue>gIIAvpaAPbtK+HZqBcX7sIzS/6o=</ns2:DigestValue></ns2:Reference></ns2:SignedInfo><ns2:SignatureValue>DBqfNjckuJOb6gja9MEC2fyV1ruTHj28w5d2ovnz/EPdDfgxlal8AFjZScF9YlDm
+OTEzfmBZbSZrNH+UT89HBbn7OXaCsPhFwBTVX4nELVU1eQVtW0ePfd1rPXOLOeBN
+dd8YrYoqPfp54v/CKv/Xl9JRLxTE5UnBQSNKOi3WC70=</ns2:SignatureValue><ns2:KeyInfo><ns2:X509Data><ns2:X509Certificate>MIICIzCCAYwCAXcwDQYJKoZIhvcNAQELBQAwWjELMAkGA1UEBhMCc2UxCzAJBgNVBAgTAmFjMQ0wCwYDVQQHEwRVbWVhMQwwCgYDVQQKEwNJVFMxDTALBgNVBAsTBERJUkcxEjAQBgNVBAMTCWxvY2FsaG9zdDAeFw0xNDAzMTkxNzE5MzlaFw0yNDAzMTYxNzE5MzlaMFoxCzAJBgNVBAYTAnNlMQswCQYDVQQIEwJhYzENMAsGA1UEBxMEVW1lYTEMMAoGA1UEChMDSVRTMQ0wCwYDVQQLEwRESVJHMRIwEAYDVQQDEwlsb2NhbGhvc3QwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBALswQbMz6dKL4FEKu+O3GYDfaniyxcfizsHaiehuh5jufrlGZw/zMMttteTRhpjtTFN2/R68d1kh8pmO+HV7u+53h+C33I178ZsOquSovGe1AWmzDzp2j6CRdQYdZaMCc4YxtwEXs7570YmnPLKhz8aHdiQRHhtx1cqdPPStkz67AgMBAAEwDQYJKoZIhvcNAQELBQADgYEApQ5znEdhsJBs+ew81X9pkUKZ/ruu/p2OPfYmKzdFnK6mq9bF5CEIaIkvbSJjpECicmGCNw9ATJXylnwFLnfxw6d+YGi4XPuo64NSG00ycnMSTMJ8OR5ForcF89v72BLRDYo6yXeNDw722ul0lPzH54CNQzsm4N/5w5iStnOT1TQ=</ns2:X509Certificate></ns2:X509Data></ns2:KeyInfo></ns2:Signature><ns0:NameIDPolicy AllowCreate="false" Format="urn:oasis:names:tc:SAML:2.0:nameid-format:persistent" /><ns3:Extensions><ns4:SPCertEnc><ns2:X509Data><ns2:X509Certificate>-----BEGIN CERTIFICATE-----
+MIICujCCAiMCAQEwDQYJKoZIhvcNAQELBQAwbTELMAkGA1UEBhMCc2UxCzAJBgNV
+BAgTAmFjMQ0wCwYDVQQHEwR1bWVhMRwwGgYDVQQKExNJVFMgVW1lYSBVbml2ZXJz
+aXR5MQ0wCwYDVQQLEwRESVJHMRUwEwYDVQQDEwxsb2NhbGhvc3QuY2EwHhcNMTUw
+NDIxMTEwNzIzWhcNMjUwNDE4MTEwNzIzWjBaMQswCQYDVQQGEwJzZTELMAkGA1UE
+CAwCYWMxDTALBgNVBAcMBFVtZWExDDAKBgNVBAoMA0lUUzENMAsGA1UECwwERElS
+RzESMBAGA1UEAwwJbG9jYWxob3N0MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIB
+CgKCAQEA1cHorMcMHqVOxzDMmDGnTM8wFkBdgC+ehLgSKPPBzbw7GiJzOsk6ZiGn
+/4/n4OAZbksePBPp8Bn4dxkpRGvjpkH6Qbcsxb0hodoKZKX8lKDnUaLUo2/ww+UU
+L2yolMTKbqP88IMYfvnbTE9QDpgSaCaqQ3Z6zHc1UhDQUWzbqpQwG3YhabSNWSas
+GUXSFtdSB1/kr5O7AvBykrGEJeI0o2cB1LVNNg+IbguLCnzbCfuVkiaeWMVZQO2a
+5GXhT1O2xglWRlmxwX6dQjHccEpu8bk7d2t982w8b1vsgbfgDXfikppUoE3VdvGM
+4qqTBFKuvLMwsm5Q+sFJcZECEBQxSwIDAQABMA0GCSqGSIb3DQEBCwUAA4GBAIv6
+eL/b8ujnIrFzOSVuCClyS8dSAJST2PCQq3a9GvcuAddCOhpjJS7stGYt1nyUZxux
+DPRzra04i+ohGbfLsGsLfSiJnPjJCC8Q7UJeMct2WOZg38iflGj0slEz9iRt55wt
+JKucWnPhVL+k3YwfqqgXbU+b7npCHKMi+LSlB9p6
+-----END CERTIFICATE-----
+</ns2:X509Certificate></ns2:X509Data></ns4:SPCertEnc></ns3:Extensions></ns0:AuthnRequest>
+2015-04-21 11:07:24,023 saml2.entity:DEBUG Loaded request
+2015-04-21 11:07:24,024 saml2.entity:DEBUG Verified request
+2015-04-21 11:07:24,051 saml2.idp:ERROR An error occured while creating metadata:'NoneType' object has no attribute '__getitem__'
+2015-04-21 11:07:32,448 saml2.entity:DEBUG receiver addresses: ['https://localhost:8088/sso/redirect']
+2015-04-21 11:07:32,449 saml2.entity:DEBUG Binding: urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect
+2015-04-21 11:07:32,450 saml2.request:DEBUG xmlstr: <?xml version="1.0" encoding="UTF-8"?>
+<ns0:AuthnRequest xmlns:ns0="urn:oasis:names:tc:SAML:2.0:protocol" xmlns:ns1="urn:oasis:names:tc:SAML:2.0:assertion" xmlns:ns2="http://www.w3.org/2000/09/xmldsig#" xmlns:ns3="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:ns4="urn:net:eustix:names:tc:PEFIM:0.0:assertion" AssertionConsumerServiceURL="https://localhost:8990/pvp2_sp/acs/post" Destination="https://localhost:8088/sso/redirect" ID="id-lQbY2rvYueXPB4VgN" IssueInstant="2015-04-21T11:07:23Z" ProtocolBinding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Version="2.0"><ns1:Issuer Format="urn:oasis:names:tc:SAML:2.0:nameid-format:entity">https://localhost:8990/pvp2_spproxy.xml</ns1:Issuer><ns2:Signature Id="Signature1"><ns2:SignedInfo><ns2:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><ns2:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/><ns2:Reference URI="#id-lQbY2rvYueXPB4VgN"><ns2:Transforms><ns2:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/><ns2:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></ns2:Transforms><ns2:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><ns2:DigestValue>gIIAvpaAPbtK+HZqBcX7sIzS/6o=</ns2:DigestValue></ns2:Reference></ns2:SignedInfo><ns2:SignatureValue>DBqfNjckuJOb6gja9MEC2fyV1ruTHj28w5d2ovnz/EPdDfgxlal8AFjZScF9YlDm
+OTEzfmBZbSZrNH+UT89HBbn7OXaCsPhFwBTVX4nELVU1eQVtW0ePfd1rPXOLOeBN
+dd8YrYoqPfp54v/CKv/Xl9JRLxTE5UnBQSNKOi3WC70=</ns2:SignatureValue><ns2:KeyInfo><ns2:X509Data><ns2:X509Certificate>MIICIzCCAYwCAXcwDQYJKoZIhvcNAQELBQAwWjELMAkGA1UEBhMCc2UxCzAJBgNVBAgTAmFjMQ0wCwYDVQQHEwRVbWVhMQwwCgYDVQQKEwNJVFMxDTALBgNVBAsTBERJUkcxEjAQBgNVBAMTCWxvY2FsaG9zdDAeFw0xNDAzMTkxNzE5MzlaFw0yNDAzMTYxNzE5MzlaMFoxCzAJBgNVBAYTAnNlMQswCQYDVQQIEwJhYzENMAsGA1UEBxMEVW1lYTEMMAoGA1UEChMDSVRTMQ0wCwYDVQQLEwRESVJHMRIwEAYDVQQDEwlsb2NhbGhvc3QwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBALswQbMz6dKL4FEKu+O3GYDfaniyxcfizsHaiehuh5jufrlGZw/zMMttteTRhpjtTFN2/R68d1kh8pmO+HV7u+53h+C33I178ZsOquSovGe1AWmzDzp2j6CRdQYdZaMCc4YxtwEXs7570YmnPLKhz8aHdiQRHhtx1cqdPPStkz67AgMBAAEwDQYJKoZIhvcNAQELBQADgYEApQ5znEdhsJBs+ew81X9pkUKZ/ruu/p2OPfYmKzdFnK6mq9bF5CEIaIkvbSJjpECicmGCNw9ATJXylnwFLnfxw6d+YGi4XPuo64NSG00ycnMSTMJ8OR5ForcF89v72BLRDYo6yXeNDw722ul0lPzH54CNQzsm4N/5w5iStnOT1TQ=</ns2:X509Certificate></ns2:X509Data></ns2:KeyInfo></ns2:Signature><ns3:Extensions><ns4:SPCertEnc><ns2:X509Data><ns2:X509Certificate>-----BEGIN CERTIFICATE-----
+MIICujCCAiMCAQEwDQYJKoZIhvcNAQELBQAwbTELMAkGA1UEBhMCc2UxCzAJBgNV
+BAgTAmFjMQ0wCwYDVQQHEwR1bWVhMRwwGgYDVQQKExNJVFMgVW1lYSBVbml2ZXJz
+aXR5MQ0wCwYDVQQLEwRESVJHMRUwEwYDVQQDEwxsb2NhbGhvc3QuY2EwHhcNMTUw
+NDIxMTEwNzIzWhcNMjUwNDE4MTEwNzIzWjBaMQswCQYDVQQGEwJzZTELMAkGA1UE
+CAwCYWMxDTALBgNVBAcMBFVtZWExDDAKBgNVBAoMA0lUUzENMAsGA1UECwwERElS
+RzESMBAGA1UEAwwJbG9jYWxob3N0MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIB
+CgKCAQEA1cHorMcMHqVOxzDMmDGnTM8wFkBdgC+ehLgSKPPBzbw7GiJzOsk6ZiGn
+/4/n4OAZbksePBPp8Bn4dxkpRGvjpkH6Qbcsxb0hodoKZKX8lKDnUaLUo2/ww+UU
+L2yolMTKbqP88IMYfvnbTE9QDpgSaCaqQ3Z6zHc1UhDQUWzbqpQwG3YhabSNWSas
+GUXSFtdSB1/kr5O7AvBykrGEJeI0o2cB1LVNNg+IbguLCnzbCfuVkiaeWMVZQO2a
+5GXhT1O2xglWRlmxwX6dQjHccEpu8bk7d2t982w8b1vsgbfgDXfikppUoE3VdvGM
+4qqTBFKuvLMwsm5Q+sFJcZECEBQxSwIDAQABMA0GCSqGSIb3DQEBCwUAA4GBAIv6
+eL/b8ujnIrFzOSVuCClyS8dSAJST2PCQq3a9GvcuAddCOhpjJS7stGYt1nyUZxux
+DPRzra04i+ohGbfLsGsLfSiJnPjJCC8Q7UJeMct2WOZg38iflGj0slEz9iRt55wt
+JKucWnPhVL+k3YwfqqgXbU+b7npCHKMi+LSlB9p6
+-----END CERTIFICATE-----
+</ns2:X509Certificate></ns2:X509Data></ns4:SPCertEnc></ns3:Extensions><ns0:NameIDPolicy AllowCreate="false" Format="urn:oasis:names:tc:SAML:2.0:nameid-format:persistent"/></ns0:AuthnRequest>
+
+2015-04-21 11:07:32,451 saml2.sigver:DEBUG ==== Certs from metadata ==== https://localhost:8990/pvp2_spproxy.xml: [(<open file '<fdopen>', mode 'w+b' at 0x7fb6a87ba6f0>, '/tmp/tmptDeFND.pem')] ====
+2015-04-21 11:07:32,452 saml2.sigver:DEBUG xmlsec command: /usr/bin/xmlsec1 --verify --pubkey-cert-pem /tmp/tmptDeFND.pem --id-attr:ID urn:oasis:names:tc:SAML:2.0:protocol:AuthnRequest --store-signatures --node-id id-lQbY2rvYueXPB4VgN --output /tmp/tmpOwJSFc.xml /tmp/tmpoMybty.xml
+2015-04-21 11:07:32,462 saml2.sigver:ERROR ============================================================
+= VERIFICATION CONTEXT
+== Status: unknown
+== flags: 0x00000008
+== flags2: 0x00000000
+== Key Info Read Ctx:
+= KEY INFO READ CONTEXT
+== flags: 0x00000000
+== flags2: 0x00000000
+== enabled key data: all
+== RetrievalMethod level (cur/max): 0/1
+== TRANSFORMS CTX (status=0)
+== flags: 0x00000000
+== flags2: 0x00000000
+== enabled transforms: all
+=== uri: NULL
+=== uri xpointer expr: NULL
+== EncryptedKey level (cur/max): 0/1
+=== KeyReq:
+==== keyId: NULL
+==== keyType: 0x00000000
+==== keyUsage: 0xffffffff
+==== keyBitsSize: 0
+=== list size: 0
+== Key Info Write Ctx:
+= KEY INFO WRITE CONTEXT
+== flags: 0x00000000
+== flags2: 0x00000000
+== enabled key data: all
+== RetrievalMethod level (cur/max): 0/1
+== TRANSFORMS CTX (status=0)
+== flags: 0x00000000
+== flags2: 0x00000000
+== enabled transforms: all
+=== uri: NULL
+=== uri xpointer expr: NULL
+== EncryptedKey level (cur/max): 0/1
+=== KeyReq:
+==== keyId: NULL
+==== keyType: 0x00000001
+==== keyUsage: 0xffffffff
+==== keyBitsSize: 0
+=== list size: 0
+== Signature Transform Ctx:
+== TRANSFORMS CTX (status=0)
+== flags: 0x00000000
+== flags2: 0x00000000
+== enabled transforms: all
+=== uri: NULL
+=== uri xpointer expr: NULL
+== SignedInfo References List:
+=== list size: 0
+== Manifest References List:
+=== list size: 0
+
+/tmp/tmpoMybty.xml:1: parser error : Start tag expected, '<' not found
+nVdZk6JIF333V1TYj0Y1ixsaXT2RrIKAIIviyxdsAoqAJJjIrx/UrqV7ajr6m3qqPOTdTt5zM/32V3NK
+^
+Error: failed to parse xml file "/tmp/tmpoMybty.xml"
+Error: failed to load document "/tmp/tmpoMybty.xml"
+ERROR
+SignedInfo References (ok/all): 0/0
+Manifests References (ok/all): 0/0
+Error: failed to verify file "/tmp/tmpoMybty.xml"
+
+------------------------------------------------------------
+/tmp/tmpoMybty.xml:1: parser error : Start tag expected, '<' not found
+nVdZk6JIF333V1TYj0Y1ixsaXT2RrIKAIIviyxdsAoqAJJjIrx/UrqV7ajr6m3qqPOTdTt5zM/32V3NK
+^
+Error: failed to parse xml file "/tmp/tmpoMybty.xml"
+Error: failed to load document "/tmp/tmpoMybty.xml"
+ERROR
+SignedInfo References (ok/all): 0/0
+Manifests References (ok/all): 0/0
+Error: failed to verify file "/tmp/tmpoMybty.xml"
+============================================================
+2015-04-21 11:07:32,463 saml2.sigver:DEBUG xmlsec command: /usr/bin/xmlsec1 --verify --pubkey-cert-pem /tmp/tmptDeFND.pem --id-attr:ID urn:oasis:names:tc:SAML:2.0:protocol:AuthnRequest --store-signatures --node-id id-lQbY2rvYueXPB4VgN --output /tmp/tmpjAOk0D.xml /tmp/tmpf1BnUe.xml
+2015-04-21 11:07:32,473 saml2.request:INFO request: <?xml version='1.0' encoding='UTF-8'?>
+<ns0:AuthnRequest xmlns:ns0="urn:oasis:names:tc:SAML:2.0:protocol" xmlns:ns1="urn:oasis:names:tc:SAML:2.0:assertion" xmlns:ns2="http://www.w3.org/2000/09/xmldsig#" xmlns:ns3="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:ns4="urn:net:eustix:names:tc:PEFIM:0.0:assertion" AssertionConsumerServiceURL="https://localhost:8990/pvp2_sp/acs/post" Destination="https://localhost:8088/sso/redirect" ID="id-lQbY2rvYueXPB4VgN" IssueInstant="2015-04-21T11:07:23Z" ProtocolBinding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Version="2.0"><ns1:Issuer Format="urn:oasis:names:tc:SAML:2.0:nameid-format:entity">https://localhost:8990/pvp2_spproxy.xml</ns1:Issuer><ns2:Signature Id="Signature1"><ns2:SignedInfo><ns2:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><ns2:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><ns2:Reference URI="#id-lQbY2rvYueXPB4VgN"><ns2:Transforms><ns2:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><ns2:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></ns2:Transforms><ns2:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><ns2:DigestValue>gIIAvpaAPbtK+HZqBcX7sIzS/6o=</ns2:DigestValue></ns2:Reference></ns2:SignedInfo><ns2:SignatureValue>DBqfNjckuJOb6gja9MEC2fyV1ruTHj28w5d2ovnz/EPdDfgxlal8AFjZScF9YlDm
+OTEzfmBZbSZrNH+UT89HBbn7OXaCsPhFwBTVX4nELVU1eQVtW0ePfd1rPXOLOeBN
+dd8YrYoqPfp54v/CKv/Xl9JRLxTE5UnBQSNKOi3WC70=</ns2:SignatureValue><ns2:KeyInfo><ns2:X509Data><ns2:X509Certificate>MIICIzCCAYwCAXcwDQYJKoZIhvcNAQELBQAwWjELMAkGA1UEBhMCc2UxCzAJBgNVBAgTAmFjMQ0wCwYDVQQHEwRVbWVhMQwwCgYDVQQKEwNJVFMxDTALBgNVBAsTBERJUkcxEjAQBgNVBAMTCWxvY2FsaG9zdDAeFw0xNDAzMTkxNzE5MzlaFw0yNDAzMTYxNzE5MzlaMFoxCzAJBgNVBAYTAnNlMQswCQYDVQQIEwJhYzENMAsGA1UEBxMEVW1lYTEMMAoGA1UEChMDSVRTMQ0wCwYDVQQLEwRESVJHMRIwEAYDVQQDEwlsb2NhbGhvc3QwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBALswQbMz6dKL4FEKu+O3GYDfaniyxcfizsHaiehuh5jufrlGZw/zMMttteTRhpjtTFN2/R68d1kh8pmO+HV7u+53h+C33I178ZsOquSovGe1AWmzDzp2j6CRdQYdZaMCc4YxtwEXs7570YmnPLKhz8aHdiQRHhtx1cqdPPStkz67AgMBAAEwDQYJKoZIhvcNAQELBQADgYEApQ5znEdhsJBs+ew81X9pkUKZ/ruu/p2OPfYmKzdFnK6mq9bF5CEIaIkvbSJjpECicmGCNw9ATJXylnwFLnfxw6d+YGi4XPuo64NSG00ycnMSTMJ8OR5ForcF89v72BLRDYo6yXeNDw722ul0lPzH54CNQzsm4N/5w5iStnOT1TQ=</ns2:X509Certificate></ns2:X509Data></ns2:KeyInfo></ns2:Signature><ns0:NameIDPolicy AllowCreate="false" Format="urn:oasis:names:tc:SAML:2.0:nameid-format:persistent" /><ns3:Extensions><ns4:SPCertEnc><ns2:X509Data><ns2:X509Certificate>-----BEGIN CERTIFICATE-----
+MIICujCCAiMCAQEwDQYJKoZIhvcNAQELBQAwbTELMAkGA1UEBhMCc2UxCzAJBgNV
+BAgTAmFjMQ0wCwYDVQQHEwR1bWVhMRwwGgYDVQQKExNJVFMgVW1lYSBVbml2ZXJz
+aXR5MQ0wCwYDVQQLEwRESVJHMRUwEwYDVQQDEwxsb2NhbGhvc3QuY2EwHhcNMTUw
+NDIxMTEwNzIzWhcNMjUwNDE4MTEwNzIzWjBaMQswCQYDVQQGEwJzZTELMAkGA1UE
+CAwCYWMxDTALBgNVBAcMBFVtZWExDDAKBgNVBAoMA0lUUzENMAsGA1UECwwERElS
+RzESMBAGA1UEAwwJbG9jYWxob3N0MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIB
+CgKCAQEA1cHorMcMHqVOxzDMmDGnTM8wFkBdgC+ehLgSKPPBzbw7GiJzOsk6ZiGn
+/4/n4OAZbksePBPp8Bn4dxkpRGvjpkH6Qbcsxb0hodoKZKX8lKDnUaLUo2/ww+UU
+L2yolMTKbqP88IMYfvnbTE9QDpgSaCaqQ3Z6zHc1UhDQUWzbqpQwG3YhabSNWSas
+GUXSFtdSB1/kr5O7AvBykrGEJeI0o2cB1LVNNg+IbguLCnzbCfuVkiaeWMVZQO2a
+5GXhT1O2xglWRlmxwX6dQjHccEpu8bk7d2t982w8b1vsgbfgDXfikppUoE3VdvGM
+4qqTBFKuvLMwsm5Q+sFJcZECEBQxSwIDAQABMA0GCSqGSIb3DQEBCwUAA4GBAIv6
+eL/b8ujnIrFzOSVuCClyS8dSAJST2PCQq3a9GvcuAddCOhpjJS7stGYt1nyUZxux
+DPRzra04i+ohGbfLsGsLfSiJnPjJCC8Q7UJeMct2WOZg38iflGj0slEz9iRt55wt
+JKucWnPhVL+k3YwfqqgXbU+b7npCHKMi+LSlB9p6
+-----END CERTIFICATE-----
+</ns2:X509Certificate></ns2:X509Data></ns4:SPCertEnc></ns3:Extensions></ns0:AuthnRequest>
+2015-04-21 11:07:32,474 saml2.entity:DEBUG Loaded request
+2015-04-21 11:07:32,475 saml2.entity:DEBUG Verified request
+2015-04-21 11:07:38,129 saml2.mdstore:DEBUG service(https://localhost:8990/pvp2_spproxy.xml, spsso_descriptor, assertion_consumer_service, urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST)
+2015-04-21 11:07:38,130 saml2.mdstore:DEBUG service => [{'index': '1', 'binding': 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST', '__class__': 'urn:oasis:names:tc:SAML:2.0:metadata&AssertionConsumerService', 'location': 'https://localhost:8990/pvp2_sp/acs/post'}]
+2015-04-21 11:07:38,130 saml2.mdstore:DEBUG service(https://localhost:8990/pvp2_spproxy.xml, spsso_descriptor, assertion_consumer_service, urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST)
+2015-04-21 11:07:38,131 saml2.mdstore:DEBUG service => [{'index': '1', 'binding': 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST', '__class__': 'urn:oasis:names:tc:SAML:2.0:metadata&AssertionConsumerService', 'location': 'https://localhost:8990/pvp2_sp/acs/post'}]
+2015-04-21 11:07:38,134 saml2.ident:DEBUG failed to find userid testuser in IdentDB
+2015-04-21 11:07:38,135 saml2.ident:DEBUG local_policy: <saml2.assertion.Policy object at 0x7fb6a886cc50>, name_id_policy: <?xml version='1.0' encoding='UTF-8'?>
+<ns0:NameIDPolicy xmlns:ns0="urn:oasis:names:tc:SAML:2.0:protocol" AllowCreate="false" Format="urn:oasis:names:tc:SAML:2.0:nameid-format:persistent" />
+2015-04-21 11:07:38,135 saml2.server:DEBUG construct_nameid: testuser => <?xml version='1.0' encoding='UTF-8'?>
+<ns0:NameID xmlns:ns0="urn:oasis:names:tc:SAML:2.0:assertion" Format="urn:oasis:names:tc:SAML:2.0:nameid-format:persistent" NameQualifier="https://localhost:8088/TestPEFIMIdP.xml" SPNameQualifier="https://localhost:8990/pvp2_spproxy.xml">testuser</ns0:NameID>
+2015-04-21 11:07:38,142 saml2.sigver:DEBUG xmlsec command: /usr/bin/xmlsec1 encrypt --pubkey-cert-pem /tmp/tmp0DJu3a --session-key des-192 --xml-data /tmp/tmpOENzm5 --node-xpath /*[local-name()="Response"]/*[local-name()="Assertion"]/*[local-name()="Advice"]/*[local-name()="EncryptedAssertion"]/*[local-name()="Assertion"] --output /tmp/tmpt74rHQ.xml /tmp/tmpENw9Oy
+2015-04-21 11:07:38,154 saml2.sigver:DEBUG xmlsec command: /usr/bin/xmlsec1 --sign --privkey-pem /opt/pefim/etc/pki/mykey.pem --id-attr:ID urn:oasis:names:tc:SAML:2.0:protocol:Response --node-id id-zcbP0wM4HJjpi6LBF --output /tmp/tmpNR9Pde.xml /tmp/tmpSKBRiW.xml
+2015-04-21 11:07:38,166 saml2.entity:INFO HTTP POST
+2015-04-21 11:14:08,627 saml2:INFO Logging started
+2015-04-21 11:14:37,191 saml2.entity:DEBUG receiver addresses: ['https://localhost:8088/sso/redirect']
+2015-04-21 11:14:37,191 saml2.entity:DEBUG Binding: urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect
+2015-04-21 11:14:37,192 saml2.request:DEBUG xmlstr: <?xml version="1.0" encoding="UTF-8"?>
+<ns0:AuthnRequest xmlns:ns0="urn:oasis:names:tc:SAML:2.0:protocol" xmlns:ns1="urn:oasis:names:tc:SAML:2.0:assertion" xmlns:ns2="http://www.w3.org/2000/09/xmldsig#" xmlns:ns3="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:ns4="urn:net:eustix:names:tc:PEFIM:0.0:assertion" AssertionConsumerServiceURL="https://localhost:8990/pvp2_sp/acs/post" Destination="https://localhost:8088/sso/redirect" ID="id-R4p0e20HfxMsBuNp0" IssueInstant="2015-04-21T11:14:37Z" ProtocolBinding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Version="2.0"><ns1:Issuer Format="urn:oasis:names:tc:SAML:2.0:nameid-format:entity">https://localhost:8990/pvp2_spproxy.xml</ns1:Issuer><ns2:Signature Id="Signature1"><ns2:SignedInfo><ns2:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><ns2:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/><ns2:Reference URI="#id-R4p0e20HfxMsBuNp0"><ns2:Transforms><ns2:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/><ns2:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></ns2:Transforms><ns2:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><ns2:DigestValue>GW62RhRbtAG/bqSg8qp9dCZqOi8=</ns2:DigestValue></ns2:Reference></ns2:SignedInfo><ns2:SignatureValue>oL8qWX5TGCmg4dRE24BRuu6BRH730xVWGfCb6eoe8J5a2kiluiocUITXYVKfrtXz
+s9YdUIVdrKZ5lAJbp4+ENst6MMnASEPTwuywx9ElB42mjMBtbukReIeNymju0oSv
+mM9AREFGxDhfzIW+mIYoWzs1UXLCGajYGLpOaf5r1Bs=</ns2:SignatureValue><ns2:KeyInfo><ns2:X509Data><ns2:X509Certificate>MIICIzCCAYwCAXcwDQYJKoZIhvcNAQELBQAwWjELMAkGA1UEBhMCc2UxCzAJBgNVBAgTAmFjMQ0wCwYDVQQHEwRVbWVhMQwwCgYDVQQKEwNJVFMxDTALBgNVBAsTBERJUkcxEjAQBgNVBAMTCWxvY2FsaG9zdDAeFw0xNDAzMTkxNzE5MzlaFw0yNDAzMTYxNzE5MzlaMFoxCzAJBgNVBAYTAnNlMQswCQYDVQQIEwJhYzENMAsGA1UEBxMEVW1lYTEMMAoGA1UEChMDSVRTMQ0wCwYDVQQLEwRESVJHMRIwEAYDVQQDEwlsb2NhbGhvc3QwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBALswQbMz6dKL4FEKu+O3GYDfaniyxcfizsHaiehuh5jufrlGZw/zMMttteTRhpjtTFN2/R68d1kh8pmO+HV7u+53h+C33I178ZsOquSovGe1AWmzDzp2j6CRdQYdZaMCc4YxtwEXs7570YmnPLKhz8aHdiQRHhtx1cqdPPStkz67AgMBAAEwDQYJKoZIhvcNAQELBQADgYEApQ5znEdhsJBs+ew81X9pkUKZ/ruu/p2OPfYmKzdFnK6mq9bF5CEIaIkvbSJjpECicmGCNw9ATJXylnwFLnfxw6d+YGi4XPuo64NSG00ycnMSTMJ8OR5ForcF89v72BLRDYo6yXeNDw722ul0lPzH54CNQzsm4N/5w5iStnOT1TQ=</ns2:X509Certificate></ns2:X509Data></ns2:KeyInfo></ns2:Signature><ns3:Extensions><ns4:SPCertEnc><ns2:X509Data><ns2:X509Certificate>-----BEGIN CERTIFICATE-----
+MIICujCCAiMCAQEwDQYJKoZIhvcNAQELBQAwbTELMAkGA1UEBhMCc2UxCzAJBgNV
+BAgTAmFjMQ0wCwYDVQQHEwR1bWVhMRwwGgYDVQQKExNJVFMgVW1lYSBVbml2ZXJz
+aXR5MQ0wCwYDVQQLEwRESVJHMRUwEwYDVQQDEwxsb2NhbGhvc3QuY2EwHhcNMTUw
+NDIxMTExNDM3WhcNMjUwNDE4MTExNDM3WjBaMQswCQYDVQQGEwJzZTELMAkGA1UE
+CAwCYWMxDTALBgNVBAcMBFVtZWExDDAKBgNVBAoMA0lUUzENMAsGA1UECwwERElS
+RzESMBAGA1UEAwwJbG9jYWxob3N0MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIB
+CgKCAQEArQaLrGkzbw/VRvLP3dFjvREximEoUoKtcfTxCgZpUcC75wYIRmPNv/5W
+bUVvr8qSPFw8bx9hCiX/KlfEvFsyEW6zHwmcaz35R04TMC8ja3kxYdToY8Zsvp7Y
+L0PG0uZQMvqzUE6N/cJt2vpLV2HN0/j5lOemzyBYbls9qd3kcJUGHMO9fPSFFJsO
+shunjhH2qEn1abLnxknjTp7bdOK/DeWpUeOb0ggZNveWvOfAHmsrtY1hTAtKvIBF
+mOSyUCZMBZ+hQ6D3zT8AsNtH4oLJoTpqrBwk2gSgu+RGrZeVUnbhhVvVfmjv0qg6
++9nCjeSPRH8nmXKvwCwaGfvZvWvblQIDAQABMA0GCSqGSIb3DQEBCwUAA4GBACLL
+6SAs39R2NX+OByxvkWm1HtIHggC7KGLVlPGXteIOOBX3/gs4qvw3jFDtfJ9KAfQn
+SvrTHhU7QuXjuasYLJKv9NgvO2qjWlObXjHtQgQzI9kpZg5gz8tDpkSYwkhmGJnk
+1HPDk8HUwfWCoo2iFLVmkov/aI3CknuHaKcOjMmS
+-----END CERTIFICATE-----
+</ns2:X509Certificate></ns2:X509Data></ns4:SPCertEnc></ns3:Extensions><ns0:NameIDPolicy AllowCreate="false" Format="urn:oasis:names:tc:SAML:2.0:nameid-format:persistent"/></ns0:AuthnRequest>
+
+2015-04-21 11:14:37,194 saml2.sigver:DEBUG ==== Certs from metadata ==== https://localhost:8990/pvp2_spproxy.xml: [(<open file '<fdopen>', mode 'w+b' at 0x7fbf04ea3390>, '/tmp/tmp5aKPK0.pem')] ====
+2015-04-21 11:14:37,195 saml2.sigver:DEBUG xmlsec command: /usr/bin/xmlsec1 --verify --pubkey-cert-pem /tmp/tmp5aKPK0.pem --id-attr:ID urn:oasis:names:tc:SAML:2.0:protocol:AuthnRequest --store-signatures --node-id id-R4p0e20HfxMsBuNp0 --output /tmp/tmpyM85F9.xml /tmp/tmpcrsHMe.xml
+2015-04-21 11:14:37,205 saml2.sigver:ERROR ============================================================
+= VERIFICATION CONTEXT
+== Status: unknown
+== flags: 0x00000008
+== flags2: 0x00000000
+== Key Info Read Ctx:
+= KEY INFO READ CONTEXT
+== flags: 0x00000000
+== flags2: 0x00000000
+== enabled key data: all
+== RetrievalMethod level (cur/max): 0/1
+== TRANSFORMS CTX (status=0)
+== flags: 0x00000000
+== flags2: 0x00000000
+== enabled transforms: all
+=== uri: NULL
+=== uri xpointer expr: NULL
+== EncryptedKey level (cur/max): 0/1
+=== KeyReq:
+==== keyId: NULL
+==== keyType: 0x00000000
+==== keyUsage: 0xffffffff
+==== keyBitsSize: 0
+=== list size: 0
+== Key Info Write Ctx:
+= KEY INFO WRITE CONTEXT
+== flags: 0x00000000
+== flags2: 0x00000000
+== enabled key data: all
+== RetrievalMethod level (cur/max): 0/1
+== TRANSFORMS CTX (status=0)
+== flags: 0x00000000
+== flags2: 0x00000000
+== enabled transforms: all
+=== uri: NULL
+=== uri xpointer expr: NULL
+== EncryptedKey level (cur/max): 0/1
+=== KeyReq:
+==== keyId: NULL
+==== keyType: 0x00000001
+==== keyUsage: 0xffffffff
+==== keyBitsSize: 0
+=== list size: 0
+== Signature Transform Ctx:
+== TRANSFORMS CTX (status=0)
+== flags: 0x00000000
+== flags2: 0x00000000
+== enabled transforms: all
+=== uri: NULL
+=== uri xpointer expr: NULL
+== SignedInfo References List:
+=== list size: 0
+== Manifest References List:
+=== list size: 0
+
+/tmp/tmpcrsHMe.xml:1: parser error : Start tag expected, '<' not found
+nVfJcuLIFt3zFQ566XBpYCba1ZGaBZJAEyA2LzShAU0oJaXQ17eActlV7a6o1145D3mnc++5JH/+1abJ
+^
+Error: failed to parse xml file "/tmp/tmpcrsHMe.xml"
+Error: failed to load document "/tmp/tmpcrsHMe.xml"
+ERROR
+SignedInfo References (ok/all): 0/0
+Manifests References (ok/all): 0/0
+Error: failed to verify file "/tmp/tmpcrsHMe.xml"
+
+------------------------------------------------------------
+/tmp/tmpcrsHMe.xml:1: parser error : Start tag expected, '<' not found
+nVfJcuLIFt3zFQ566XBpYCba1ZGaBZJAEyA2LzShAU0oJaXQ17eActlV7a6o1145D3mnc++5JH/+1abJ
+^
+Error: failed to parse xml file "/tmp/tmpcrsHMe.xml"
+Error: failed to load document "/tmp/tmpcrsHMe.xml"
+ERROR
+SignedInfo References (ok/all): 0/0
+Manifests References (ok/all): 0/0
+Error: failed to verify file "/tmp/tmpcrsHMe.xml"
+============================================================
+2015-04-21 11:14:37,206 saml2.sigver:DEBUG xmlsec command: /usr/bin/xmlsec1 --verify --pubkey-cert-pem /tmp/tmp5aKPK0.pem --id-attr:ID urn:oasis:names:tc:SAML:2.0:protocol:AuthnRequest --store-signatures --node-id id-R4p0e20HfxMsBuNp0 --output /tmp/tmpRW2B5b.xml /tmp/tmpe7zLw2.xml
+2015-04-21 11:14:37,217 saml2.request:INFO request: <?xml version='1.0' encoding='UTF-8'?>
+<ns0:AuthnRequest xmlns:ns0="urn:oasis:names:tc:SAML:2.0:protocol" xmlns:ns1="urn:oasis:names:tc:SAML:2.0:assertion" xmlns:ns2="http://www.w3.org/2000/09/xmldsig#" xmlns:ns3="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:ns4="urn:net:eustix:names:tc:PEFIM:0.0:assertion" AssertionConsumerServiceURL="https://localhost:8990/pvp2_sp/acs/post" Destination="https://localhost:8088/sso/redirect" ID="id-R4p0e20HfxMsBuNp0" IssueInstant="2015-04-21T11:14:37Z" ProtocolBinding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Version="2.0"><ns1:Issuer Format="urn:oasis:names:tc:SAML:2.0:nameid-format:entity">https://localhost:8990/pvp2_spproxy.xml</ns1:Issuer><ns2:Signature Id="Signature1"><ns2:SignedInfo><ns2:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><ns2:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><ns2:Reference URI="#id-R4p0e20HfxMsBuNp0"><ns2:Transforms><ns2:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><ns2:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></ns2:Transforms><ns2:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><ns2:DigestValue>GW62RhRbtAG/bqSg8qp9dCZqOi8=</ns2:DigestValue></ns2:Reference></ns2:SignedInfo><ns2:SignatureValue>oL8qWX5TGCmg4dRE24BRuu6BRH730xVWGfCb6eoe8J5a2kiluiocUITXYVKfrtXz
+s9YdUIVdrKZ5lAJbp4+ENst6MMnASEPTwuywx9ElB42mjMBtbukReIeNymju0oSv
+mM9AREFGxDhfzIW+mIYoWzs1UXLCGajYGLpOaf5r1Bs=</ns2:SignatureValue><ns2:KeyInfo><ns2:X509Data><ns2:X509Certificate>MIICIzCCAYwCAXcwDQYJKoZIhvcNAQELBQAwWjELMAkGA1UEBhMCc2UxCzAJBgNVBAgTAmFjMQ0wCwYDVQQHEwRVbWVhMQwwCgYDVQQKEwNJVFMxDTALBgNVBAsTBERJUkcxEjAQBgNVBAMTCWxvY2FsaG9zdDAeFw0xNDAzMTkxNzE5MzlaFw0yNDAzMTYxNzE5MzlaMFoxCzAJBgNVBAYTAnNlMQswCQYDVQQIEwJhYzENMAsGA1UEBxMEVW1lYTEMMAoGA1UEChMDSVRTMQ0wCwYDVQQLEwRESVJHMRIwEAYDVQQDEwlsb2NhbGhvc3QwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBALswQbMz6dKL4FEKu+O3GYDfaniyxcfizsHaiehuh5jufrlGZw/zMMttteTRhpjtTFN2/R68d1kh8pmO+HV7u+53h+C33I178ZsOquSovGe1AWmzDzp2j6CRdQYdZaMCc4YxtwEXs7570YmnPLKhz8aHdiQRHhtx1cqdPPStkz67AgMBAAEwDQYJKoZIhvcNAQELBQADgYEApQ5znEdhsJBs+ew81X9pkUKZ/ruu/p2OPfYmKzdFnK6mq9bF5CEIaIkvbSJjpECicmGCNw9ATJXylnwFLnfxw6d+YGi4XPuo64NSG00ycnMSTMJ8OR5ForcF89v72BLRDYo6yXeNDw722ul0lPzH54CNQzsm4N/5w5iStnOT1TQ=</ns2:X509Certificate></ns2:X509Data></ns2:KeyInfo></ns2:Signature><ns0:NameIDPolicy AllowCreate="false" Format="urn:oasis:names:tc:SAML:2.0:nameid-format:persistent" /><ns3:Extensions><ns4:SPCertEnc><ns2:X509Data><ns2:X509Certificate>-----BEGIN CERTIFICATE-----
+MIICujCCAiMCAQEwDQYJKoZIhvcNAQELBQAwbTELMAkGA1UEBhMCc2UxCzAJBgNV
+BAgTAmFjMQ0wCwYDVQQHEwR1bWVhMRwwGgYDVQQKExNJVFMgVW1lYSBVbml2ZXJz
+aXR5MQ0wCwYDVQQLEwRESVJHMRUwEwYDVQQDEwxsb2NhbGhvc3QuY2EwHhcNMTUw
+NDIxMTExNDM3WhcNMjUwNDE4MTExNDM3WjBaMQswCQYDVQQGEwJzZTELMAkGA1UE
+CAwCYWMxDTALBgNVBAcMBFVtZWExDDAKBgNVBAoMA0lUUzENMAsGA1UECwwERElS
+RzESMBAGA1UEAwwJbG9jYWxob3N0MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIB
+CgKCAQEArQaLrGkzbw/VRvLP3dFjvREximEoUoKtcfTxCgZpUcC75wYIRmPNv/5W
+bUVvr8qSPFw8bx9hCiX/KlfEvFsyEW6zHwmcaz35R04TMC8ja3kxYdToY8Zsvp7Y
+L0PG0uZQMvqzUE6N/cJt2vpLV2HN0/j5lOemzyBYbls9qd3kcJUGHMO9fPSFFJsO
+shunjhH2qEn1abLnxknjTp7bdOK/DeWpUeOb0ggZNveWvOfAHmsrtY1hTAtKvIBF
+mOSyUCZMBZ+hQ6D3zT8AsNtH4oLJoTpqrBwk2gSgu+RGrZeVUnbhhVvVfmjv0qg6
++9nCjeSPRH8nmXKvwCwaGfvZvWvblQIDAQABMA0GCSqGSIb3DQEBCwUAA4GBACLL
+6SAs39R2NX+OByxvkWm1HtIHggC7KGLVlPGXteIOOBX3/gs4qvw3jFDtfJ9KAfQn
+SvrTHhU7QuXjuasYLJKv9NgvO2qjWlObXjHtQgQzI9kpZg5gz8tDpkSYwkhmGJnk
+1HPDk8HUwfWCoo2iFLVmkov/aI3CknuHaKcOjMmS
+-----END CERTIFICATE-----
+</ns2:X509Certificate></ns2:X509Data></ns4:SPCertEnc></ns3:Extensions></ns0:AuthnRequest>
+2015-04-21 11:14:37,218 saml2.entity:DEBUG Loaded request
+2015-04-21 11:14:37,219 saml2.entity:DEBUG Verified request
+2015-04-21 11:14:37,246 saml2.idp:ERROR An error occured while creating metadata:'NoneType' object has no attribute '__getitem__'
+2015-04-21 11:14:46,750 saml2.entity:DEBUG receiver addresses: ['https://localhost:8088/sso/redirect']
+2015-04-21 11:14:46,751 saml2.entity:DEBUG Binding: urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect
+2015-04-21 11:14:46,752 saml2.request:DEBUG xmlstr: <?xml version="1.0" encoding="UTF-8"?>
+<ns0:AuthnRequest xmlns:ns0="urn:oasis:names:tc:SAML:2.0:protocol" xmlns:ns1="urn:oasis:names:tc:SAML:2.0:assertion" xmlns:ns2="http://www.w3.org/2000/09/xmldsig#" xmlns:ns3="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:ns4="urn:net:eustix:names:tc:PEFIM:0.0:assertion" AssertionConsumerServiceURL="https://localhost:8990/pvp2_sp/acs/post" Destination="https://localhost:8088/sso/redirect" ID="id-R4p0e20HfxMsBuNp0" IssueInstant="2015-04-21T11:14:37Z" ProtocolBinding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Version="2.0"><ns1:Issuer Format="urn:oasis:names:tc:SAML:2.0:nameid-format:entity">https://localhost:8990/pvp2_spproxy.xml</ns1:Issuer><ns2:Signature Id="Signature1"><ns2:SignedInfo><ns2:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><ns2:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/><ns2:Reference URI="#id-R4p0e20HfxMsBuNp0"><ns2:Transforms><ns2:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/><ns2:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></ns2:Transforms><ns2:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><ns2:DigestValue>GW62RhRbtAG/bqSg8qp9dCZqOi8=</ns2:DigestValue></ns2:Reference></ns2:SignedInfo><ns2:SignatureValue>oL8qWX5TGCmg4dRE24BRuu6BRH730xVWGfCb6eoe8J5a2kiluiocUITXYVKfrtXz
+s9YdUIVdrKZ5lAJbp4+ENst6MMnASEPTwuywx9ElB42mjMBtbukReIeNymju0oSv
+mM9AREFGxDhfzIW+mIYoWzs1UXLCGajYGLpOaf5r1Bs=</ns2:SignatureValue><ns2:KeyInfo><ns2:X509Data><ns2:X509Certificate>MIICIzCCAYwCAXcwDQYJKoZIhvcNAQELBQAwWjELMAkGA1UEBhMCc2UxCzAJBgNVBAgTAmFjMQ0wCwYDVQQHEwRVbWVhMQwwCgYDVQQKEwNJVFMxDTALBgNVBAsTBERJUkcxEjAQBgNVBAMTCWxvY2FsaG9zdDAeFw0xNDAzMTkxNzE5MzlaFw0yNDAzMTYxNzE5MzlaMFoxCzAJBgNVBAYTAnNlMQswCQYDVQQIEwJhYzENMAsGA1UEBxMEVW1lYTEMMAoGA1UEChMDSVRTMQ0wCwYDVQQLEwRESVJHMRIwEAYDVQQDEwlsb2NhbGhvc3QwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBALswQbMz6dKL4FEKu+O3GYDfaniyxcfizsHaiehuh5jufrlGZw/zMMttteTRhpjtTFN2/R68d1kh8pmO+HV7u+53h+C33I178ZsOquSovGe1AWmzDzp2j6CRdQYdZaMCc4YxtwEXs7570YmnPLKhz8aHdiQRHhtx1cqdPPStkz67AgMBAAEwDQYJKoZIhvcNAQELBQADgYEApQ5znEdhsJBs+ew81X9pkUKZ/ruu/p2OPfYmKzdFnK6mq9bF5CEIaIkvbSJjpECicmGCNw9ATJXylnwFLnfxw6d+YGi4XPuo64NSG00ycnMSTMJ8OR5ForcF89v72BLRDYo6yXeNDw722ul0lPzH54CNQzsm4N/5w5iStnOT1TQ=</ns2:X509Certificate></ns2:X509Data></ns2:KeyInfo></ns2:Signature><ns3:Extensions><ns4:SPCertEnc><ns2:X509Data><ns2:X509Certificate>-----BEGIN CERTIFICATE-----
+MIICujCCAiMCAQEwDQYJKoZIhvcNAQELBQAwbTELMAkGA1UEBhMCc2UxCzAJBgNV
+BAgTAmFjMQ0wCwYDVQQHEwR1bWVhMRwwGgYDVQQKExNJVFMgVW1lYSBVbml2ZXJz
+aXR5MQ0wCwYDVQQLEwRESVJHMRUwEwYDVQQDEwxsb2NhbGhvc3QuY2EwHhcNMTUw
+NDIxMTExNDM3WhcNMjUwNDE4MTExNDM3WjBaMQswCQYDVQQGEwJzZTELMAkGA1UE
+CAwCYWMxDTALBgNVBAcMBFVtZWExDDAKBgNVBAoMA0lUUzENMAsGA1UECwwERElS
+RzESMBAGA1UEAwwJbG9jYWxob3N0MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIB
+CgKCAQEArQaLrGkzbw/VRvLP3dFjvREximEoUoKtcfTxCgZpUcC75wYIRmPNv/5W
+bUVvr8qSPFw8bx9hCiX/KlfEvFsyEW6zHwmcaz35R04TMC8ja3kxYdToY8Zsvp7Y
+L0PG0uZQMvqzUE6N/cJt2vpLV2HN0/j5lOemzyBYbls9qd3kcJUGHMO9fPSFFJsO
+shunjhH2qEn1abLnxknjTp7bdOK/DeWpUeOb0ggZNveWvOfAHmsrtY1hTAtKvIBF
+mOSyUCZMBZ+hQ6D3zT8AsNtH4oLJoTpqrBwk2gSgu+RGrZeVUnbhhVvVfmjv0qg6
++9nCjeSPRH8nmXKvwCwaGfvZvWvblQIDAQABMA0GCSqGSIb3DQEBCwUAA4GBACLL
+6SAs39R2NX+OByxvkWm1HtIHggC7KGLVlPGXteIOOBX3/gs4qvw3jFDtfJ9KAfQn
+SvrTHhU7QuXjuasYLJKv9NgvO2qjWlObXjHtQgQzI9kpZg5gz8tDpkSYwkhmGJnk
+1HPDk8HUwfWCoo2iFLVmkov/aI3CknuHaKcOjMmS
+-----END CERTIFICATE-----
+</ns2:X509Certificate></ns2:X509Data></ns4:SPCertEnc></ns3:Extensions><ns0:NameIDPolicy AllowCreate="false" Format="urn:oasis:names:tc:SAML:2.0:nameid-format:persistent"/></ns0:AuthnRequest>
+
+2015-04-21 11:14:46,754 saml2.sigver:DEBUG ==== Certs from metadata ==== https://localhost:8990/pvp2_spproxy.xml: [(<open file '<fdopen>', mode 'w+b' at 0x7fbf04ea3420>, '/tmp/tmpKj9h7F.pem')] ====
+2015-04-21 11:14:46,754 saml2.sigver:DEBUG xmlsec command: /usr/bin/xmlsec1 --verify --pubkey-cert-pem /tmp/tmpKj9h7F.pem --id-attr:ID urn:oasis:names:tc:SAML:2.0:protocol:AuthnRequest --store-signatures --node-id id-R4p0e20HfxMsBuNp0 --output /tmp/tmpjv1w9n.xml /tmp/tmp8NBtHT.xml
+2015-04-21 11:14:46,764 saml2.sigver:ERROR ============================================================
+= VERIFICATION CONTEXT
+== Status: unknown
+== flags: 0x00000008
+== flags2: 0x00000000
+== Key Info Read Ctx:
+= KEY INFO READ CONTEXT
+== flags: 0x00000000
+== flags2: 0x00000000
+== enabled key data: all
+== RetrievalMethod level (cur/max): 0/1
+== TRANSFORMS CTX (status=0)
+== flags: 0x00000000
+== flags2: 0x00000000
+== enabled transforms: all
+=== uri: NULL
+=== uri xpointer expr: NULL
+== EncryptedKey level (cur/max): 0/1
+=== KeyReq:
+==== keyId: NULL
+==== keyType: 0x00000000
+==== keyUsage: 0xffffffff
+==== keyBitsSize: 0
+=== list size: 0
+== Key Info Write Ctx:
+= KEY INFO WRITE CONTEXT
+== flags: 0x00000000
+== flags2: 0x00000000
+== enabled key data: all
+== RetrievalMethod level (cur/max): 0/1
+== TRANSFORMS CTX (status=0)
+== flags: 0x00000000
+== flags2: 0x00000000
+== enabled transforms: all
+=== uri: NULL
+=== uri xpointer expr: NULL
+== EncryptedKey level (cur/max): 0/1
+=== KeyReq:
+==== keyId: NULL
+==== keyType: 0x00000001
+==== keyUsage: 0xffffffff
+==== keyBitsSize: 0
+=== list size: 0
+== Signature Transform Ctx:
+== TRANSFORMS CTX (status=0)
+== flags: 0x00000000
+== flags2: 0x00000000
+== enabled transforms: all
+=== uri: NULL
+=== uri xpointer expr: NULL
+== SignedInfo References List:
+=== list size: 0
+== Manifest References List:
+=== list size: 0
+
+/tmp/tmp8NBtHT.xml:1: parser error : Start tag expected, '<' not found
+nVfJcuLIFt3zFQ566XBpYCba1ZGaBZJAEyA2LzShAU0oJaXQ17eActlV7a6o1145D3mnc++5JH/+1abJ
+^
+Error: failed to parse xml file "/tmp/tmp8NBtHT.xml"
+Error: failed to load document "/tmp/tmp8NBtHT.xml"
+ERROR
+SignedInfo References (ok/all): 0/0
+Manifests References (ok/all): 0/0
+Error: failed to verify file "/tmp/tmp8NBtHT.xml"
+
+------------------------------------------------------------
+/tmp/tmp8NBtHT.xml:1: parser error : Start tag expected, '<' not found
+nVfJcuLIFt3zFQ566XBpYCba1ZGaBZJAEyA2LzShAU0oJaXQ17eActlV7a6o1145D3mnc++5JH/+1abJ
+^
+Error: failed to parse xml file "/tmp/tmp8NBtHT.xml"
+Error: failed to load document "/tmp/tmp8NBtHT.xml"
+ERROR
+SignedInfo References (ok/all): 0/0
+Manifests References (ok/all): 0/0
+Error: failed to verify file "/tmp/tmp8NBtHT.xml"
+============================================================
+2015-04-21 11:14:46,765 saml2.sigver:DEBUG xmlsec command: /usr/bin/xmlsec1 --verify --pubkey-cert-pem /tmp/tmpKj9h7F.pem --id-attr:ID urn:oasis:names:tc:SAML:2.0:protocol:AuthnRequest --store-signatures --node-id id-R4p0e20HfxMsBuNp0 --output /tmp/tmpfKuDnk.xml /tmp/tmpkZisZV.xml
+2015-04-21 11:14:46,776 saml2.request:INFO request: <?xml version='1.0' encoding='UTF-8'?>
+<ns0:AuthnRequest xmlns:ns0="urn:oasis:names:tc:SAML:2.0:protocol" xmlns:ns1="urn:oasis:names:tc:SAML:2.0:assertion" xmlns:ns2="http://www.w3.org/2000/09/xmldsig#" xmlns:ns3="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:ns4="urn:net:eustix:names:tc:PEFIM:0.0:assertion" AssertionConsumerServiceURL="https://localhost:8990/pvp2_sp/acs/post" Destination="https://localhost:8088/sso/redirect" ID="id-R4p0e20HfxMsBuNp0" IssueInstant="2015-04-21T11:14:37Z" ProtocolBinding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Version="2.0"><ns1:Issuer Format="urn:oasis:names:tc:SAML:2.0:nameid-format:entity">https://localhost:8990/pvp2_spproxy.xml</ns1:Issuer><ns2:Signature Id="Signature1"><ns2:SignedInfo><ns2:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><ns2:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><ns2:Reference URI="#id-R4p0e20HfxMsBuNp0"><ns2:Transforms><ns2:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><ns2:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></ns2:Transforms><ns2:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><ns2:DigestValue>GW62RhRbtAG/bqSg8qp9dCZqOi8=</ns2:DigestValue></ns2:Reference></ns2:SignedInfo><ns2:SignatureValue>oL8qWX5TGCmg4dRE24BRuu6BRH730xVWGfCb6eoe8J5a2kiluiocUITXYVKfrtXz
+s9YdUIVdrKZ5lAJbp4+ENst6MMnASEPTwuywx9ElB42mjMBtbukReIeNymju0oSv
+mM9AREFGxDhfzIW+mIYoWzs1UXLCGajYGLpOaf5r1Bs=</ns2:SignatureValue><ns2:KeyInfo><ns2:X509Data><ns2:X509Certificate>MIICIzCCAYwCAXcwDQYJKoZIhvcNAQELBQAwWjELMAkGA1UEBhMCc2UxCzAJBgNVBAgTAmFjMQ0wCwYDVQQHEwRVbWVhMQwwCgYDVQQKEwNJVFMxDTALBgNVBAsTBERJUkcxEjAQBgNVBAMTCWxvY2FsaG9zdDAeFw0xNDAzMTkxNzE5MzlaFw0yNDAzMTYxNzE5MzlaMFoxCzAJBgNVBAYTAnNlMQswCQYDVQQIEwJhYzENMAsGA1UEBxMEVW1lYTEMMAoGA1UEChMDSVRTMQ0wCwYDVQQLEwRESVJHMRIwEAYDVQQDEwlsb2NhbGhvc3QwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBALswQbMz6dKL4FEKu+O3GYDfaniyxcfizsHaiehuh5jufrlGZw/zMMttteTRhpjtTFN2/R68d1kh8pmO+HV7u+53h+C33I178ZsOquSovGe1AWmzDzp2j6CRdQYdZaMCc4YxtwEXs7570YmnPLKhz8aHdiQRHhtx1cqdPPStkz67AgMBAAEwDQYJKoZIhvcNAQELBQADgYEApQ5znEdhsJBs+ew81X9pkUKZ/ruu/p2OPfYmKzdFnK6mq9bF5CEIaIkvbSJjpECicmGCNw9ATJXylnwFLnfxw6d+YGi4XPuo64NSG00ycnMSTMJ8OR5ForcF89v72BLRDYo6yXeNDw722ul0lPzH54CNQzsm4N/5w5iStnOT1TQ=</ns2:X509Certificate></ns2:X509Data></ns2:KeyInfo></ns2:Signature><ns0:NameIDPolicy AllowCreate="false" Format="urn:oasis:names:tc:SAML:2.0:nameid-format:persistent" /><ns3:Extensions><ns4:SPCertEnc><ns2:X509Data><ns2:X509Certificate>-----BEGIN CERTIFICATE-----
+MIICujCCAiMCAQEwDQYJKoZIhvcNAQELBQAwbTELMAkGA1UEBhMCc2UxCzAJBgNV
+BAgTAmFjMQ0wCwYDVQQHEwR1bWVhMRwwGgYDVQQKExNJVFMgVW1lYSBVbml2ZXJz
+aXR5MQ0wCwYDVQQLEwRESVJHMRUwEwYDVQQDEwxsb2NhbGhvc3QuY2EwHhcNMTUw
+NDIxMTExNDM3WhcNMjUwNDE4MTExNDM3WjBaMQswCQYDVQQGEwJzZTELMAkGA1UE
+CAwCYWMxDTALBgNVBAcMBFVtZWExDDAKBgNVBAoMA0lUUzENMAsGA1UECwwERElS
+RzESMBAGA1UEAwwJbG9jYWxob3N0MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIB
+CgKCAQEArQaLrGkzbw/VRvLP3dFjvREximEoUoKtcfTxCgZpUcC75wYIRmPNv/5W
+bUVvr8qSPFw8bx9hCiX/KlfEvFsyEW6zHwmcaz35R04TMC8ja3kxYdToY8Zsvp7Y
+L0PG0uZQMvqzUE6N/cJt2vpLV2HN0/j5lOemzyBYbls9qd3kcJUGHMO9fPSFFJsO
+shunjhH2qEn1abLnxknjTp7bdOK/DeWpUeOb0ggZNveWvOfAHmsrtY1hTAtKvIBF
+mOSyUCZMBZ+hQ6D3zT8AsNtH4oLJoTpqrBwk2gSgu+RGrZeVUnbhhVvVfmjv0qg6
++9nCjeSPRH8nmXKvwCwaGfvZvWvblQIDAQABMA0GCSqGSIb3DQEBCwUAA4GBACLL
+6SAs39R2NX+OByxvkWm1HtIHggC7KGLVlPGXteIOOBX3/gs4qvw3jFDtfJ9KAfQn
+SvrTHhU7QuXjuasYLJKv9NgvO2qjWlObXjHtQgQzI9kpZg5gz8tDpkSYwkhmGJnk
+1HPDk8HUwfWCoo2iFLVmkov/aI3CknuHaKcOjMmS
+-----END CERTIFICATE-----
+</ns2:X509Certificate></ns2:X509Data></ns4:SPCertEnc></ns3:Extensions></ns0:AuthnRequest>
+2015-04-21 11:14:46,777 saml2.entity:DEBUG Loaded request
+2015-04-21 11:14:46,778 saml2.entity:DEBUG Verified request
+2015-04-21 11:14:52,456 saml2.mdstore:DEBUG service(https://localhost:8990/pvp2_spproxy.xml, spsso_descriptor, assertion_consumer_service, urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST)
+2015-04-21 11:14:52,457 saml2.mdstore:DEBUG service => [{'index': '1', 'binding': 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST', '__class__': 'urn:oasis:names:tc:SAML:2.0:metadata&AssertionConsumerService', 'location': 'https://localhost:8990/pvp2_sp/acs/post'}]
+2015-04-21 11:14:52,457 saml2.mdstore:DEBUG service(https://localhost:8990/pvp2_spproxy.xml, spsso_descriptor, assertion_consumer_service, urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST)
+2015-04-21 11:14:52,458 saml2.mdstore:DEBUG service => [{'index': '1', 'binding': 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST', '__class__': 'urn:oasis:names:tc:SAML:2.0:metadata&AssertionConsumerService', 'location': 'https://localhost:8990/pvp2_sp/acs/post'}]
+2015-04-21 11:14:52,461 saml2.ident:DEBUG failed to find userid testuser in IdentDB
+2015-04-21 11:14:52,462 saml2.ident:DEBUG local_policy: <saml2.assertion.Policy object at 0x7fbf04f55bd0>, name_id_policy: <?xml version='1.0' encoding='UTF-8'?>
+<ns0:NameIDPolicy xmlns:ns0="urn:oasis:names:tc:SAML:2.0:protocol" AllowCreate="false" Format="urn:oasis:names:tc:SAML:2.0:nameid-format:persistent" />
+2015-04-21 11:14:52,463 saml2.server:DEBUG construct_nameid: testuser => <?xml version='1.0' encoding='UTF-8'?>
+<ns0:NameID xmlns:ns0="urn:oasis:names:tc:SAML:2.0:assertion" Format="urn:oasis:names:tc:SAML:2.0:nameid-format:persistent" NameQualifier="https://localhost:8088/TestPEFIMIdP.xml" SPNameQualifier="https://localhost:8990/pvp2_spproxy.xml">testuser</ns0:NameID>
+2015-04-21 11:14:52,470 saml2.sigver:DEBUG xmlsec command: /usr/bin/xmlsec1 encrypt --pubkey-cert-pem /tmp/tmpKyrN4U --session-key des-192 --xml-data /tmp/tmpU9KsQD --node-xpath /*[local-name()="Response"]/*[local-name()="Assertion"]/*[local-name()="Advice"]/*[local-name()="EncryptedAssertion"]/*[local-name()="Assertion"] --output /tmp/tmps9EXjf.xml /tmp/tmpHpOIh7
+2015-04-21 11:14:52,482 saml2.sigver:DEBUG xmlsec command: /usr/bin/xmlsec1 --sign --privkey-pem /opt/pefim/etc/pki/mykey.pem --id-attr:ID urn:oasis:names:tc:SAML:2.0:protocol:Response --node-id id-9nQJWViiIU5NHZsRS --output /tmp/tmpomlici.xml /tmp/tmpw_Ztai.xml
+2015-04-21 11:14:52,495 saml2.entity:INFO HTTP POST
+2015-04-21 11:26:52,491 saml2:INFO Logging started
+2015-04-21 11:27:10,401 saml2.entity:DEBUG receiver addresses: ['https://localhost:8088/sso/redirect']
+2015-04-21 11:27:10,402 saml2.entity:DEBUG Binding: urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect
+2015-04-21 11:27:10,402 saml2.request:DEBUG xmlstr: <?xml version="1.0" encoding="UTF-8"?>
+<ns0:AuthnRequest xmlns:ns0="urn:oasis:names:tc:SAML:2.0:protocol" xmlns:ns1="urn:oasis:names:tc:SAML:2.0:assertion" xmlns:ns2="http://www.w3.org/2000/09/xmldsig#" xmlns:ns3="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:ns4="urn:net:eustix:names:tc:PEFIM:0.0:assertion" AssertionConsumerServiceURL="https://localhost:8990/pvp2_sp/acs/post" Destination="https://localhost:8088/sso/redirect" ID="id-2tC2EAHQSzDv0IJGU" IssueInstant="2015-04-21T11:27:10Z" ProtocolBinding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Version="2.0"><ns1:Issuer Format="urn:oasis:names:tc:SAML:2.0:nameid-format:entity">https://localhost:8990/pvp2_spproxy.xml</ns1:Issuer><ns2:Signature Id="Signature1"><ns2:SignedInfo><ns2:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><ns2:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/><ns2:Reference URI="#id-2tC2EAHQSzDv0IJGU"><ns2:Transforms><ns2:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/><ns2:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></ns2:Transforms><ns2:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><ns2:DigestValue>hQ+xu907q0cKcWA9rlQmaBow7VI=</ns2:DigestValue></ns2:Reference></ns2:SignedInfo><ns2:SignatureValue>eN/bM7vYaGfywCV2ClpKBk84TQExPnzDbLgJX5eCLi0qvZq+0cCpXtkphJj0A4PK
+8/M7LIGQIcHYGFup6qzQip6eEOTfMNU4oOQBY2incwYWZMi3GJfZTrYo8vWghz/w
+CrDlnd54hTjJ2vBXE+Idj+WN677k1DSva4v8CAGhR1U=</ns2:SignatureValue><ns2:KeyInfo><ns2:X509Data><ns2:X509Certificate>MIICIzCCAYwCAXcwDQYJKoZIhvcNAQELBQAwWjELMAkGA1UEBhMCc2UxCzAJBgNVBAgTAmFjMQ0wCwYDVQQHEwRVbWVhMQwwCgYDVQQKEwNJVFMxDTALBgNVBAsTBERJUkcxEjAQBgNVBAMTCWxvY2FsaG9zdDAeFw0xNDAzMTkxNzE5MzlaFw0yNDAzMTYxNzE5MzlaMFoxCzAJBgNVBAYTAnNlMQswCQYDVQQIEwJhYzENMAsGA1UEBxMEVW1lYTEMMAoGA1UEChMDSVRTMQ0wCwYDVQQLEwRESVJHMRIwEAYDVQQDEwlsb2NhbGhvc3QwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBALswQbMz6dKL4FEKu+O3GYDfaniyxcfizsHaiehuh5jufrlGZw/zMMttteTRhpjtTFN2/R68d1kh8pmO+HV7u+53h+C33I178ZsOquSovGe1AWmzDzp2j6CRdQYdZaMCc4YxtwEXs7570YmnPLKhz8aHdiQRHhtx1cqdPPStkz67AgMBAAEwDQYJKoZIhvcNAQELBQADgYEApQ5znEdhsJBs+ew81X9pkUKZ/ruu/p2OPfYmKzdFnK6mq9bF5CEIaIkvbSJjpECicmGCNw9ATJXylnwFLnfxw6d+YGi4XPuo64NSG00ycnMSTMJ8OR5ForcF89v72BLRDYo6yXeNDw722ul0lPzH54CNQzsm4N/5w5iStnOT1TQ=</ns2:X509Certificate></ns2:X509Data></ns2:KeyInfo></ns2:Signature><ns3:Extensions><ns4:SPCertEnc><ns2:X509Data><ns2:X509Certificate>-----BEGIN CERTIFICATE-----
+MIICujCCAiMCAQEwDQYJKoZIhvcNAQELBQAwbTELMAkGA1UEBhMCc2UxCzAJBgNV
+BAgTAmFjMQ0wCwYDVQQHEwR1bWVhMRwwGgYDVQQKExNJVFMgVW1lYSBVbml2ZXJz
+aXR5MQ0wCwYDVQQLEwRESVJHMRUwEwYDVQQDEwxsb2NhbGhvc3QuY2EwHhcNMTUw
+NDIxMTEyNzEwWhcNMjUwNDE4MTEyNzEwWjBaMQswCQYDVQQGEwJzZTELMAkGA1UE
+CAwCYWMxDTALBgNVBAcMBFVtZWExDDAKBgNVBAoMA0lUUzENMAsGA1UECwwERElS
+RzESMBAGA1UEAwwJbG9jYWxob3N0MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIB
+CgKCAQEA3vZSuvfgpLdGFaF27ehY0FsdIAcZ9OsJo4Ez/+Iq8gOAtdPe77j77ri0
+UC05lbaAvjpeD2L7pF0io5s+dwssL2FwGDBzXp86O+6h5P/iua0ZglOjKOZNFH27
+tkchKxWLpY1KqIgwD8C9oMZheabfDWg7d39ev5xTO0wu+Az29kBXottj6a12/i4U
+OmRmgbwb8l0cAeWSncSsc+khKLzDsp2iISFXg/lD5Z0QD2cCeIijpVouULQLQCU0
+0QYVl5op/8qXmy5JIgRa/AafVjdgg28N61Sw6cm5Bqr//H4aMIlyQhZBcxJ24KiK
+7E3XtZu3M8gnzaatvWMee42rcF0BSQIDAQABMA0GCSqGSIb3DQEBCwUAA4GBACQD
+t1xKQwtWZXW0oPtUcvEnUN0yXN0U6b0z4dPbQP1U1Aqm7+iI7jii4dSaxmq9AoJP
+gxwiYPowypFTjO+oGpJoEv7qs4O64eVffaob8KjVVOUlbQUJNvVXL91Zg0z7ce8J
+KNI0KXFU6Vvy58OT2v0tqXZZ4fwo89KBio+VBZcT
+-----END CERTIFICATE-----
+</ns2:X509Certificate></ns2:X509Data></ns4:SPCertEnc></ns3:Extensions><ns0:NameIDPolicy AllowCreate="false" Format="urn:oasis:names:tc:SAML:2.0:nameid-format:persistent"/></ns0:AuthnRequest>
+
+2015-04-21 11:27:10,404 saml2.sigver:DEBUG ==== Certs from metadata ==== https://localhost:8990/pvp2_spproxy.xml: [(<open file '<fdopen>', mode 'w+b' at 0x7f2f0b6ab300>, '/tmp/tmpKPM_cf.pem')] ====
+2015-04-21 11:27:10,405 saml2.sigver:DEBUG xmlsec command: /usr/bin/xmlsec1 --verify --pubkey-cert-pem /tmp/tmpKPM_cf.pem --id-attr:ID urn:oasis:names:tc:SAML:2.0:protocol:AuthnRequest --store-signatures --node-id id-2tC2EAHQSzDv0IJGU --output /tmp/tmpUjTlO0.xml /tmp/tmpHZyvnf.xml
+2015-04-21 11:27:10,415 saml2.sigver:ERROR ============================================================
+= VERIFICATION CONTEXT
+== Status: unknown
+== flags: 0x00000008
+== flags2: 0x00000000
+== Key Info Read Ctx:
+= KEY INFO READ CONTEXT
+== flags: 0x00000000
+== flags2: 0x00000000
+== enabled key data: all
+== RetrievalMethod level (cur/max): 0/1
+== TRANSFORMS CTX (status=0)
+== flags: 0x00000000
+== flags2: 0x00000000
+== enabled transforms: all
+=== uri: NULL
+=== uri xpointer expr: NULL
+== EncryptedKey level (cur/max): 0/1
+=== KeyReq:
+==== keyId: NULL
+==== keyType: 0x00000000
+==== keyUsage: 0xffffffff
+==== keyBitsSize: 0
+=== list size: 0
+== Key Info Write Ctx:
+= KEY INFO WRITE CONTEXT
+== flags: 0x00000000
+== flags2: 0x00000000
+== enabled key data: all
+== RetrievalMethod level (cur/max): 0/1
+== TRANSFORMS CTX (status=0)
+== flags: 0x00000000
+== flags2: 0x00000000
+== enabled transforms: all
+=== uri: NULL
+=== uri xpointer expr: NULL
+== EncryptedKey level (cur/max): 0/1
+=== KeyReq:
+==== keyId: NULL
+==== keyType: 0x00000001
+==== keyUsage: 0xffffffff
+==== keyBitsSize: 0
+=== list size: 0
+== Signature Transform Ctx:
+== TRANSFORMS CTX (status=0)
+== flags: 0x00000000
+== flags2: 0x00000000
+== enabled transforms: all
+=== uri: NULL
+=== uri xpointer expr: NULL
+== SignedInfo References List:
+=== list size: 0
+== Manifest References List:
+=== list size: 0
+
+/tmp/tmpHZyvnf.xml:1: parser error : Start tag expected, '<' not found
+nVdZk6JIF333V1TYj0Y1iyhodPVEsgoIioAKL18gpIAioCyJ/PpB7Vq6p6ajv/HJPOTdTt5zSb791ZyS
+^
+Error: failed to parse xml file "/tmp/tmpHZyvnf.xml"
+Error: failed to load document "/tmp/tmpHZyvnf.xml"
+ERROR
+SignedInfo References (ok/all): 0/0
+Manifests References (ok/all): 0/0
+Error: failed to verify file "/tmp/tmpHZyvnf.xml"
+
+------------------------------------------------------------
+/tmp/tmpHZyvnf.xml:1: parser error : Start tag expected, '<' not found
+nVdZk6JIF333V1TYj0Y1iyhodPVEsgoIioAKL18gpIAioCyJ/PpB7Vq6p6ajv/HJPOTdTt5zSb791ZyS
+^
+Error: failed to parse xml file "/tmp/tmpHZyvnf.xml"
+Error: failed to load document "/tmp/tmpHZyvnf.xml"
+ERROR
+SignedInfo References (ok/all): 0/0
+Manifests References (ok/all): 0/0
+Error: failed to verify file "/tmp/tmpHZyvnf.xml"
+============================================================
+2015-04-21 11:27:10,416 saml2.sigver:DEBUG xmlsec command: /usr/bin/xmlsec1 --verify --pubkey-cert-pem /tmp/tmpKPM_cf.pem --id-attr:ID urn:oasis:names:tc:SAML:2.0:protocol:AuthnRequest --store-signatures --node-id id-2tC2EAHQSzDv0IJGU --output /tmp/tmpPd1rCg.xml /tmp/tmpguPJtA.xml
+2015-04-21 11:27:10,428 saml2.request:INFO request: <?xml version='1.0' encoding='UTF-8'?>
+<ns0:AuthnRequest xmlns:ns0="urn:oasis:names:tc:SAML:2.0:protocol" xmlns:ns1="urn:oasis:names:tc:SAML:2.0:assertion" xmlns:ns2="http://www.w3.org/2000/09/xmldsig#" xmlns:ns3="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:ns4="urn:net:eustix:names:tc:PEFIM:0.0:assertion" AssertionConsumerServiceURL="https://localhost:8990/pvp2_sp/acs/post" Destination="https://localhost:8088/sso/redirect" ID="id-2tC2EAHQSzDv0IJGU" IssueInstant="2015-04-21T11:27:10Z" ProtocolBinding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Version="2.0"><ns1:Issuer Format="urn:oasis:names:tc:SAML:2.0:nameid-format:entity">https://localhost:8990/pvp2_spproxy.xml</ns1:Issuer><ns2:Signature Id="Signature1"><ns2:SignedInfo><ns2:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><ns2:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><ns2:Reference URI="#id-2tC2EAHQSzDv0IJGU"><ns2:Transforms><ns2:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><ns2:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></ns2:Transforms><ns2:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><ns2:DigestValue>hQ+xu907q0cKcWA9rlQmaBow7VI=</ns2:DigestValue></ns2:Reference></ns2:SignedInfo><ns2:SignatureValue>eN/bM7vYaGfywCV2ClpKBk84TQExPnzDbLgJX5eCLi0qvZq+0cCpXtkphJj0A4PK
+8/M7LIGQIcHYGFup6qzQip6eEOTfMNU4oOQBY2incwYWZMi3GJfZTrYo8vWghz/w
+CrDlnd54hTjJ2vBXE+Idj+WN677k1DSva4v8CAGhR1U=</ns2:SignatureValue><ns2:KeyInfo><ns2:X509Data><ns2:X509Certificate>MIICIzCCAYwCAXcwDQYJKoZIhvcNAQELBQAwWjELMAkGA1UEBhMCc2UxCzAJBgNVBAgTAmFjMQ0wCwYDVQQHEwRVbWVhMQwwCgYDVQQKEwNJVFMxDTALBgNVBAsTBERJUkcxEjAQBgNVBAMTCWxvY2FsaG9zdDAeFw0xNDAzMTkxNzE5MzlaFw0yNDAzMTYxNzE5MzlaMFoxCzAJBgNVBAYTAnNlMQswCQYDVQQIEwJhYzENMAsGA1UEBxMEVW1lYTEMMAoGA1UEChMDSVRTMQ0wCwYDVQQLEwRESVJHMRIwEAYDVQQDEwlsb2NhbGhvc3QwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBALswQbMz6dKL4FEKu+O3GYDfaniyxcfizsHaiehuh5jufrlGZw/zMMttteTRhpjtTFN2/R68d1kh8pmO+HV7u+53h+C33I178ZsOquSovGe1AWmzDzp2j6CRdQYdZaMCc4YxtwEXs7570YmnPLKhz8aHdiQRHhtx1cqdPPStkz67AgMBAAEwDQYJKoZIhvcNAQELBQADgYEApQ5znEdhsJBs+ew81X9pkUKZ/ruu/p2OPfYmKzdFnK6mq9bF5CEIaIkvbSJjpECicmGCNw9ATJXylnwFLnfxw6d+YGi4XPuo64NSG00ycnMSTMJ8OR5ForcF89v72BLRDYo6yXeNDw722ul0lPzH54CNQzsm4N/5w5iStnOT1TQ=</ns2:X509Certificate></ns2:X509Data></ns2:KeyInfo></ns2:Signature><ns0:NameIDPolicy AllowCreate="false" Format="urn:oasis:names:tc:SAML:2.0:nameid-format:persistent" /><ns3:Extensions><ns4:SPCertEnc><ns2:X509Data><ns2:X509Certificate>-----BEGIN CERTIFICATE-----
+MIICujCCAiMCAQEwDQYJKoZIhvcNAQELBQAwbTELMAkGA1UEBhMCc2UxCzAJBgNV
+BAgTAmFjMQ0wCwYDVQQHEwR1bWVhMRwwGgYDVQQKExNJVFMgVW1lYSBVbml2ZXJz
+aXR5MQ0wCwYDVQQLEwRESVJHMRUwEwYDVQQDEwxsb2NhbGhvc3QuY2EwHhcNMTUw
+NDIxMTEyNzEwWhcNMjUwNDE4MTEyNzEwWjBaMQswCQYDVQQGEwJzZTELMAkGA1UE
+CAwCYWMxDTALBgNVBAcMBFVtZWExDDAKBgNVBAoMA0lUUzENMAsGA1UECwwERElS
+RzESMBAGA1UEAwwJbG9jYWxob3N0MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIB
+CgKCAQEA3vZSuvfgpLdGFaF27ehY0FsdIAcZ9OsJo4Ez/+Iq8gOAtdPe77j77ri0
+UC05lbaAvjpeD2L7pF0io5s+dwssL2FwGDBzXp86O+6h5P/iua0ZglOjKOZNFH27
+tkchKxWLpY1KqIgwD8C9oMZheabfDWg7d39ev5xTO0wu+Az29kBXottj6a12/i4U
+OmRmgbwb8l0cAeWSncSsc+khKLzDsp2iISFXg/lD5Z0QD2cCeIijpVouULQLQCU0
+0QYVl5op/8qXmy5JIgRa/AafVjdgg28N61Sw6cm5Bqr//H4aMIlyQhZBcxJ24KiK
+7E3XtZu3M8gnzaatvWMee42rcF0BSQIDAQABMA0GCSqGSIb3DQEBCwUAA4GBACQD
+t1xKQwtWZXW0oPtUcvEnUN0yXN0U6b0z4dPbQP1U1Aqm7+iI7jii4dSaxmq9AoJP
+gxwiYPowypFTjO+oGpJoEv7qs4O64eVffaob8KjVVOUlbQUJNvVXL91Zg0z7ce8J
+KNI0KXFU6Vvy58OT2v0tqXZZ4fwo89KBio+VBZcT
+-----END CERTIFICATE-----
+</ns2:X509Certificate></ns2:X509Data></ns4:SPCertEnc></ns3:Extensions></ns0:AuthnRequest>
+2015-04-21 11:27:10,429 saml2.entity:DEBUG Loaded request
+2015-04-21 11:27:10,430 saml2.entity:DEBUG Verified request
+2015-04-21 11:27:10,457 saml2.idp:ERROR An error occured while creating metadata:'NoneType' object has no attribute '__getitem__'
+2015-04-21 11:27:18,875 saml2.entity:DEBUG receiver addresses: ['https://localhost:8088/sso/redirect']
+2015-04-21 11:27:18,876 saml2.entity:DEBUG Binding: urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect
+2015-04-21 11:27:18,877 saml2.request:DEBUG xmlstr: <?xml version="1.0" encoding="UTF-8"?>
+<ns0:AuthnRequest xmlns:ns0="urn:oasis:names:tc:SAML:2.0:protocol" xmlns:ns1="urn:oasis:names:tc:SAML:2.0:assertion" xmlns:ns2="http://www.w3.org/2000/09/xmldsig#" xmlns:ns3="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:ns4="urn:net:eustix:names:tc:PEFIM:0.0:assertion" AssertionConsumerServiceURL="https://localhost:8990/pvp2_sp/acs/post" Destination="https://localhost:8088/sso/redirect" ID="id-2tC2EAHQSzDv0IJGU" IssueInstant="2015-04-21T11:27:10Z" ProtocolBinding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Version="2.0"><ns1:Issuer Format="urn:oasis:names:tc:SAML:2.0:nameid-format:entity">https://localhost:8990/pvp2_spproxy.xml</ns1:Issuer><ns2:Signature Id="Signature1"><ns2:SignedInfo><ns2:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><ns2:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/><ns2:Reference URI="#id-2tC2EAHQSzDv0IJGU"><ns2:Transforms><ns2:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/><ns2:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></ns2:Transforms><ns2:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><ns2:DigestValue>hQ+xu907q0cKcWA9rlQmaBow7VI=</ns2:DigestValue></ns2:Reference></ns2:SignedInfo><ns2:SignatureValue>eN/bM7vYaGfywCV2ClpKBk84TQExPnzDbLgJX5eCLi0qvZq+0cCpXtkphJj0A4PK
+8/M7LIGQIcHYGFup6qzQip6eEOTfMNU4oOQBY2incwYWZMi3GJfZTrYo8vWghz/w
+CrDlnd54hTjJ2vBXE+Idj+WN677k1DSva4v8CAGhR1U=</ns2:SignatureValue><ns2:KeyInfo><ns2:X509Data><ns2:X509Certificate>MIICIzCCAYwCAXcwDQYJKoZIhvcNAQELBQAwWjELMAkGA1UEBhMCc2UxCzAJBgNVBAgTAmFjMQ0wCwYDVQQHEwRVbWVhMQwwCgYDVQQKEwNJVFMxDTALBgNVBAsTBERJUkcxEjAQBgNVBAMTCWxvY2FsaG9zdDAeFw0xNDAzMTkxNzE5MzlaFw0yNDAzMTYxNzE5MzlaMFoxCzAJBgNVBAYTAnNlMQswCQYDVQQIEwJhYzENMAsGA1UEBxMEVW1lYTEMMAoGA1UEChMDSVRTMQ0wCwYDVQQLEwRESVJHMRIwEAYDVQQDEwlsb2NhbGhvc3QwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBALswQbMz6dKL4FEKu+O3GYDfaniyxcfizsHaiehuh5jufrlGZw/zMMttteTRhpjtTFN2/R68d1kh8pmO+HV7u+53h+C33I178ZsOquSovGe1AWmzDzp2j6CRdQYdZaMCc4YxtwEXs7570YmnPLKhz8aHdiQRHhtx1cqdPPStkz67AgMBAAEwDQYJKoZIhvcNAQELBQADgYEApQ5znEdhsJBs+ew81X9pkUKZ/ruu/p2OPfYmKzdFnK6mq9bF5CEIaIkvbSJjpECicmGCNw9ATJXylnwFLnfxw6d+YGi4XPuo64NSG00ycnMSTMJ8OR5ForcF89v72BLRDYo6yXeNDw722ul0lPzH54CNQzsm4N/5w5iStnOT1TQ=</ns2:X509Certificate></ns2:X509Data></ns2:KeyInfo></ns2:Signature><ns3:Extensions><ns4:SPCertEnc><ns2:X509Data><ns2:X509Certificate>-----BEGIN CERTIFICATE-----
+MIICujCCAiMCAQEwDQYJKoZIhvcNAQELBQAwbTELMAkGA1UEBhMCc2UxCzAJBgNV
+BAgTAmFjMQ0wCwYDVQQHEwR1bWVhMRwwGgYDVQQKExNJVFMgVW1lYSBVbml2ZXJz
+aXR5MQ0wCwYDVQQLEwRESVJHMRUwEwYDVQQDEwxsb2NhbGhvc3QuY2EwHhcNMTUw
+NDIxMTEyNzEwWhcNMjUwNDE4MTEyNzEwWjBaMQswCQYDVQQGEwJzZTELMAkGA1UE
+CAwCYWMxDTALBgNVBAcMBFVtZWExDDAKBgNVBAoMA0lUUzENMAsGA1UECwwERElS
+RzESMBAGA1UEAwwJbG9jYWxob3N0MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIB
+CgKCAQEA3vZSuvfgpLdGFaF27ehY0FsdIAcZ9OsJo4Ez/+Iq8gOAtdPe77j77ri0
+UC05lbaAvjpeD2L7pF0io5s+dwssL2FwGDBzXp86O+6h5P/iua0ZglOjKOZNFH27
+tkchKxWLpY1KqIgwD8C9oMZheabfDWg7d39ev5xTO0wu+Az29kBXottj6a12/i4U
+OmRmgbwb8l0cAeWSncSsc+khKLzDsp2iISFXg/lD5Z0QD2cCeIijpVouULQLQCU0
+0QYVl5op/8qXmy5JIgRa/AafVjdgg28N61Sw6cm5Bqr//H4aMIlyQhZBcxJ24KiK
+7E3XtZu3M8gnzaatvWMee42rcF0BSQIDAQABMA0GCSqGSIb3DQEBCwUAA4GBACQD
+t1xKQwtWZXW0oPtUcvEnUN0yXN0U6b0z4dPbQP1U1Aqm7+iI7jii4dSaxmq9AoJP
+gxwiYPowypFTjO+oGpJoEv7qs4O64eVffaob8KjVVOUlbQUJNvVXL91Zg0z7ce8J
+KNI0KXFU6Vvy58OT2v0tqXZZ4fwo89KBio+VBZcT
+-----END CERTIFICATE-----
+</ns2:X509Certificate></ns2:X509Data></ns4:SPCertEnc></ns3:Extensions><ns0:NameIDPolicy AllowCreate="false" Format="urn:oasis:names:tc:SAML:2.0:nameid-format:persistent"/></ns0:AuthnRequest>
+
+2015-04-21 11:27:18,878 saml2.sigver:DEBUG ==== Certs from metadata ==== https://localhost:8990/pvp2_spproxy.xml: [(<open file '<fdopen>', mode 'w+b' at 0x7f2f0b6ab390>, '/tmp/tmpoqpRMk.pem')] ====
+2015-04-21 11:27:18,879 saml2.sigver:DEBUG xmlsec command: /usr/bin/xmlsec1 --verify --pubkey-cert-pem /tmp/tmpoqpRMk.pem --id-attr:ID urn:oasis:names:tc:SAML:2.0:protocol:AuthnRequest --store-signatures --node-id id-2tC2EAHQSzDv0IJGU --output /tmp/tmpHkxt0C.xml /tmp/tmpWf_3J9.xml
+2015-04-21 11:27:18,889 saml2.sigver:ERROR ============================================================
+= VERIFICATION CONTEXT
+== Status: unknown
+== flags: 0x00000008
+== flags2: 0x00000000
+== Key Info Read Ctx:
+= KEY INFO READ CONTEXT
+== flags: 0x00000000
+== flags2: 0x00000000
+== enabled key data: all
+== RetrievalMethod level (cur/max): 0/1
+== TRANSFORMS CTX (status=0)
+== flags: 0x00000000
+== flags2: 0x00000000
+== enabled transforms: all
+=== uri: NULL
+=== uri xpointer expr: NULL
+== EncryptedKey level (cur/max): 0/1
+=== KeyReq:
+==== keyId: NULL
+==== keyType: 0x00000000
+==== keyUsage: 0xffffffff
+==== keyBitsSize: 0
+=== list size: 0
+== Key Info Write Ctx:
+= KEY INFO WRITE CONTEXT
+== flags: 0x00000000
+== flags2: 0x00000000
+== enabled key data: all
+== RetrievalMethod level (cur/max): 0/1
+== TRANSFORMS CTX (status=0)
+== flags: 0x00000000
+== flags2: 0x00000000
+== enabled transforms: all
+=== uri: NULL
+=== uri xpointer expr: NULL
+== EncryptedKey level (cur/max): 0/1
+=== KeyReq:
+==== keyId: NULL
+==== keyType: 0x00000001
+==== keyUsage: 0xffffffff
+==== keyBitsSize: 0
+=== list size: 0
+== Signature Transform Ctx:
+== TRANSFORMS CTX (status=0)
+== flags: 0x00000000
+== flags2: 0x00000000
+== enabled transforms: all
+=== uri: NULL
+=== uri xpointer expr: NULL
+== SignedInfo References List:
+=== list size: 0
+== Manifest References List:
+=== list size: 0
+
+/tmp/tmpWf_3J9.xml:1: parser error : Start tag expected, '<' not found
+nVdZk6JIF333V1TYj0Y1iyhodPVEsgoIioAKL18gpIAioCyJ/PpB7Vq6p6ajv/HJPOTdTt5zSb791ZyS
+^
+Error: failed to parse xml file "/tmp/tmpWf_3J9.xml"
+Error: failed to load document "/tmp/tmpWf_3J9.xml"
+ERROR
+SignedInfo References (ok/all): 0/0
+Manifests References (ok/all): 0/0
+Error: failed to verify file "/tmp/tmpWf_3J9.xml"
+
+------------------------------------------------------------
+/tmp/tmpWf_3J9.xml:1: parser error : Start tag expected, '<' not found
+nVdZk6JIF333V1TYj0Y1iyhodPVEsgoIioAKL18gpIAioCyJ/PpB7Vq6p6ajv/HJPOTdTt5zSb791ZyS
+^
+Error: failed to parse xml file "/tmp/tmpWf_3J9.xml"
+Error: failed to load document "/tmp/tmpWf_3J9.xml"
+ERROR
+SignedInfo References (ok/all): 0/0
+Manifests References (ok/all): 0/0
+Error: failed to verify file "/tmp/tmpWf_3J9.xml"
+============================================================
+2015-04-21 11:27:18,890 saml2.sigver:DEBUG xmlsec command: /usr/bin/xmlsec1 --verify --pubkey-cert-pem /tmp/tmpoqpRMk.pem --id-attr:ID urn:oasis:names:tc:SAML:2.0:protocol:AuthnRequest --store-signatures --node-id id-2tC2EAHQSzDv0IJGU --output /tmp/tmpKZnERZ.xml /tmp/tmp6Wz0Nu.xml
+2015-04-21 11:27:18,901 saml2.request:INFO request: <?xml version='1.0' encoding='UTF-8'?>
+<ns0:AuthnRequest xmlns:ns0="urn:oasis:names:tc:SAML:2.0:protocol" xmlns:ns1="urn:oasis:names:tc:SAML:2.0:assertion" xmlns:ns2="http://www.w3.org/2000/09/xmldsig#" xmlns:ns3="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:ns4="urn:net:eustix:names:tc:PEFIM:0.0:assertion" AssertionConsumerServiceURL="https://localhost:8990/pvp2_sp/acs/post" Destination="https://localhost:8088/sso/redirect" ID="id-2tC2EAHQSzDv0IJGU" IssueInstant="2015-04-21T11:27:10Z" ProtocolBinding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Version="2.0"><ns1:Issuer Format="urn:oasis:names:tc:SAML:2.0:nameid-format:entity">https://localhost:8990/pvp2_spproxy.xml</ns1:Issuer><ns2:Signature Id="Signature1"><ns2:SignedInfo><ns2:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><ns2:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><ns2:Reference URI="#id-2tC2EAHQSzDv0IJGU"><ns2:Transforms><ns2:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><ns2:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></ns2:Transforms><ns2:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><ns2:DigestValue>hQ+xu907q0cKcWA9rlQmaBow7VI=</ns2:DigestValue></ns2:Reference></ns2:SignedInfo><ns2:SignatureValue>eN/bM7vYaGfywCV2ClpKBk84TQExPnzDbLgJX5eCLi0qvZq+0cCpXtkphJj0A4PK
+8/M7LIGQIcHYGFup6qzQip6eEOTfMNU4oOQBY2incwYWZMi3GJfZTrYo8vWghz/w
+CrDlnd54hTjJ2vBXE+Idj+WN677k1DSva4v8CAGhR1U=</ns2:SignatureValue><ns2:KeyInfo><ns2:X509Data><ns2:X509Certificate>MIICIzCCAYwCAXcwDQYJKoZIhvcNAQELBQAwWjELMAkGA1UEBhMCc2UxCzAJBgNVBAgTAmFjMQ0wCwYDVQQHEwRVbWVhMQwwCgYDVQQKEwNJVFMxDTALBgNVBAsTBERJUkcxEjAQBgNVBAMTCWxvY2FsaG9zdDAeFw0xNDAzMTkxNzE5MzlaFw0yNDAzMTYxNzE5MzlaMFoxCzAJBgNVBAYTAnNlMQswCQYDVQQIEwJhYzENMAsGA1UEBxMEVW1lYTEMMAoGA1UEChMDSVRTMQ0wCwYDVQQLEwRESVJHMRIwEAYDVQQDEwlsb2NhbGhvc3QwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBALswQbMz6dKL4FEKu+O3GYDfaniyxcfizsHaiehuh5jufrlGZw/zMMttteTRhpjtTFN2/R68d1kh8pmO+HV7u+53h+C33I178ZsOquSovGe1AWmzDzp2j6CRdQYdZaMCc4YxtwEXs7570YmnPLKhz8aHdiQRHhtx1cqdPPStkz67AgMBAAEwDQYJKoZIhvcNAQELBQADgYEApQ5znEdhsJBs+ew81X9pkUKZ/ruu/p2OPfYmKzdFnK6mq9bF5CEIaIkvbSJjpECicmGCNw9ATJXylnwFLnfxw6d+YGi4XPuo64NSG00ycnMSTMJ8OR5ForcF89v72BLRDYo6yXeNDw722ul0lPzH54CNQzsm4N/5w5iStnOT1TQ=</ns2:X509Certificate></ns2:X509Data></ns2:KeyInfo></ns2:Signature><ns0:NameIDPolicy AllowCreate="false" Format="urn:oasis:names:tc:SAML:2.0:nameid-format:persistent" /><ns3:Extensions><ns4:SPCertEnc><ns2:X509Data><ns2:X509Certificate>-----BEGIN CERTIFICATE-----
+MIICujCCAiMCAQEwDQYJKoZIhvcNAQELBQAwbTELMAkGA1UEBhMCc2UxCzAJBgNV
+BAgTAmFjMQ0wCwYDVQQHEwR1bWVhMRwwGgYDVQQKExNJVFMgVW1lYSBVbml2ZXJz
+aXR5MQ0wCwYDVQQLEwRESVJHMRUwEwYDVQQDEwxsb2NhbGhvc3QuY2EwHhcNMTUw
+NDIxMTEyNzEwWhcNMjUwNDE4MTEyNzEwWjBaMQswCQYDVQQGEwJzZTELMAkGA1UE
+CAwCYWMxDTALBgNVBAcMBFVtZWExDDAKBgNVBAoMA0lUUzENMAsGA1UECwwERElS
+RzESMBAGA1UEAwwJbG9jYWxob3N0MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIB
+CgKCAQEA3vZSuvfgpLdGFaF27ehY0FsdIAcZ9OsJo4Ez/+Iq8gOAtdPe77j77ri0
+UC05lbaAvjpeD2L7pF0io5s+dwssL2FwGDBzXp86O+6h5P/iua0ZglOjKOZNFH27
+tkchKxWLpY1KqIgwD8C9oMZheabfDWg7d39ev5xTO0wu+Az29kBXottj6a12/i4U
+OmRmgbwb8l0cAeWSncSsc+khKLzDsp2iISFXg/lD5Z0QD2cCeIijpVouULQLQCU0
+0QYVl5op/8qXmy5JIgRa/AafVjdgg28N61Sw6cm5Bqr//H4aMIlyQhZBcxJ24KiK
+7E3XtZu3M8gnzaatvWMee42rcF0BSQIDAQABMA0GCSqGSIb3DQEBCwUAA4GBACQD
+t1xKQwtWZXW0oPtUcvEnUN0yXN0U6b0z4dPbQP1U1Aqm7+iI7jii4dSaxmq9AoJP
+gxwiYPowypFTjO+oGpJoEv7qs4O64eVffaob8KjVVOUlbQUJNvVXL91Zg0z7ce8J
+KNI0KXFU6Vvy58OT2v0tqXZZ4fwo89KBio+VBZcT
+-----END CERTIFICATE-----
+</ns2:X509Certificate></ns2:X509Data></ns4:SPCertEnc></ns3:Extensions></ns0:AuthnRequest>
+2015-04-21 11:27:18,902 saml2.entity:DEBUG Loaded request
+2015-04-21 11:27:18,903 saml2.entity:DEBUG Verified request
+2015-04-21 11:27:23,332 saml2.mdstore:DEBUG service(https://localhost:8990/pvp2_spproxy.xml, spsso_descriptor, assertion_consumer_service, urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST)
+2015-04-21 11:27:23,333 saml2.mdstore:DEBUG service => [{'index': '1', 'binding': 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST', '__class__': 'urn:oasis:names:tc:SAML:2.0:metadata&AssertionConsumerService', 'location': 'https://localhost:8990/pvp2_sp/acs/post'}]
+2015-04-21 11:27:23,334 saml2.mdstore:DEBUG service(https://localhost:8990/pvp2_spproxy.xml, spsso_descriptor, assertion_consumer_service, urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST)
+2015-04-21 11:27:23,334 saml2.mdstore:DEBUG service => [{'index': '1', 'binding': 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST', '__class__': 'urn:oasis:names:tc:SAML:2.0:metadata&AssertionConsumerService', 'location': 'https://localhost:8990/pvp2_sp/acs/post'}]
+2015-04-21 11:27:23,337 saml2.ident:DEBUG failed to find userid testuser in IdentDB
+2015-04-21 11:27:23,338 saml2.ident:DEBUG local_policy: <saml2.assertion.Policy object at 0x7f2f0b75cc10>, name_id_policy: <?xml version='1.0' encoding='UTF-8'?>
+<ns0:NameIDPolicy xmlns:ns0="urn:oasis:names:tc:SAML:2.0:protocol" AllowCreate="false" Format="urn:oasis:names:tc:SAML:2.0:nameid-format:persistent" />
+2015-04-21 11:27:23,339 saml2.server:DEBUG construct_nameid: testuser => <?xml version='1.0' encoding='UTF-8'?>
+<ns0:NameID xmlns:ns0="urn:oasis:names:tc:SAML:2.0:assertion" Format="urn:oasis:names:tc:SAML:2.0:nameid-format:persistent" NameQualifier="https://localhost:8088/TestPEFIMIdP.xml" SPNameQualifier="https://localhost:8990/pvp2_spproxy.xml">testuser</ns0:NameID>
+2015-04-21 11:27:23,346 saml2.sigver:DEBUG xmlsec command: /usr/bin/xmlsec1 encrypt --pubkey-cert-pem /tmp/tmp0bU62z --session-key des-192 --xml-data /tmp/tmpdvhjq_ --node-xpath /*[local-name()="Response"]/*[local-name()="Assertion"]/*[local-name()="Advice"]/*[local-name()="EncryptedAssertion"]/*[local-name()="Assertion"] --output /tmp/tmpLrKGmm.xml /tmp/tmp9qkvAF
+2015-04-21 11:27:23,358 saml2.sigver:DEBUG xmlsec command: /usr/bin/xmlsec1 --sign --privkey-pem /opt/pefim/etc/pki/mykey.pem --id-attr:ID urn:oasis:names:tc:SAML:2.0:protocol:Response --node-id id-AggthfgaSOzY3QWQS --output /tmp/tmp3rKf_B.xml /tmp/tmpwt_tFj.xml
+2015-04-21 11:27:23,372 saml2.entity:INFO HTTP POST
+2015-04-21 11:36:30,095 saml2:INFO Logging started
+2015-04-21 11:40:20,190 saml2.entity:DEBUG receiver addresses: ['https://localhost:8088/sso/redirect']
+2015-04-21 11:40:20,191 saml2.entity:DEBUG Binding: urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect
+2015-04-21 11:40:20,192 saml2.request:DEBUG xmlstr: <?xml version="1.0" encoding="UTF-8"?>
+<ns0:AuthnRequest xmlns:ns0="urn:oasis:names:tc:SAML:2.0:protocol" xmlns:ns1="urn:oasis:names:tc:SAML:2.0:assertion" xmlns:ns2="http://www.w3.org/2000/09/xmldsig#" xmlns:ns3="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:ns4="urn:net:eustix:names:tc:PEFIM:0.0:assertion" AssertionConsumerServiceURL="https://localhost:8999/pvp2_sp/acs/post" Destination="https://localhost:8088/sso/redirect" ID="id-aQN9FlsfA3AOgsTHI" IssueInstant="2015-04-21T11:40:20Z" ProtocolBinding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Version="2.0"><ns1:Issuer Format="urn:oasis:names:tc:SAML:2.0:nameid-format:entity">https://localhost:8999/pvp2_spproxy.xml</ns1:Issuer><ns2:Signature Id="Signature1"><ns2:SignedInfo><ns2:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><ns2:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/><ns2:Reference URI="#id-aQN9FlsfA3AOgsTHI"><ns2:Transforms><ns2:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/><ns2:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></ns2:Transforms><ns2:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><ns2:DigestValue>W3uqUQXkqSFbPKjU8kSpg7QsbU8=</ns2:DigestValue></ns2:Reference></ns2:SignedInfo><ns2:SignatureValue>SL9B8SRBgkoukdRERBf/NOsUja2clR6bK5as90yuViHQbpuxXtF2D4dnyBAyL7Fo
+7r2zyiknithNeia28EjLfVzIeEAv9+QB5F53ynp4K7zEtboiD7EnUSmSN6oo39G0
+4sfekUeCYAJRrIne/NX8MqkLvdo/dbRQO5PL+m33dgI=</ns2:SignatureValue><ns2:KeyInfo><ns2:X509Data><ns2:X509Certificate>MIICIzCCAYwCAXcwDQYJKoZIhvcNAQELBQAwWjELMAkGA1UEBhMCc2UxCzAJBgNVBAgTAmFjMQ0wCwYDVQQHEwRVbWVhMQwwCgYDVQQKEwNJVFMxDTALBgNVBAsTBERJUkcxEjAQBgNVBAMTCWxvY2FsaG9zdDAeFw0xNDAzMTkxNzE5MzlaFw0yNDAzMTYxNzE5MzlaMFoxCzAJBgNVBAYTAnNlMQswCQYDVQQIEwJhYzENMAsGA1UEBxMEVW1lYTEMMAoGA1UEChMDSVRTMQ0wCwYDVQQLEwRESVJHMRIwEAYDVQQDEwlsb2NhbGhvc3QwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBALswQbMz6dKL4FEKu+O3GYDfaniyxcfizsHaiehuh5jufrlGZw/zMMttteTRhpjtTFN2/R68d1kh8pmO+HV7u+53h+C33I178ZsOquSovGe1AWmzDzp2j6CRdQYdZaMCc4YxtwEXs7570YmnPLKhz8aHdiQRHhtx1cqdPPStkz67AgMBAAEwDQYJKoZIhvcNAQELBQADgYEApQ5znEdhsJBs+ew81X9pkUKZ/ruu/p2OPfYmKzdFnK6mq9bF5CEIaIkvbSJjpECicmGCNw9ATJXylnwFLnfxw6d+YGi4XPuo64NSG00ycnMSTMJ8OR5ForcF89v72BLRDYo6yXeNDw722ul0lPzH54CNQzsm4N/5w5iStnOT1TQ=</ns2:X509Certificate></ns2:X509Data></ns2:KeyInfo></ns2:Signature><ns3:Extensions><ns4:SPCertEnc><ns2:X509Data><ns2:X509Certificate>-----BEGIN CERTIFICATE-----
+MIICujCCAiMCAQEwDQYJKoZIhvcNAQELBQAwbTELMAkGA1UEBhMCc2UxCzAJBgNV
+BAgTAmFjMQ0wCwYDVQQHEwR1bWVhMRwwGgYDVQQKExNJVFMgVW1lYSBVbml2ZXJz
+aXR5MQ0wCwYDVQQLEwRESVJHMRUwEwYDVQQDEwxsb2NhbGhvc3QuY2EwHhcNMTUw
+NDIxMTE0MDE5WhcNMjUwNDE4MTE0MDE5WjBaMQswCQYDVQQGEwJzZTELMAkGA1UE
+CAwCYWMxDTALBgNVBAcMBFVtZWExDDAKBgNVBAoMA0lUUzENMAsGA1UECwwERElS
+RzESMBAGA1UEAwwJbG9jYWxob3N0MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIB
+CgKCAQEAvdhgOJfblcftW86zQeyG5QEAE9Y/IuUuwCZlXpBkEoTPkS9uC0ZiEBsh
+yOPSCZzp0186b99V9gdn5qc2uwhLjM0Iw9Fw6FzRdonhp8CE/dZmojRJdCLcJDFD
+0zwsS6cNizVZq4DNhuzIiVlPkjqv2j4vG+JKSPSIUGPsSNB3VgGoikH7oOPS5QZh
+N1W/BAbn+U5egHwwNvocAZhxT0C+TPtlBSXj+D6yofxxkxAL5iTSsZOMXIUxLHOg
+VfQuTRAorqJBuWKcIMP6EK2BejKaBXGsztlIAL0uDUvN9RPbf9h7rTIAh2M34r64
+vla3aiyk5jIqk3REBdGM1QGstFLr1wIDAQABMA0GCSqGSIb3DQEBCwUAA4GBAFLx
+Hz1E57otPXnY9OLyGN+3q2pBzpIYJgOeMSQ0Q5w+Qp/XGYlbRazoRmVAYelCIF4M
+Om3ZYF0JbvXQ4f+vSOoWu8u5Jf/wYAWm4b+ExAsQdeCUv+o5mjNvEmuGn45Gghtv
+4kTiTavualNZA58zExbeP7pSYbNiQntQzaQ4tVTz
+-----END CERTIFICATE-----
+</ns2:X509Certificate></ns2:X509Data></ns4:SPCertEnc></ns3:Extensions><ns0:NameIDPolicy AllowCreate="false" Format="urn:oasis:names:tc:SAML:2.0:nameid-format:persistent"/></ns0:AuthnRequest>
+
+2015-04-21 11:40:20,193 saml2.sigver:DEBUG ==== Certs from metadata ==== https://localhost:8999/pvp2_spproxy.xml: [] ====
+2015-04-21 11:40:20,193 saml2.request:INFO EXCEPTION: https://localhost:8999/pvp2_spproxy.xml
+2015-04-21 11:40:20,194 saml2.request:ERROR Response was not correctly signed
+2015-04-21 11:40:20,194 saml2.request:INFO <?xml version="1.0" encoding="UTF-8"?>
+<ns0:AuthnRequest xmlns:ns0="urn:oasis:names:tc:SAML:2.0:protocol" xmlns:ns1="urn:oasis:names:tc:SAML:2.0:assertion" xmlns:ns2="http://www.w3.org/2000/09/xmldsig#" xmlns:ns3="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:ns4="urn:net:eustix:names:tc:PEFIM:0.0:assertion" AssertionConsumerServiceURL="https://localhost:8999/pvp2_sp/acs/post" Destination="https://localhost:8088/sso/redirect" ID="id-aQN9FlsfA3AOgsTHI" IssueInstant="2015-04-21T11:40:20Z" ProtocolBinding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Version="2.0"><ns1:Issuer Format="urn:oasis:names:tc:SAML:2.0:nameid-format:entity">https://localhost:8999/pvp2_spproxy.xml</ns1:Issuer><ns2:Signature Id="Signature1"><ns2:SignedInfo><ns2:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><ns2:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/><ns2:Reference URI="#id-aQN9FlsfA3AOgsTHI"><ns2:Transforms><ns2:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/><ns2:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></ns2:Transforms><ns2:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><ns2:DigestValue>W3uqUQXkqSFbPKjU8kSpg7QsbU8=</ns2:DigestValue></ns2:Reference></ns2:SignedInfo><ns2:SignatureValue>SL9B8SRBgkoukdRERBf/NOsUja2clR6bK5as90yuViHQbpuxXtF2D4dnyBAyL7Fo
+7r2zyiknithNeia28EjLfVzIeEAv9+QB5F53ynp4K7zEtboiD7EnUSmSN6oo39G0
+4sfekUeCYAJRrIne/NX8MqkLvdo/dbRQO5PL+m33dgI=</ns2:SignatureValue><ns2:KeyInfo><ns2:X509Data><ns2:X509Certificate>MIICIzCCAYwCAXcwDQYJKoZIhvcNAQELBQAwWjELMAkGA1UEBhMCc2UxCzAJBgNVBAgTAmFjMQ0wCwYDVQQHEwRVbWVhMQwwCgYDVQQKEwNJVFMxDTALBgNVBAsTBERJUkcxEjAQBgNVBAMTCWxvY2FsaG9zdDAeFw0xNDAzMTkxNzE5MzlaFw0yNDAzMTYxNzE5MzlaMFoxCzAJBgNVBAYTAnNlMQswCQYDVQQIEwJhYzENMAsGA1UEBxMEVW1lYTEMMAoGA1UEChMDSVRTMQ0wCwYDVQQLEwRESVJHMRIwEAYDVQQDEwlsb2NhbGhvc3QwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBALswQbMz6dKL4FEKu+O3GYDfaniyxcfizsHaiehuh5jufrlGZw/zMMttteTRhpjtTFN2/R68d1kh8pmO+HV7u+53h+C33I178ZsOquSovGe1AWmzDzp2j6CRdQYdZaMCc4YxtwEXs7570YmnPLKhz8aHdiQRHhtx1cqdPPStkz67AgMBAAEwDQYJKoZIhvcNAQELBQADgYEApQ5znEdhsJBs+ew81X9pkUKZ/ruu/p2OPfYmKzdFnK6mq9bF5CEIaIkvbSJjpECicmGCNw9ATJXylnwFLnfxw6d+YGi4XPuo64NSG00ycnMSTMJ8OR5ForcF89v72BLRDYo6yXeNDw722ul0lPzH54CNQzsm4N/5w5iStnOT1TQ=</ns2:X509Certificate></ns2:X509Data></ns2:KeyInfo></ns2:Signature><ns3:Extensions><ns4:SPCertEnc><ns2:X509Data><ns2:X509Certificate>-----BEGIN CERTIFICATE-----
+MIICujCCAiMCAQEwDQYJKoZIhvcNAQELBQAwbTELMAkGA1UEBhMCc2UxCzAJBgNV
+BAgTAmFjMQ0wCwYDVQQHEwR1bWVhMRwwGgYDVQQKExNJVFMgVW1lYSBVbml2ZXJz
+aXR5MQ0wCwYDVQQLEwRESVJHMRUwEwYDVQQDEwxsb2NhbGhvc3QuY2EwHhcNMTUw
+NDIxMTE0MDE5WhcNMjUwNDE4MTE0MDE5WjBaMQswCQYDVQQGEwJzZTELMAkGA1UE
+CAwCYWMxDTALBgNVBAcMBFVtZWExDDAKBgNVBAoMA0lUUzENMAsGA1UECwwERElS
+RzESMBAGA1UEAwwJbG9jYWxob3N0MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIB
+CgKCAQEAvdhgOJfblcftW86zQeyG5QEAE9Y/IuUuwCZlXpBkEoTPkS9uC0ZiEBsh
+yOPSCZzp0186b99V9gdn5qc2uwhLjM0Iw9Fw6FzRdonhp8CE/dZmojRJdCLcJDFD
+0zwsS6cNizVZq4DNhuzIiVlPkjqv2j4vG+JKSPSIUGPsSNB3VgGoikH7oOPS5QZh
+N1W/BAbn+U5egHwwNvocAZhxT0C+TPtlBSXj+D6yofxxkxAL5iTSsZOMXIUxLHOg
+VfQuTRAorqJBuWKcIMP6EK2BejKaBXGsztlIAL0uDUvN9RPbf9h7rTIAh2M34r64
+vla3aiyk5jIqk3REBdGM1QGstFLr1wIDAQABMA0GCSqGSIb3DQEBCwUAA4GBAFLx
+Hz1E57otPXnY9OLyGN+3q2pBzpIYJgOeMSQ0Q5w+Qp/XGYlbRazoRmVAYelCIF4M
+Om3ZYF0JbvXQ4f+vSOoWu8u5Jf/wYAWm4b+ExAsQdeCUv+o5mjNvEmuGn45Gghtv
+4kTiTavualNZA58zExbeP7pSYbNiQntQzaQ4tVTz
+-----END CERTIFICATE-----
+</ns2:X509Certificate></ns2:X509Data></ns4:SPCertEnc></ns3:Extensions><ns0:NameIDPolicy AllowCreate="false" Format="urn:oasis:names:tc:SAML:2.0:nameid-format:persistent"/></ns0:AuthnRequest>
+
+2015-04-21 11:41:32,903 saml2:INFO Logging started
+2015-04-21 11:41:36,746 saml2.entity:DEBUG receiver addresses: ['https://localhost:8088/sso/redirect']
+2015-04-21 11:41:36,747 saml2.entity:DEBUG Binding: urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect
+2015-04-21 11:41:36,747 saml2.request:DEBUG xmlstr: <?xml version="1.0" encoding="UTF-8"?>
+<ns0:AuthnRequest xmlns:ns0="urn:oasis:names:tc:SAML:2.0:protocol" xmlns:ns1="urn:oasis:names:tc:SAML:2.0:assertion" xmlns:ns2="http://www.w3.org/2000/09/xmldsig#" xmlns:ns3="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:ns4="urn:net:eustix:names:tc:PEFIM:0.0:assertion" AssertionConsumerServiceURL="https://localhost:8999/pvp2_sp/acs/post" Destination="https://localhost:8088/sso/redirect" ID="id-lRgfjIV43AYm6egyt" IssueInstant="2015-04-21T11:41:36Z" ProtocolBinding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Version="2.0"><ns1:Issuer Format="urn:oasis:names:tc:SAML:2.0:nameid-format:entity">https://localhost:8999/pvp2_spproxy.xml</ns1:Issuer><ns2:Signature Id="Signature1"><ns2:SignedInfo><ns2:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><ns2:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/><ns2:Reference URI="#id-lRgfjIV43AYm6egyt"><ns2:Transforms><ns2:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/><ns2:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></ns2:Transforms><ns2:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><ns2:DigestValue>5GpeoVQvZEj+it7jflZ8Hwa95Ls=</ns2:DigestValue></ns2:Reference></ns2:SignedInfo><ns2:SignatureValue>hz1LGMI6M8Bx9T9RnRJcg3D/OSUrUK2HtaH30MImAF2AD3kuYIBgs3xmFgO01n22
+BG13z92uN7ey4DQlOWWU+x8Vb4xOOvj+brxGvb61sSLUGq/X6QWF7tkrDG4yF7bk
+uAE0gHygMESL9K4TlqIt96osisTjr8udjvFQiFrilEA=</ns2:SignatureValue><ns2:KeyInfo><ns2:X509Data><ns2:X509Certificate>MIICIzCCAYwCAXcwDQYJKoZIhvcNAQELBQAwWjELMAkGA1UEBhMCc2UxCzAJBgNVBAgTAmFjMQ0wCwYDVQQHEwRVbWVhMQwwCgYDVQQKEwNJVFMxDTALBgNVBAsTBERJUkcxEjAQBgNVBAMTCWxvY2FsaG9zdDAeFw0xNDAzMTkxNzE5MzlaFw0yNDAzMTYxNzE5MzlaMFoxCzAJBgNVBAYTAnNlMQswCQYDVQQIEwJhYzENMAsGA1UEBxMEVW1lYTEMMAoGA1UEChMDSVRTMQ0wCwYDVQQLEwRESVJHMRIwEAYDVQQDEwlsb2NhbGhvc3QwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBALswQbMz6dKL4FEKu+O3GYDfaniyxcfizsHaiehuh5jufrlGZw/zMMttteTRhpjtTFN2/R68d1kh8pmO+HV7u+53h+C33I178ZsOquSovGe1AWmzDzp2j6CRdQYdZaMCc4YxtwEXs7570YmnPLKhz8aHdiQRHhtx1cqdPPStkz67AgMBAAEwDQYJKoZIhvcNAQELBQADgYEApQ5znEdhsJBs+ew81X9pkUKZ/ruu/p2OPfYmKzdFnK6mq9bF5CEIaIkvbSJjpECicmGCNw9ATJXylnwFLnfxw6d+YGi4XPuo64NSG00ycnMSTMJ8OR5ForcF89v72BLRDYo6yXeNDw722ul0lPzH54CNQzsm4N/5w5iStnOT1TQ=</ns2:X509Certificate></ns2:X509Data></ns2:KeyInfo></ns2:Signature><ns3:Extensions><ns4:SPCertEnc><ns2:X509Data><ns2:X509Certificate>-----BEGIN CERTIFICATE-----
+MIICujCCAiMCAQEwDQYJKoZIhvcNAQELBQAwbTELMAkGA1UEBhMCc2UxCzAJBgNV
+BAgTAmFjMQ0wCwYDVQQHEwR1bWVhMRwwGgYDVQQKExNJVFMgVW1lYSBVbml2ZXJz
+aXR5MQ0wCwYDVQQLEwRESVJHMRUwEwYDVQQDEwxsb2NhbGhvc3QuY2EwHhcNMTUw
+NDIxMTE0MTM2WhcNMjUwNDE4MTE0MTM2WjBaMQswCQYDVQQGEwJzZTELMAkGA1UE
+CAwCYWMxDTALBgNVBAcMBFVtZWExDDAKBgNVBAoMA0lUUzENMAsGA1UECwwERElS
+RzESMBAGA1UEAwwJbG9jYWxob3N0MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIB
+CgKCAQEAzN3OTCtcDMohOcy0MHeq+QqGzbVeIPgvpfdfcN8qPm7IWM7rSOP3JjED
+YAyYcOlrPs5zaonp/tLaGMBbbaLrjOqDxTVOUnuvPaeGtm4OjnF5w5k343Tm+tZL
+jaKRDwIZ9lW3J1Hkaqr68tDjzNWR+TUpJJ3OY7Mwhl7eonoHawOhGIYUsHEN38GN
+pFaTTmRe3uOF/IxwjMEnKDfclT2Rp5QtGJs1D6haNMBe/biQJS15qlVw9e+4z/3+
+XvJBx5EKwyr4HnTC2jZR1R7oEl3G6YmZJ72BeEl4AxWKFTDOL1MydQX4hETMZL8W
+vIlUpyvl81ddy+cwncbF2g4tAGvZhwIDAQABMA0GCSqGSIb3DQEBCwUAA4GBAGB/
+SKff3riIJafphzeDKCTdzY7xmZh5JlFlnYxL4hHjPA3KrOmz+H9LQbTqvEjkIATr
+kjpjHkp72rDrDk0nzEoYgEseHVtJ66b9jy2kPHR/9YHs44AtPoa1Opbm8pXvphX3
+Mfgysd9v1p/ZLceP5MsYb9UAQlzdwAO2WlQmSNBb
+-----END CERTIFICATE-----
+</ns2:X509Certificate></ns2:X509Data></ns4:SPCertEnc></ns3:Extensions><ns0:NameIDPolicy AllowCreate="false" Format="urn:oasis:names:tc:SAML:2.0:nameid-format:persistent"/></ns0:AuthnRequest>
+
+2015-04-21 11:41:36,749 saml2.sigver:DEBUG ==== Certs from metadata ==== https://localhost:8999/pvp2_spproxy.xml: [(<open file '<fdopen>', mode 'w+b' at 0x7f04fdb2d810>, '/tmp/tmpqBznoQ.pem')] ====
+2015-04-21 11:41:36,751 saml2.sigver:DEBUG xmlsec command: /usr/bin/xmlsec1 --verify --pubkey-cert-pem /tmp/tmpqBznoQ.pem --id-attr:ID urn:oasis:names:tc:SAML:2.0:protocol:AuthnRequest --store-signatures --node-id id-lRgfjIV43AYm6egyt --output /tmp/tmpSnTVO6.xml /tmp/tmp8lkJjX.xml
+2015-04-21 11:41:36,759 saml2.sigver:ERROR ============================================================
+= VERIFICATION CONTEXT
+== Status: unknown
+== flags: 0x00000008
+== flags2: 0x00000000
+== Key Info Read Ctx:
+= KEY INFO READ CONTEXT
+== flags: 0x00000000
+== flags2: 0x00000000
+== enabled key data: all
+== RetrievalMethod level (cur/max): 0/1
+== TRANSFORMS CTX (status=0)
+== flags: 0x00000000
+== flags2: 0x00000000
+== enabled transforms: all
+=== uri: NULL
+=== uri xpointer expr: NULL
+== EncryptedKey level (cur/max): 0/1
+=== KeyReq:
+==== keyId: NULL
+==== keyType: 0x00000000
+==== keyUsage: 0xffffffff
+==== keyBitsSize: 0
+=== list size: 0
+== Key Info Write Ctx:
+= KEY INFO WRITE CONTEXT
+== flags: 0x00000000
+== flags2: 0x00000000
+== enabled key data: all
+== RetrievalMethod level (cur/max): 0/1
+== TRANSFORMS CTX (status=0)
+== flags: 0x00000000
+== flags2: 0x00000000
+== enabled transforms: all
+=== uri: NULL
+=== uri xpointer expr: NULL
+== EncryptedKey level (cur/max): 0/1
+=== KeyReq:
+==== keyId: NULL
+==== keyType: 0x00000001
+==== keyUsage: 0xffffffff
+==== keyBitsSize: 0
+=== list size: 0
+== Signature Transform Ctx:
+== TRANSFORMS CTX (status=0)
+== flags: 0x00000000
+== flags2: 0x00000000
+== enabled transforms: all
+=== uri: NULL
+=== uri xpointer expr: NULL
+== SignedInfo References List:
+=== list size: 0
+== Manifest References List:
+=== list size: 0
+
+/tmp/tmp8lkJjX.xml:1: parser error : Start tag expected, '<' not found
+nVdZk6JIF333V1TYj0Y1q2t09UQCCaICgrjgyxcsKYtsAprIrx/UrqV7ajr6G5/MQ97t5D2X5NtfdRI/
+^
+Error: failed to parse xml file "/tmp/tmp8lkJjX.xml"
+Error: failed to load document "/tmp/tmp8lkJjX.xml"
+ERROR
+SignedInfo References (ok/all): 0/0
+Manifests References (ok/all): 0/0
+Error: failed to verify file "/tmp/tmp8lkJjX.xml"
+
+------------------------------------------------------------
+/tmp/tmp8lkJjX.xml:1: parser error : Start tag expected, '<' not found
+nVdZk6JIF333V1TYj0Y1q2t09UQCCaICgrjgyxcsKYtsAprIrx/UrqV7ajr6G5/MQ97t5D2X5NtfdRI/
+^
+Error: failed to parse xml file "/tmp/tmp8lkJjX.xml"
+Error: failed to load document "/tmp/tmp8lkJjX.xml"
+ERROR
+SignedInfo References (ok/all): 0/0
+Manifests References (ok/all): 0/0
+Error: failed to verify file "/tmp/tmp8lkJjX.xml"
+============================================================
+2015-04-21 11:41:36,760 saml2.sigver:DEBUG xmlsec command: /usr/bin/xmlsec1 --verify --pubkey-cert-pem /tmp/tmpqBznoQ.pem --id-attr:ID urn:oasis:names:tc:SAML:2.0:protocol:AuthnRequest --store-signatures --node-id id-lRgfjIV43AYm6egyt --output /tmp/tmpAn5B4q.xml /tmp/tmpqrsuWi.xml
+2015-04-21 11:41:36,773 saml2.request:INFO request: <?xml version='1.0' encoding='UTF-8'?>
+<ns0:AuthnRequest xmlns:ns0="urn:oasis:names:tc:SAML:2.0:protocol" xmlns:ns1="urn:oasis:names:tc:SAML:2.0:assertion" xmlns:ns2="http://www.w3.org/2000/09/xmldsig#" xmlns:ns3="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:ns4="urn:net:eustix:names:tc:PEFIM:0.0:assertion" AssertionConsumerServiceURL="https://localhost:8999/pvp2_sp/acs/post" Destination="https://localhost:8088/sso/redirect" ID="id-lRgfjIV43AYm6egyt" IssueInstant="2015-04-21T11:41:36Z" ProtocolBinding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Version="2.0"><ns1:Issuer Format="urn:oasis:names:tc:SAML:2.0:nameid-format:entity">https://localhost:8999/pvp2_spproxy.xml</ns1:Issuer><ns2:Signature Id="Signature1"><ns2:SignedInfo><ns2:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><ns2:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><ns2:Reference URI="#id-lRgfjIV43AYm6egyt"><ns2:Transforms><ns2:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><ns2:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></ns2:Transforms><ns2:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><ns2:DigestValue>5GpeoVQvZEj+it7jflZ8Hwa95Ls=</ns2:DigestValue></ns2:Reference></ns2:SignedInfo><ns2:SignatureValue>hz1LGMI6M8Bx9T9RnRJcg3D/OSUrUK2HtaH30MImAF2AD3kuYIBgs3xmFgO01n22
+BG13z92uN7ey4DQlOWWU+x8Vb4xOOvj+brxGvb61sSLUGq/X6QWF7tkrDG4yF7bk
+uAE0gHygMESL9K4TlqIt96osisTjr8udjvFQiFrilEA=</ns2:SignatureValue><ns2:KeyInfo><ns2:X509Data><ns2:X509Certificate>MIICIzCCAYwCAXcwDQYJKoZIhvcNAQELBQAwWjELMAkGA1UEBhMCc2UxCzAJBgNVBAgTAmFjMQ0wCwYDVQQHEwRVbWVhMQwwCgYDVQQKEwNJVFMxDTALBgNVBAsTBERJUkcxEjAQBgNVBAMTCWxvY2FsaG9zdDAeFw0xNDAzMTkxNzE5MzlaFw0yNDAzMTYxNzE5MzlaMFoxCzAJBgNVBAYTAnNlMQswCQYDVQQIEwJhYzENMAsGA1UEBxMEVW1lYTEMMAoGA1UEChMDSVRTMQ0wCwYDVQQLEwRESVJHMRIwEAYDVQQDEwlsb2NhbGhvc3QwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBALswQbMz6dKL4FEKu+O3GYDfaniyxcfizsHaiehuh5jufrlGZw/zMMttteTRhpjtTFN2/R68d1kh8pmO+HV7u+53h+C33I178ZsOquSovGe1AWmzDzp2j6CRdQYdZaMCc4YxtwEXs7570YmnPLKhz8aHdiQRHhtx1cqdPPStkz67AgMBAAEwDQYJKoZIhvcNAQELBQADgYEApQ5znEdhsJBs+ew81X9pkUKZ/ruu/p2OPfYmKzdFnK6mq9bF5CEIaIkvbSJjpECicmGCNw9ATJXylnwFLnfxw6d+YGi4XPuo64NSG00ycnMSTMJ8OR5ForcF89v72BLRDYo6yXeNDw722ul0lPzH54CNQzsm4N/5w5iStnOT1TQ=</ns2:X509Certificate></ns2:X509Data></ns2:KeyInfo></ns2:Signature><ns0:NameIDPolicy AllowCreate="false" Format="urn:oasis:names:tc:SAML:2.0:nameid-format:persistent" /><ns3:Extensions><ns4:SPCertEnc><ns2:X509Data><ns2:X509Certificate>-----BEGIN CERTIFICATE-----
+MIICujCCAiMCAQEwDQYJKoZIhvcNAQELBQAwbTELMAkGA1UEBhMCc2UxCzAJBgNV
+BAgTAmFjMQ0wCwYDVQQHEwR1bWVhMRwwGgYDVQQKExNJVFMgVW1lYSBVbml2ZXJz
+aXR5MQ0wCwYDVQQLEwRESVJHMRUwEwYDVQQDEwxsb2NhbGhvc3QuY2EwHhcNMTUw
+NDIxMTE0MTM2WhcNMjUwNDE4MTE0MTM2WjBaMQswCQYDVQQGEwJzZTELMAkGA1UE
+CAwCYWMxDTALBgNVBAcMBFVtZWExDDAKBgNVBAoMA0lUUzENMAsGA1UECwwERElS
+RzESMBAGA1UEAwwJbG9jYWxob3N0MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIB
+CgKCAQEAzN3OTCtcDMohOcy0MHeq+QqGzbVeIPgvpfdfcN8qPm7IWM7rSOP3JjED
+YAyYcOlrPs5zaonp/tLaGMBbbaLrjOqDxTVOUnuvPaeGtm4OjnF5w5k343Tm+tZL
+jaKRDwIZ9lW3J1Hkaqr68tDjzNWR+TUpJJ3OY7Mwhl7eonoHawOhGIYUsHEN38GN
+pFaTTmRe3uOF/IxwjMEnKDfclT2Rp5QtGJs1D6haNMBe/biQJS15qlVw9e+4z/3+
+XvJBx5EKwyr4HnTC2jZR1R7oEl3G6YmZJ72BeEl4AxWKFTDOL1MydQX4hETMZL8W
+vIlUpyvl81ddy+cwncbF2g4tAGvZhwIDAQABMA0GCSqGSIb3DQEBCwUAA4GBAGB/
+SKff3riIJafphzeDKCTdzY7xmZh5JlFlnYxL4hHjPA3KrOmz+H9LQbTqvEjkIATr
+kjpjHkp72rDrDk0nzEoYgEseHVtJ66b9jy2kPHR/9YHs44AtPoa1Opbm8pXvphX3
+Mfgysd9v1p/ZLceP5MsYb9UAQlzdwAO2WlQmSNBb
+-----END CERTIFICATE-----
+</ns2:X509Certificate></ns2:X509Data></ns4:SPCertEnc></ns3:Extensions></ns0:AuthnRequest>
+2015-04-21 11:41:36,774 saml2.entity:DEBUG Loaded request
+2015-04-21 11:41:36,775 saml2.entity:DEBUG Verified request
+2015-04-21 11:41:36,801 saml2.idp:ERROR An error occured while creating metadata:'NoneType' object has no attribute '__getitem__'
+2015-04-21 11:41:46,194 saml2.entity:DEBUG receiver addresses: ['https://localhost:8088/sso/redirect']
+2015-04-21 11:41:46,196 saml2.entity:DEBUG Binding: urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect
+2015-04-21 11:41:46,197 saml2.request:DEBUG xmlstr: <?xml version="1.0" encoding="UTF-8"?>
+<ns0:AuthnRequest xmlns:ns0="urn:oasis:names:tc:SAML:2.0:protocol" xmlns:ns1="urn:oasis:names:tc:SAML:2.0:assertion" xmlns:ns2="http://www.w3.org/2000/09/xmldsig#" xmlns:ns3="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:ns4="urn:net:eustix:names:tc:PEFIM:0.0:assertion" AssertionConsumerServiceURL="https://localhost:8999/pvp2_sp/acs/post" Destination="https://localhost:8088/sso/redirect" ID="id-lRgfjIV43AYm6egyt" IssueInstant="2015-04-21T11:41:36Z" ProtocolBinding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Version="2.0"><ns1:Issuer Format="urn:oasis:names:tc:SAML:2.0:nameid-format:entity">https://localhost:8999/pvp2_spproxy.xml</ns1:Issuer><ns2:Signature Id="Signature1"><ns2:SignedInfo><ns2:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><ns2:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/><ns2:Reference URI="#id-lRgfjIV43AYm6egyt"><ns2:Transforms><ns2:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/><ns2:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></ns2:Transforms><ns2:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><ns2:DigestValue>5GpeoVQvZEj+it7jflZ8Hwa95Ls=</ns2:DigestValue></ns2:Reference></ns2:SignedInfo><ns2:SignatureValue>hz1LGMI6M8Bx9T9RnRJcg3D/OSUrUK2HtaH30MImAF2AD3kuYIBgs3xmFgO01n22
+BG13z92uN7ey4DQlOWWU+x8Vb4xOOvj+brxGvb61sSLUGq/X6QWF7tkrDG4yF7bk
+uAE0gHygMESL9K4TlqIt96osisTjr8udjvFQiFrilEA=</ns2:SignatureValue><ns2:KeyInfo><ns2:X509Data><ns2:X509Certificate>MIICIzCCAYwCAXcwDQYJKoZIhvcNAQELBQAwWjELMAkGA1UEBhMCc2UxCzAJBgNVBAgTAmFjMQ0wCwYDVQQHEwRVbWVhMQwwCgYDVQQKEwNJVFMxDTALBgNVBAsTBERJUkcxEjAQBgNVBAMTCWxvY2FsaG9zdDAeFw0xNDAzMTkxNzE5MzlaFw0yNDAzMTYxNzE5MzlaMFoxCzAJBgNVBAYTAnNlMQswCQYDVQQIEwJhYzENMAsGA1UEBxMEVW1lYTEMMAoGA1UEChMDSVRTMQ0wCwYDVQQLEwRESVJHMRIwEAYDVQQDEwlsb2NhbGhvc3QwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBALswQbMz6dKL4FEKu+O3GYDfaniyxcfizsHaiehuh5jufrlGZw/zMMttteTRhpjtTFN2/R68d1kh8pmO+HV7u+53h+C33I178ZsOquSovGe1AWmzDzp2j6CRdQYdZaMCc4YxtwEXs7570YmnPLKhz8aHdiQRHhtx1cqdPPStkz67AgMBAAEwDQYJKoZIhvcNAQELBQADgYEApQ5znEdhsJBs+ew81X9pkUKZ/ruu/p2OPfYmKzdFnK6mq9bF5CEIaIkvbSJjpECicmGCNw9ATJXylnwFLnfxw6d+YGi4XPuo64NSG00ycnMSTMJ8OR5ForcF89v72BLRDYo6yXeNDw722ul0lPzH54CNQzsm4N/5w5iStnOT1TQ=</ns2:X509Certificate></ns2:X509Data></ns2:KeyInfo></ns2:Signature><ns3:Extensions><ns4:SPCertEnc><ns2:X509Data><ns2:X509Certificate>-----BEGIN CERTIFICATE-----
+MIICujCCAiMCAQEwDQYJKoZIhvcNAQELBQAwbTELMAkGA1UEBhMCc2UxCzAJBgNV
+BAgTAmFjMQ0wCwYDVQQHEwR1bWVhMRwwGgYDVQQKExNJVFMgVW1lYSBVbml2ZXJz
+aXR5MQ0wCwYDVQQLEwRESVJHMRUwEwYDVQQDEwxsb2NhbGhvc3QuY2EwHhcNMTUw
+NDIxMTE0MTM2WhcNMjUwNDE4MTE0MTM2WjBaMQswCQYDVQQGEwJzZTELMAkGA1UE
+CAwCYWMxDTALBgNVBAcMBFVtZWExDDAKBgNVBAoMA0lUUzENMAsGA1UECwwERElS
+RzESMBAGA1UEAwwJbG9jYWxob3N0MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIB
+CgKCAQEAzN3OTCtcDMohOcy0MHeq+QqGzbVeIPgvpfdfcN8qPm7IWM7rSOP3JjED
+YAyYcOlrPs5zaonp/tLaGMBbbaLrjOqDxTVOUnuvPaeGtm4OjnF5w5k343Tm+tZL
+jaKRDwIZ9lW3J1Hkaqr68tDjzNWR+TUpJJ3OY7Mwhl7eonoHawOhGIYUsHEN38GN
+pFaTTmRe3uOF/IxwjMEnKDfclT2Rp5QtGJs1D6haNMBe/biQJS15qlVw9e+4z/3+
+XvJBx5EKwyr4HnTC2jZR1R7oEl3G6YmZJ72BeEl4AxWKFTDOL1MydQX4hETMZL8W
+vIlUpyvl81ddy+cwncbF2g4tAGvZhwIDAQABMA0GCSqGSIb3DQEBCwUAA4GBAGB/
+SKff3riIJafphzeDKCTdzY7xmZh5JlFlnYxL4hHjPA3KrOmz+H9LQbTqvEjkIATr
+kjpjHkp72rDrDk0nzEoYgEseHVtJ66b9jy2kPHR/9YHs44AtPoa1Opbm8pXvphX3
+Mfgysd9v1p/ZLceP5MsYb9UAQlzdwAO2WlQmSNBb
+-----END CERTIFICATE-----
+</ns2:X509Certificate></ns2:X509Data></ns4:SPCertEnc></ns3:Extensions><ns0:NameIDPolicy AllowCreate="false" Format="urn:oasis:names:tc:SAML:2.0:nameid-format:persistent"/></ns0:AuthnRequest>
+
+2015-04-21 11:41:46,200 saml2.sigver:DEBUG ==== Certs from metadata ==== https://localhost:8999/pvp2_spproxy.xml: [(<open file '<fdopen>', mode 'w+b' at 0x7f04fdb2d8a0>, '/tmp/tmp9ffxsk.pem')] ====
+2015-04-21 11:41:46,201 saml2.sigver:DEBUG xmlsec command: /usr/bin/xmlsec1 --verify --pubkey-cert-pem /tmp/tmp9ffxsk.pem --id-attr:ID urn:oasis:names:tc:SAML:2.0:protocol:AuthnRequest --store-signatures --node-id id-lRgfjIV43AYm6egyt --output /tmp/tmpc83xjR.xml /tmp/tmpRYDtZP.xml
+2015-04-21 11:41:46,211 saml2.sigver:ERROR ============================================================
+= VERIFICATION CONTEXT
+== Status: unknown
+== flags: 0x00000008
+== flags2: 0x00000000
+== Key Info Read Ctx:
+= KEY INFO READ CONTEXT
+== flags: 0x00000000
+== flags2: 0x00000000
+== enabled key data: all
+== RetrievalMethod level (cur/max): 0/1
+== TRANSFORMS CTX (status=0)
+== flags: 0x00000000
+== flags2: 0x00000000
+== enabled transforms: all
+=== uri: NULL
+=== uri xpointer expr: NULL
+== EncryptedKey level (cur/max): 0/1
+=== KeyReq:
+==== keyId: NULL
+==== keyType: 0x00000000
+==== keyUsage: 0xffffffff
+==== keyBitsSize: 0
+=== list size: 0
+== Key Info Write Ctx:
+= KEY INFO WRITE CONTEXT
+== flags: 0x00000000
+== flags2: 0x00000000
+== enabled key data: all
+== RetrievalMethod level (cur/max): 0/1
+== TRANSFORMS CTX (status=0)
+== flags: 0x00000000
+== flags2: 0x00000000
+== enabled transforms: all
+=== uri: NULL
+=== uri xpointer expr: NULL
+== EncryptedKey level (cur/max): 0/1
+=== KeyReq:
+==== keyId: NULL
+==== keyType: 0x00000001
+==== keyUsage: 0xffffffff
+==== keyBitsSize: 0
+=== list size: 0
+== Signature Transform Ctx:
+== TRANSFORMS CTX (status=0)
+== flags: 0x00000000
+== flags2: 0x00000000
+== enabled transforms: all
+=== uri: NULL
+=== uri xpointer expr: NULL
+== SignedInfo References List:
+=== list size: 0
+== Manifest References List:
+=== list size: 0
+
+/tmp/tmpRYDtZP.xml:1: parser error : Start tag expected, '<' not found
+nVdZk6JIF333V1TYj0Y1q2t09UQCCaICgrjgyxcsKYtsAprIrx/UrqV7ajr6G5/MQ97t5D2X5NtfdRI/
+^
+Error: failed to parse xml file "/tmp/tmpRYDtZP.xml"
+Error: failed to load document "/tmp/tmpRYDtZP.xml"
+ERROR
+SignedInfo References (ok/all): 0/0
+Manifests References (ok/all): 0/0
+Error: failed to verify file "/tmp/tmpRYDtZP.xml"
+
+------------------------------------------------------------
+/tmp/tmpRYDtZP.xml:1: parser error : Start tag expected, '<' not found
+nVdZk6JIF333V1TYj0Y1q2t09UQCCaICgrjgyxcsKYtsAprIrx/UrqV7ajr6G5/MQ97t5D2X5NtfdRI/
+^
+Error: failed to parse xml file "/tmp/tmpRYDtZP.xml"
+Error: failed to load document "/tmp/tmpRYDtZP.xml"
+ERROR
+SignedInfo References (ok/all): 0/0
+Manifests References (ok/all): 0/0
+Error: failed to verify file "/tmp/tmpRYDtZP.xml"
+============================================================
+2015-04-21 11:41:46,212 saml2.sigver:DEBUG xmlsec command: /usr/bin/xmlsec1 --verify --pubkey-cert-pem /tmp/tmp9ffxsk.pem --id-attr:ID urn:oasis:names:tc:SAML:2.0:protocol:AuthnRequest --store-signatures --node-id id-lRgfjIV43AYm6egyt --output /tmp/tmp2YoE79.xml /tmp/tmpIyLyEl.xml
+2015-04-21 11:41:46,224 saml2.request:INFO request: <?xml version='1.0' encoding='UTF-8'?>
+<ns0:AuthnRequest xmlns:ns0="urn:oasis:names:tc:SAML:2.0:protocol" xmlns:ns1="urn:oasis:names:tc:SAML:2.0:assertion" xmlns:ns2="http://www.w3.org/2000/09/xmldsig#" xmlns:ns3="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:ns4="urn:net:eustix:names:tc:PEFIM:0.0:assertion" AssertionConsumerServiceURL="https://localhost:8999/pvp2_sp/acs/post" Destination="https://localhost:8088/sso/redirect" ID="id-lRgfjIV43AYm6egyt" IssueInstant="2015-04-21T11:41:36Z" ProtocolBinding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Version="2.0"><ns1:Issuer Format="urn:oasis:names:tc:SAML:2.0:nameid-format:entity">https://localhost:8999/pvp2_spproxy.xml</ns1:Issuer><ns2:Signature Id="Signature1"><ns2:SignedInfo><ns2:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><ns2:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><ns2:Reference URI="#id-lRgfjIV43AYm6egyt"><ns2:Transforms><ns2:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><ns2:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></ns2:Transforms><ns2:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><ns2:DigestValue>5GpeoVQvZEj+it7jflZ8Hwa95Ls=</ns2:DigestValue></ns2:Reference></ns2:SignedInfo><ns2:SignatureValue>hz1LGMI6M8Bx9T9RnRJcg3D/OSUrUK2HtaH30MImAF2AD3kuYIBgs3xmFgO01n22
+BG13z92uN7ey4DQlOWWU+x8Vb4xOOvj+brxGvb61sSLUGq/X6QWF7tkrDG4yF7bk
+uAE0gHygMESL9K4TlqIt96osisTjr8udjvFQiFrilEA=</ns2:SignatureValue><ns2:KeyInfo><ns2:X509Data><ns2:X509Certificate>MIICIzCCAYwCAXcwDQYJKoZIhvcNAQELBQAwWjELMAkGA1UEBhMCc2UxCzAJBgNVBAgTAmFjMQ0wCwYDVQQHEwRVbWVhMQwwCgYDVQQKEwNJVFMxDTALBgNVBAsTBERJUkcxEjAQBgNVBAMTCWxvY2FsaG9zdDAeFw0xNDAzMTkxNzE5MzlaFw0yNDAzMTYxNzE5MzlaMFoxCzAJBgNVBAYTAnNlMQswCQYDVQQIEwJhYzENMAsGA1UEBxMEVW1lYTEMMAoGA1UEChMDSVRTMQ0wCwYDVQQLEwRESVJHMRIwEAYDVQQDEwlsb2NhbGhvc3QwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBALswQbMz6dKL4FEKu+O3GYDfaniyxcfizsHaiehuh5jufrlGZw/zMMttteTRhpjtTFN2/R68d1kh8pmO+HV7u+53h+C33I178ZsOquSovGe1AWmzDzp2j6CRdQYdZaMCc4YxtwEXs7570YmnPLKhz8aHdiQRHhtx1cqdPPStkz67AgMBAAEwDQYJKoZIhvcNAQELBQADgYEApQ5znEdhsJBs+ew81X9pkUKZ/ruu/p2OPfYmKzdFnK6mq9bF5CEIaIkvbSJjpECicmGCNw9ATJXylnwFLnfxw6d+YGi4XPuo64NSG00ycnMSTMJ8OR5ForcF89v72BLRDYo6yXeNDw722ul0lPzH54CNQzsm4N/5w5iStnOT1TQ=</ns2:X509Certificate></ns2:X509Data></ns2:KeyInfo></ns2:Signature><ns0:NameIDPolicy AllowCreate="false" Format="urn:oasis:names:tc:SAML:2.0:nameid-format:persistent" /><ns3:Extensions><ns4:SPCertEnc><ns2:X509Data><ns2:X509Certificate>-----BEGIN CERTIFICATE-----
+MIICujCCAiMCAQEwDQYJKoZIhvcNAQELBQAwbTELMAkGA1UEBhMCc2UxCzAJBgNV
+BAgTAmFjMQ0wCwYDVQQHEwR1bWVhMRwwGgYDVQQKExNJVFMgVW1lYSBVbml2ZXJz
+aXR5MQ0wCwYDVQQLEwRESVJHMRUwEwYDVQQDEwxsb2NhbGhvc3QuY2EwHhcNMTUw
+NDIxMTE0MTM2WhcNMjUwNDE4MTE0MTM2WjBaMQswCQYDVQQGEwJzZTELMAkGA1UE
+CAwCYWMxDTALBgNVBAcMBFVtZWExDDAKBgNVBAoMA0lUUzENMAsGA1UECwwERElS
+RzESMBAGA1UEAwwJbG9jYWxob3N0MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIB
+CgKCAQEAzN3OTCtcDMohOcy0MHeq+QqGzbVeIPgvpfdfcN8qPm7IWM7rSOP3JjED
+YAyYcOlrPs5zaonp/tLaGMBbbaLrjOqDxTVOUnuvPaeGtm4OjnF5w5k343Tm+tZL
+jaKRDwIZ9lW3J1Hkaqr68tDjzNWR+TUpJJ3OY7Mwhl7eonoHawOhGIYUsHEN38GN
+pFaTTmRe3uOF/IxwjMEnKDfclT2Rp5QtGJs1D6haNMBe/biQJS15qlVw9e+4z/3+
+XvJBx5EKwyr4HnTC2jZR1R7oEl3G6YmZJ72BeEl4AxWKFTDOL1MydQX4hETMZL8W
+vIlUpyvl81ddy+cwncbF2g4tAGvZhwIDAQABMA0GCSqGSIb3DQEBCwUAA4GBAGB/
+SKff3riIJafphzeDKCTdzY7xmZh5JlFlnYxL4hHjPA3KrOmz+H9LQbTqvEjkIATr
+kjpjHkp72rDrDk0nzEoYgEseHVtJ66b9jy2kPHR/9YHs44AtPoa1Opbm8pXvphX3
+Mfgysd9v1p/ZLceP5MsYb9UAQlzdwAO2WlQmSNBb
+-----END CERTIFICATE-----
+</ns2:X509Certificate></ns2:X509Data></ns4:SPCertEnc></ns3:Extensions></ns0:AuthnRequest>
+2015-04-21 11:41:46,225 saml2.entity:DEBUG Loaded request
+2015-04-21 11:41:46,226 saml2.entity:DEBUG Verified request
+2015-04-21 11:41:51,038 saml2.mdstore:DEBUG service(https://localhost:8999/pvp2_spproxy.xml, spsso_descriptor, assertion_consumer_service, urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST)
+2015-04-21 11:41:51,038 saml2.mdstore:DEBUG service => [{'index': '1', 'binding': 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST', '__class__': 'urn:oasis:names:tc:SAML:2.0:metadata&AssertionConsumerService', 'location': 'https://localhost:8999/pvp2_sp/acs/post'}]
+2015-04-21 11:41:51,039 saml2.mdstore:DEBUG service(https://localhost:8999/pvp2_spproxy.xml, spsso_descriptor, assertion_consumer_service, urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST)
+2015-04-21 11:41:51,039 saml2.mdstore:DEBUG service => [{'index': '1', 'binding': 'urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST', '__class__': 'urn:oasis:names:tc:SAML:2.0:metadata&AssertionConsumerService', 'location': 'https://localhost:8999/pvp2_sp/acs/post'}]
+2015-04-21 11:41:51,043 saml2.ident:DEBUG failed to find userid testuser in IdentDB
+2015-04-21 11:41:51,044 saml2.ident:DEBUG local_policy: <saml2.assertion.Policy object at 0x7f04fdbdec10>, name_id_policy: <?xml version='1.0' encoding='UTF-8'?>
+<ns0:NameIDPolicy xmlns:ns0="urn:oasis:names:tc:SAML:2.0:protocol" AllowCreate="false" Format="urn:oasis:names:tc:SAML:2.0:nameid-format:persistent" />
+2015-04-21 11:41:51,045 saml2.server:DEBUG construct_nameid: testuser => <?xml version='1.0' encoding='UTF-8'?>
+<ns0:NameID xmlns:ns0="urn:oasis:names:tc:SAML:2.0:assertion" Format="urn:oasis:names:tc:SAML:2.0:nameid-format:persistent" NameQualifier="https://localhost:8088/TestPEFIMIdP.xml" SPNameQualifier="https://localhost:8999/pvp2_spproxy.xml">testuser</ns0:NameID>
+2015-04-21 11:41:51,051 saml2.sigver:DEBUG xmlsec command: /usr/bin/xmlsec1 encrypt --pubkey-cert-pem /tmp/tmp0qvCMR --session-key des-192 --xml-data /tmp/tmp1jr32h --node-xpath /*[local-name()="Response"]/*[local-name()="Assertion"]/*[local-name()="Advice"]/*[local-name()="EncryptedAssertion"]/*[local-name()="Assertion"] --output /tmp/tmpbvM5u4.xml /tmp/tmpNbJMoY
+2015-04-21 11:41:51,063 saml2.sigver:DEBUG xmlsec command: /usr/bin/xmlsec1 --sign --privkey-pem /opt/pefim/etc/pki/mykey.pem --id-attr:ID urn:oasis:names:tc:SAML:2.0:protocol:Response --node-id id-cFTB3eHXbSucW4lBe --output /tmp/tmpCgHsmN.xml /tmp/tmpsiikcK.xml
+2015-04-21 11:41:51,075 saml2.entity:INFO HTTP POST
