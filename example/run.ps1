@@ -20,8 +20,6 @@ $dir = $dir -replace "\\", "/"
 
 $port = cat ${volume}/${conf} | grep PORT | head -1 | sed 's/[^0-9]//g'
 
-$repository = "itsdirg/pefim_idp"
-
 $ssh_path = "c:\Program Files (x86)\Git\bin"
 
 [int]$port_check=[convert]::ToInt32($(netstat -an | grep ${port} | wc -l))
