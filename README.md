@@ -29,3 +29,17 @@ Replace the metadata in example/etc/metadata with your metadata or change the me
 To start the idp run the script::
 
     example/run.sh
+
+Install with windows
+====================
+
+If you are running windows there exists powershell scripts. The scripts are not signed so you have to give yourself
+permission to run them. One example to run the scripts:
+
+To build the image:
+cd [..]/dockerfiles/
+PowerShell.exe -ExecutionPolicy Bypass -File build.ps1
+
+To start:
+cd [..]/example/
+PowerShell.exe -ExecutionPolicy Bypass -File run.ps1
