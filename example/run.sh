@@ -24,7 +24,7 @@ volume=etc
 
 dir=$(pwd)
 
-port=$(cat ${volume}/${conf} | grep PORT | head -1 | sed 's/[^0-9]//g')
+port=$(cat ${volume}/${conf} | grep PORT | grep -v "#" | head -1 | sed 's/[^0-9]//g')
 
 centos_or_redhat=$(cat /etc/centos-release 2>/dev/null | wc -l)
 
