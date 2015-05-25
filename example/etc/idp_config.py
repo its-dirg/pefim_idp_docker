@@ -70,11 +70,12 @@ CONFIG = {
         "idp": {
             "name": "Test PEFIM IdP",
             "want_authn_requests_signed": True,
+            "pefim": True,
             "want_authn_requests_only_with_valid_cert": True,
             "sign_response": True,
             "sign_assertion": False,
             "verify_encrypt_cert": verify_encrypt_cert,
-            "encrypt_assertion": True,
+            #"encrypt_assertion": True,
             "endpoints": {
                 "single_sign_on_service": [
                     ("%s/sso/redirect" % BASE, BINDING_HTTP_REDIRECT),
