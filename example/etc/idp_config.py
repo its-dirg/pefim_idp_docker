@@ -74,7 +74,7 @@ CONFIG = {
             "sign_response": True,
             "sign_assertion": False,
             "verify_encrypt_cert": verify_encrypt_cert,
-            #"encrypt_assertion": True,
+            "encrypt_assertion": True,
             "endpoints": {
                 "single_sign_on_service": [
                     ("%s/sso/redirect" % BASE, BINDING_HTTP_REDIRECT),
